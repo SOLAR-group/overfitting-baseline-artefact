@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -231,2 +231,2 @@
+-		insets.trim(plotArea);
+-
++		if (true)
++			return; 		insets.trim(plotArea);
+

@@ -1,0 +1,166 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest#testSimpleFunctionCall
+.E
+Time: 8.789
+There was 1 failure:
+1) testSimpleFunctionCall(com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest)
+junit.framework.AssertionFailedError: Node structure normalization invalidated.
+Expected: var Object=function f(){};var RegExp=function f(a){};var Array=function f(a){}
+Result: 
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: externs] [input_id: InputId: externs]
+        VAR 1 [source_file: externs]
+            NAME Object 1 [source_file: externs]
+                FUNCTION f 1 [source_file: externs]
+                    NAME f 1 [source_file: externs]
+                    PARAM_LIST 1 [source_file: externs]
+                    BLOCK 1 [source_file: externs]
+        VAR 2 [source_file: externs]
+            NAME RegExp 2 [source_file: externs]
+                FUNCTION f 2 [source_file: externs]
+                    NAME f 2 [source_file: externs]
+                    PARAM_LIST 2 [source_file: externs]
+                        NAME a 2 [source_file: externs]
+                    BLOCK 2 [source_file: externs]
+        VAR 3 [source_file: externs]
+            NAME Array 3 [source_file: externs]
+                FUNCTION f 3 [source_file: externs]
+                    NAME f 3 [source_file: externs]
+                    PARAM_LIST 3 [source_file: externs]
+                        NAME a 3 [source_file: externs]
+                    BLOCK 3 [source_file: externs]
+
+
+Tree2:
+BLOCK 1 [synthetic: 1] [source_file: testcode]
+
+
+Subtree1: BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: externs] [input_id: InputId: externs]
+        VAR 1 [source_file: externs]
+            NAME Object 1 [source_file: externs]
+                FUNCTION f 1 [source_file: externs]
+                    NAME f 1 [source_file: externs]
+                    PARAM_LIST 1 [source_file: externs]
+                    BLOCK 1 [source_file: externs]
+        VAR 2 [source_file: externs]
+            NAME RegExp 2 [source_file: externs]
+                FUNCTION f 2 [source_file: externs]
+                    NAME f 2 [source_file: externs]
+                    PARAM_LIST 2 [source_file: externs]
+                        NAME a 2 [source_file: externs]
+                    BLOCK 2 [source_file: externs]
+        VAR 3 [source_file: externs]
+            NAME Array 3 [source_file: externs]
+                FUNCTION f 3 [source_file: externs]
+                    NAME f 3 [source_file: externs]
+                    PARAM_LIST 3 [source_file: externs]
+                        NAME a 3 [source_file: externs]
+                    BLOCK 3 [source_file: externs]
+
+
+Subtree2: BLOCK 1 [synthetic: 1] [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:908)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:445)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:371)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:340)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:328)
+	at com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest.testSimpleFunctionCall(PeepholeSubstituteAlternateSyntaxTest.java:1029)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FunctionNamesTest#testFunctionsNamesAndIds
+.E
+Time: 7.574
+There was 1 failure:
+1) testFunctionsNamesAndIds(com.google.javascript.jscomp.FunctionNamesTest)
+junit.framework.AssertionFailedError: Node structure normalization invalidated.
+Expected: 
+Result: 
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: externs] [input_id: InputId: externs]
+
+
+Tree2:
+BLOCK 1 [synthetic: 1] [source_file: testcode]
+
+
+Subtree1: BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: externs] [input_id: InputId: externs]
+
+
+Subtree2: BLOCK 1 [synthetic: 1] [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:908)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:445)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:371)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:340)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:328)
+	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:560)
+	at com.google.javascript.jscomp.FunctionNamesTest.testFunctionsNamesAndIds(FunctionNamesTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.rhino.NodeTest#testCheckTreeEqualsImplDifferentChild
+.
+Time: 1.474
+
+OK (1 test)
+

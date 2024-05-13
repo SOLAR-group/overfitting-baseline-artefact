@@ -1,0 +1,8 @@
+--- /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
++++ /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+@@ -300,2 +300,2 @@
+-		mean, standardDeviation);
+-		this.data.addObject(item, rowKey, columnKey);
++		mean, standardDeviation); 		notifyListeners(new org.jfree.data.general.DatasetChangeEvent(this, this));
++
+

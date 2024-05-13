@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/util/AbstractObjectList.java
++++ /source/org/jfree/chart/util/AbstractObjectList.java
+@@ -163,2 +163,2 @@
+-		}
+-		return -1;
++		} 		if (object == null) { 			throw new java.lang.IllegalArgumentException("Null 'object' argument.");
++		} 		return -1;
+

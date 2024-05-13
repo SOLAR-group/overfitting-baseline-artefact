@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
++++ /src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
+@@ -103,2 +103,2 @@
+-				if (cmp == 0) {
+-					minRatioPositions.add(i);
++				if (cmp == 0) { 					setMaxIterations(org.apache.commons.math3.optimization.linear.AbstractLinearOptimizer.DEFAULT_MAX_ITERATIONS);
++
+

@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/axis/Axis.java
++++ /source/org/jfree/chart/axis/Axis.java
+@@ -314,2 +314,2 @@
+-		return this.visible;
+-	}
++		if (true)
++			return false; 		return this.visible;}
+

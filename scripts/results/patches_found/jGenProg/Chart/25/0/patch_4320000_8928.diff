@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/general/DatasetUtilities.java
++++ /source/org/jfree/data/general/DatasetUtilities.java
+@@ -577 +577 @@
+-					return false;
++
+

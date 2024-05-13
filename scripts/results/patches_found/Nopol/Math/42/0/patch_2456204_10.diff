@@ -1,0 +1,7 @@
+--- /src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
++++ /src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
+@@ -337,3 +337,3 @@
+             final double entry = tableau.getEntry(0, i);
+-            if (Precision.compareTo(entry, 0d, maxUlps) > 0) {
++            if (((org.apache.commons.math.optimization.linear.SimplexTableau.this.restrictToNonNegative) && (org.apache.commons.math.optimization.linear.SimplexTableau.this.constraints.size() == 1)) || (!(entry <= 0.0))) {
+                 columnsToDrop.add(i);

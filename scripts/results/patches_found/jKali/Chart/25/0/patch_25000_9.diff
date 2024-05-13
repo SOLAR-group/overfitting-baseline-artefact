@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
++++ /source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+@@ -205,2 +205,2 @@
+-
+-		org.jfree.chart.plot.PlotOrientation orientation = plot.getOrientation();
++		if (true)
++			return; 		org.jfree.chart.plot.PlotOrientation orientation = plot.getOrientation();
+

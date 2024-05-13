@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1170,2 +1170,2 @@
+-
+-		if (isBorderVisible()) {
++		if (true)
++			return; 		if (isBorderVisible()) {
+

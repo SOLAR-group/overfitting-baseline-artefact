@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1149 +1149 @@
+-		}
++		} 		chartArea = new java.awt.geom.Rectangle2D.Double();
+

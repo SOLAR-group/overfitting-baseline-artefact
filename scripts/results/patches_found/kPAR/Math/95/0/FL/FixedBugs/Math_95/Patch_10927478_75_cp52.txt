@@ -1,0 +1,40 @@
+--- /src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java
++++ /src/java/org/apache/commons/math/analysis/UnivariateRealSolverUtils.java
+@@ -178,7 +178,7 @@ public class UnivariateRealSolverUtils {
+         if (initial < lowerBound || initial > upperBound || lowerBound >= upperBound) {
+             throw new IllegalArgumentException
+             ("Invalid endpoint parameters:  lowerBound=" + lowerBound + 
+-              " initial=" + initial + " upperBound=" + upperBound);
++              " initial=" + initial + " upperBound=" + function);
+         }
+         double a = initial;
+         double b = initial;
+diff --git a/src/java/org/apache/commons/math/distribution/AbstractContinuousDistribution.java b/src/java/org/apache/commons/math/distribution/AbstractContinuousDistribution.java
+index c8b323b6e..1d0f36d46 100644
+--- /src/java/org/apache/commons/math/distribution/AbstractContinuousDistribution.java
++++ /src/java/org/apache/commons/math/distribution/AbstractContinuousDistribution.java
+@@ -100,7 +100,10 @@ public abstract class AbstractContinuousDistribution
+                 return upperBound;
+             }     
+             // Failed bracket convergence was not because of corner solution
+-            throw new MathException(ex);
++            if (ex != null) {
++	throw new MathException(ex);
++}
++
+         }
+ 
+         // find root
+diff --git a/src/java/org/apache/commons/math/special/Beta.java b/src/java/org/apache/commons/math/special/Beta.java
+index 904e15663..fb77c29b7 100644
+--- /src/java/org/apache/commons/math/special/Beta.java
++++ /src/java/org/apache/commons/math/special/Beta.java
+@@ -127,7 +127,7 @@ public class Beta implements Serializable {
+             (x > 1) || (a <= 0.0) || (b <= 0.0))
+         {
+             ret = Double.NaN;
+-        } else if (x > (a + 1.0) / (a + b + 2.0)) {
++        } else if (x >= a && (x > (a + 1.0) / (a + b + 2.0))) {
+             ret = 1.0 - regularizedBeta(1.0 - x, b, a, epsilon, maxIterations);
+         } else {
+             ContinuedFraction fraction = new ContinuedFraction() {

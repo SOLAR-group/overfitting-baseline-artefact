@@ -1,0 +1,64 @@
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+@@ -91,7 +91,7 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+      * @return the built tree
+      */
+     private static BSPTree<Euclidean1D> buildTree(final double lower, final double upper) {
+-        if (Double.isInfinite(lower) && (lower < 0)) {
++        if (Double.isInfinite(upper) && (lower < 0)) {
+             if (Double.isInfinite(upper) && (upper > 0)) {
+                 // the tree must cover the whole real line
+                 return new BSPTree<Euclidean1D>(Boolean.TRUE);
+@@ -106,13 +106,7 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+         }
+         final SubHyperplane<Euclidean1D> lowerCut =
+             new OrientedPoint(new Vector1D(lower), false).wholeHyperplane();
+-        if (Double.isInfinite(upper) && (upper > 0)) {
+-            // the tree must be open on the positive infinity side
+-            return new BSPTree<Euclidean1D>(lowerCut,
+-                                            new BSPTree<Euclidean1D>(Boolean.FALSE),
+-                                            new BSPTree<Euclidean1D>(Boolean.TRUE),
+-                                            null);
+-        }
++        
+ 
+         // the tree must be bounded on the two sides
+         final SubHyperplane<Euclidean1D> upperCut =
+diff --git a/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/Line.java b/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/Line.java
+index 7ff678c96..974fcf095 100644
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/twod/Line.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/twod/Line.java
+@@ -189,19 +189,7 @@ public class Line implements Hyperplane<Euclidean2D>, Embedding<Euclidean2D, Euc
+                             abscissa * sin + originOffset * cos);
+     }
+ 
+-    /** Get the intersection point of the instance and another line.
+-     * @param other other line
+-     * @return intersection point of the instance and the other line
+-     * or null if there are no intersection points
+-     */
+-    public Vector2D intersection(final Line other) {
+-        final double d = sin * other.cos - other.sin * cos;
+-        if (FastMath.abs(d) < 1.0e-10) {
+-            return null;
+-        }
+-        return new Vector2D((cos * other.originOffset - other.cos * originOffset) / d,
+-                            (sin * other.originOffset - other.sin * originOffset) / d);
+-    }
++    
+ 
+     /** {@inheritDoc} */
+     public SubLine wholeHyperplane() {
+diff --git a/src/main/java/org/apache/commons/math3/util/FastMath.java b/src/main/java/org/apache/commons/math3/util/FastMath.java
+index c5a198a61..2591281d3 100644
+--- /src/main/java/org/apache/commons/math3/util/FastMath.java
++++ /src/main/java/org/apache/commons/math3/util/FastMath.java
+@@ -2661,7 +2661,7 @@ public class FastMath {
+                 return Math.PI * F_1_2;
+             }
+ 
+-            if (y < 0 || 1 / y < 0) {
++            if ((y < 0 || 1 / y < 0) || (y > 0)) {
+                 return -Math.PI * F_1_2;
+             }
+         }

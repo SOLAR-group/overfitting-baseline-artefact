@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1211,2 +1211,2 @@
+-
+-		java.awt.geom.Rectangle2D plotArea = nonTitleArea;
++		if (true)
++			return; 		java.awt.geom.Rectangle2D plotArea = nonTitleArea;
+

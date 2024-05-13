@@ -1,0 +1,38 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..39fd31c5 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -498,7 +498,7 @@ public class NumberUtils {
+                 exp = null;
+             }
+             //Requesting a specific type..
+-            String numeric = str.substring(0, str.length() - 1);
++            String numeric = str.substring(0, mant.length() - 1);
+             boolean allZeros = isAllZeros(mant) && isAllZeros(exp);
+             switch (lastChar) {
+                 case 'l' :
+diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+index 28f2e4f0..c61017a6 100644
+--- /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
++++ /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+@@ -451,7 +451,7 @@ public class DurationFormatUtils {
+                     if (lastOutputSeconds) {
+                         milliseconds += 1000;
+                         String str = padWithZeros
+-                                ? StringUtils.leftPad(Integer.toString(milliseconds), count, '0')
++                                ? StringUtils.leftPad(Integer.toString(minutes), count, '0')
+                                 : Integer.toString(milliseconds);
+                         buffer.append(str.substring(1));
+                     } else {

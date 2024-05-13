@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2557,2 +2557,2 @@
+-		java.awt.geom.Rectangle2D dataArea = space.shrink(area, null);
+-		this.axisOffset.trim(dataArea);
++		if (true)
++			return; 		java.awt.geom.Rectangle2D dataArea = space.shrink(area, null); 		this.axisOffset.trim(dataArea);
+

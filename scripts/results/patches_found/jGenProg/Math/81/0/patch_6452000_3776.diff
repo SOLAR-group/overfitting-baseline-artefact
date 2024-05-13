@@ -1,0 +1,10 @@
+--- /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
++++ /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+@@ -1520,3 +1520,3 @@
+-						if (a2 < cnst1) {
+-							s = (gam * (1 - java.lang.Math.sqrt(a2))) / (1 + a2);
+-						}
++
++
++
+

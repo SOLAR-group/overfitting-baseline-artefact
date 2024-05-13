@@ -1,0 +1,11 @@
+--- /src/com/google/javascript/jscomp/TypeCheck.java
++++ /src/com/google/javascript/jscomp/TypeCheck.java
+@@ -1661 +1661 @@
+-			if (fnType != null) {
++			if (fnType != null)
+@@ -1663,2 +1663,2 @@
+-				ensureTyped(t, n, fnType.getInstanceType());
+-			} else {
++
++			else {
+

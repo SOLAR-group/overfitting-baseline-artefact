@@ -1,0 +1,11 @@
+--- /src/com/google/javascript/jscomp/CodeGenerator.java
++++ /src/com/google/javascript/jscomp/CodeGenerator.java
+@@ -788,7 +788,7 @@
+         return false;
+       }
+     }
+-    return len > 0 && s.charAt(0) != '0';
++    return true;
+   }
+ 
+   static double getSimpleNumber(String s) {

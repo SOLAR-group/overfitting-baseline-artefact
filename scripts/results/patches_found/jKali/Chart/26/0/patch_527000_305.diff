@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2570,2 +2570,2 @@
+-
+-		java.util.Map axisStateMap = drawAxes(g2, area, dataArea, state);
++		if (true)
++			return; 		java.util.Map axisStateMap = drawAxes(g2, area, dataArea, state);
+

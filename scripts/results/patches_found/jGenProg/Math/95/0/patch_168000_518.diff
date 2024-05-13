@@ -1,0 +1,50 @@
+--- /src/java/org/apache/commons/math/distribution/FDistributionImpl.java
++++ /src/java/org/apache/commons/math/distribution/FDistributionImpl.java
+@@ -148,2 +147,0 @@
+-		return ret;
+-	}
+@@ -157,7 +154,0 @@
+-	public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) {
+-		if (degreesOfFreedom <= 0.0) {
+-			throw new java.lang.IllegalArgumentException(
+-			"degrees of freedom must be positive.");
+-		}
+-		this.numeratorDegreesOfFreedom = degreesOfFreedom;
+-	}
+@@ -169,3 +159,0 @@
+-	public double getNumeratorDegreesOfFreedom() {
+-		return numeratorDegreesOfFreedom;
+-	}
+@@ -179,7 +166,0 @@
+-	public void setDenominatorDegreesOfFreedom(double degreesOfFreedom) {
+-		if (degreesOfFreedom <= 0.0) {
+-			throw new java.lang.IllegalArgumentException(
+-			"degrees of freedom must be positive.");
+-		}
+-		this.denominatorDegreesOfFreedom = degreesOfFreedom;
+-	}
+@@ -191,2 +172,21 @@
+-	public double getDenominatorDegreesOfFreedom() {
+-		return denominatorDegreesOfFreedom;
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++		return denominatorDegreesOfFreedom;} 	public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) { 		if (degreesOfFreedom <= 0.0) { 			throw new java.lang.IllegalArgumentException("degrees of freedom must be positive.");} 		this.numeratorDegreesOfFreedom = degreesOfFreedom;} 	public double getNumeratorDegreesOfFreedom() { 		return numeratorDegreesOfFreedom;} 	public void setDenominatorDegreesOfFreedom(double degreesOfFreedom) { 		if (degreesOfFreedom <= 0.0) { 			throw new java.lang.IllegalArgumentException("degrees of freedom must be positive.");} 		this.denominatorDegreesOfFreedom = degreesOfFreedom;} 	public double getDenominatorDegreesOfFreedom() { 		return denominatorDegreesOfFreedom;
+

@@ -1,0 +1,6 @@
+--- /src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java
++++ /src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java
+@@ -1760 +1760 @@
+-		if (token != com.google.javascript.jscomp.parsing.JsDocToken.LP) {
++		if (token != com.google.javascript.jscomp.parsing.JsDocToken.LP) { 			restoreLookAhead(token);
+

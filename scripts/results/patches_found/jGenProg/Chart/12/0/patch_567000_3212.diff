@@ -1,0 +1,8 @@
+--- /source/org/jfree/data/general/AbstractDataset.java
++++ /source/org/jfree/data/general/AbstractDataset.java
+@@ -160,2 +160,2 @@
+-		java.util.List list = java.util.Arrays.asList(this.listenerList.getListenerList());
+-		return list.contains(listener);
++		java.util.List list = java.util.Arrays.asList(this.listenerList.getListenerList()); 		return true;
++
+

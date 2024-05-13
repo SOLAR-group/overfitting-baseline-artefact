@@ -1,0 +1,10 @@
+--- /source/org/jfree/chart/axis/AxisCollection.java
++++ /source/org/jfree/chart/axis/AxisCollection.java
+@@ -129,3 +129,3 @@
+-		if (edge == null) {
+-			throw new java.lang.IllegalArgumentException("Null 'edge' argument.");
+-		}
++		if (true)
++			return;
++
+

@@ -1,0 +1,32 @@
+--- /src/main/java/org/apache/commons/math3/exception/util/LocalizedFormats.java
++++ /src/main/java/org/apache/commons/math3/exception/util/LocalizedFormats.java
+@@ -376,12 +376,15 @@ public enum LocalizedFormats implements Localizable {
+     public String getLocalizedString(final Locale locale) {
+         try {
+             final String path = LocalizedFormats.class.getName().replaceAll("\\.", "/");
+-            ResourceBundle bundle =
++            if (path != null) {
++	ResourceBundle bundle =
+                     ResourceBundle.getBundle("assets/" + path, locale);
+             if (bundle.getLocale().getLanguage().equals(locale.getLanguage())) {
+                 // the value of the resource is the translated format
+                 return bundle.getString(toString());
+             }
++	}
++
+ 
+         } catch (MissingResourceException mre) {
+             // do nothing here
+diff --git a/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java b/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
+index a84438d9b..3548f8a38 100644
+--- /src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
++++ /src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
+@@ -120,7 +120,7 @@ public class SimplexSolver extends AbstractLinearOptimizer {
+                     for (int i = 0; i < tableau.getNumArtificialVariables(); i++) {
+                         int column = i + tableau.getArtificialVariableOffset();
+                         final double entry = tableau.getEntry(row, column);
+-                        if (Precision.equals(entry, 1d, maxUlps) && row.equals(tableau.getBasicRow(column))) {
++                        if (Precision.equals(column, 1d, maxUlps) && row.equals(tableau.getBasicRow(column))) {
+                             return row;
+                         }
+                     }

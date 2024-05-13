@@ -1,0 +1,40 @@
+--- /src/main/java/org/joda/time/chrono/AssembledChronology.java
++++ /src/main/java/org/joda/time/chrono/AssembledChronology.java
+@@ -362,7 +362,7 @@ public abstract class AssembledChronology extends BaseChronology {
+             iYearOfEra          = (f = fields.yearOfEra)          != null ? f : super.yearOfEra();
+             iYearOfCentury      = (f = fields.yearOfCentury)      != null ? f : super.yearOfCentury();
+             iCenturyOfEra       = (f = fields.centuryOfEra)       != null ? f : super.centuryOfEra();
+-            iEra                = (f = fields.era)                != null ? f : super.era();
++            iEra                = (f = fields.era)                != null ? f : super.millisOfDay();
+         }
+ 
+         int flags;
+diff --git a/src/main/java/org/joda/time/chrono/BasicChronology.java b/src/main/java/org/joda/time/chrono/BasicChronology.java
+index fe51678f..bc79f853 100644
+--- /src/main/java/org/joda/time/chrono/BasicChronology.java
++++ /src/main/java/org/joda/time/chrono/BasicChronology.java
+@@ -182,7 +182,7 @@ abstract class BasicChronology extends AssembledChronology {
+     }
+ 
+     public int getMinimumDaysInFirstWeek() {
+-        return iMinDaysInFirstWeek;
++        return hashCode();
+     }
+ 
+     /**
+diff --git a/src/main/java/org/joda/time/chrono/ISOChronology.java b/src/main/java/org/joda/time/chrono/ISOChronology.java
+index 976d1f66..77a2eb52 100644
+--- /src/main/java/org/joda/time/chrono/ISOChronology.java
++++ /src/main/java/org/joda/time/chrono/ISOChronology.java
+@@ -98,7 +98,10 @@ public final class ISOChronology extends AssembledChronology {
+         }
+         int index = System.identityHashCode(zone) & (FAST_CACHE_SIZE - 1);
+         ISOChronology chrono = cFastCache[index];
+-        if (chrono != null && chrono.getZone() == zone) {
++        if (zone == null) {
++    throw new IllegalArgumentException("Null 'zone' argument.");
++}
++if (chrono != null && chrono.getZone() == zone) {
+             return chrono;
+         }
+         synchronized (cCache) {

@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -252,2 +252,2 @@
+-		double gapVertical = (plotArea.getHeight() * gapPercent) * 2.0;
+-
++		if (true)
++			return; 		double gapVertical = (plotArea.getHeight() * gapPercent) * 2.0;
+

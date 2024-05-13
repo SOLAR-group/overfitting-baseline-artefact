@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2544,2 +2544,2 @@
+-
+-
++			if (true)
++				return;
+

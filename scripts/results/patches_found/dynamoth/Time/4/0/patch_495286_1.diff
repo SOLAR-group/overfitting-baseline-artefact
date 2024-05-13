@@ -1,0 +1,7 @@
+--- /src/main/java/org/joda/time/Partial.java
++++ /src/main/java/org/joda/time/Partial.java
+@@ -426,3 +426,3 @@
+     public Partial with(DateTimeFieldType fieldType, int value) {
+-        if (fieldType == null) {
++        if ((this.size() + this.size()) == (value - this.size())) {
+             throw new IllegalArgumentException("The field type must not be null");

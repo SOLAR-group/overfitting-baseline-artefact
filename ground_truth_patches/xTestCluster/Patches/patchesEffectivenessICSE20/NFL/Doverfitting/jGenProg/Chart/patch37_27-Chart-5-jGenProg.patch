@@ -1,0 +1,14 @@
+--- /source/org/jfree/data/xy/XYSeries.java
++++ /source/org/jfree/data/xy/XYSeries.java
+@@ -560,8 +560,8 @@
+ 
+ 
+ 
+-			if (this.autoSort) {
+-				this.data.add(((-index) - 1), new org.jfree.data.xy.XYDataItem(x, y));
++			if (this.autoSort) { 				add(x, y, true);
++
+ 			}else 
+ 			{
+ 				this.data.add(new org.jfree.data.xy.XYDataItem(x, y));
+

@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2673 +2673 @@
+-				foundData = render(g2, dataArea, i, state) || foundData;
++
+

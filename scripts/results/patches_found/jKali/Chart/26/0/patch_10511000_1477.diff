@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1198,2 +1198,2 @@
+-			org.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title) (iterator.next()));
+-			org.jfree.chart.entity.EntityCollection e = drawTitle(currentTitle, g2, nonTitleArea, 
++			if (true)
++				return; 			org.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title) (iterator.next())); 			org.jfree.chart.entity.EntityCollection e = drawTitle(currentTitle, g2, nonTitleArea, 
+

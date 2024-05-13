@@ -1,0 +1,12 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2867,4 +2867,4 @@
+-							for (int row = 0; row < rowCount; row++) {
+-								renderer.drawItem(g2, state, dataArea, this, 
+-								domainAxis, rangeAxis, currentDataset, 
+-								row, column, pass);
++							for (int row = 0; row < rowCount; row++) { 								drawRangeCrosshair(g2, dataArea, getOrientation(), getRangeCrosshairValue(), getRangeAxis(), getRangeCrosshairStroke(), getRangeCrosshairPaint());
++
++
++
+

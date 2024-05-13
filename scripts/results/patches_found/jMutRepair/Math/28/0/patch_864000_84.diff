@@ -1,0 +1,6 @@
+--- /src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
++++ /src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
+@@ -115 +115 @@
+-		} else if (minRatioPositions.size() > 1) {
++		} else if (minRatioPositions.size() == 1) {
+

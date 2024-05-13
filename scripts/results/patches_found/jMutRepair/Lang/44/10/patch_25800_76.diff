@@ -1,0 +1,6 @@
+--- /src/java/org/apache/commons/lang/NumberUtils.java
++++ /src/java/org/apache/commons/lang/NumberUtils.java
+@@ -194 +194 @@
+-					(exp == null)) && 
++					(exp == null)) || 
+

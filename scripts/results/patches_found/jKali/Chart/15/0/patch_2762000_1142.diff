@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1148,2 +1148,2 @@
+-
+-		g2.addRenderingHints(this.renderingHints);
++		if (true)
++			return; 		g2.addRenderingHints(this.renderingHints);
+

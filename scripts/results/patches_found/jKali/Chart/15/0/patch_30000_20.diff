@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -232,2 +232,2 @@
+-
+-		java.awt.geom.Rectangle2D originalPlotArea = ((java.awt.geom.Rectangle2D) (plotArea.clone()));
++		if (true)
++			return; 		java.awt.geom.Rectangle2D originalPlotArea = ((java.awt.geom.Rectangle2D) (plotArea.clone()));
+

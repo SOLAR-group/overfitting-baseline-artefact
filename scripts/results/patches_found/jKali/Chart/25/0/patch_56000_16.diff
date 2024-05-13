@@ -1,0 +1,8 @@
+--- /source/org/jfree/data/statistics/MeanAndStandardDeviation.java
++++ /source/org/jfree/data/statistics/MeanAndStandardDeviation.java
+@@ -95,2 +95,2 @@
+-		return this.mean;
+-	}
++		if (true)
++			return null; 		return this.mean;}
+

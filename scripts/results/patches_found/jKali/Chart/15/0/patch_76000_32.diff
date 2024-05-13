@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -242,2 +242,2 @@
+-		g2.clip(plotArea);
+-
++		if (true)
++			return; 		g2.clip(plotArea);
+

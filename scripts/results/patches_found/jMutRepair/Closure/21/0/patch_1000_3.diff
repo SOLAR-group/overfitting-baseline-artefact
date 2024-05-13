@@ -1,0 +1,6 @@
+--- /src/com/google/javascript/jscomp/CheckSideEffects.java
++++ /src/com/google/javascript/jscomp/CheckSideEffects.java
+@@ -120 +120 @@
+-					if (ancestorType == com.google.javascript.rhino.Token.COMMA) 						continue;
++					if (ancestorType >= com.google.javascript.rhino.Token.COMMA) 						continue;
+

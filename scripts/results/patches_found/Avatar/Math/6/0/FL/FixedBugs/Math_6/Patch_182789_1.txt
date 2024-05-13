@@ -1,0 +1,27 @@
+--- /src/main/java/org/apache/commons/math3/optim/BaseOptimizer.java
++++ /src/main/java/org/apache/commons/math3/optim/BaseOptimizer.java
+@@ -90,7 +90,7 @@ public abstract class BaseOptimizer<PAIR> {
+      * @return the number of evaluations of the objective function.
+      */
+     public int getIterations() {
+-        return iterations.getCount();
++        return this.evaluations.getCount();
+     }
+ 
+     /**
+diff --git a/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java b/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+index 03030411a..b6d1710a2 100644
+--- /src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
++++ /src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java
+@@ -1257,7 +1257,10 @@ public class CMAESOptimizer
+     private static double min(final double[] m) {
+         double min = Double.MAX_VALUE;
+         for (int r = 0; r < m.length; r++) {
+-            if (min > m[r]) {
++            if (m == null) {
++	    return 0.0;
++	}
++if (min > m[r]) {
+                 min = m[r];
+             }
+         }

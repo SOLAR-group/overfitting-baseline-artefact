@@ -1,0 +1,32 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2866,14 +2866,14 @@
+-						if (this.rowRenderingOrder == org.jfree.chart.util.SortOrder.ASCENDING) {
+-							for (int row = 0; row < rowCount; row++) {
+-								renderer.drawItem(g2, state, dataArea, this, 
+-								domainAxis, rangeAxis, currentDataset, 
+-								row, column, pass);
+-							}
+-						} else 
+-						{
+-							for (int row = rowCount - 1; row >= 0; row--) {
+-								renderer.drawItem(g2, state, dataArea, this, 
+-								domainAxis, rangeAxis, currentDataset, 
+-								row, column, pass);
+-							}
+-						}
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+

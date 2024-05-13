@@ -1,0 +1,9 @@
+--- /source/org/jfree/chart/plot/XYPlot.java
++++ /source/org/jfree/chart/plot/XYPlot.java
+@@ -4922,3 +4922,5 @@
+                 axis.setPlot(this);
+-                axis.addChangeListener(this);
++                if (true) {
++                    axis.addChangeListener(this);
++                }
+             }

@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
++++ /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
+@@ -439,2 +439,2 @@
+-			return newdiff;
+-		} else {
++			if (true)
++				return 0; 			return newdiff;} else {
+

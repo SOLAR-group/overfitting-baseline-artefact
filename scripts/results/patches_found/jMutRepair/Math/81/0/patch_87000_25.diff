@@ -1,0 +1,6 @@
+--- /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
++++ /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+@@ -1543 +1543 @@
+-					if ((end - start) > 2) {
++					if (!((end - start) > 2)) {
+

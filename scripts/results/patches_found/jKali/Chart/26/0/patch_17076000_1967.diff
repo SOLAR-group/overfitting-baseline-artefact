@@ -1,0 +1,31 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1149,0 +1150,13 @@
++		if (true)
++			return;
++
++
++
++
++
++
++
++
++
++
++
+@@ -1151,13 +1163,0 @@
+-		if (this.backgroundImage != null) {
+-			java.awt.Composite originalComposite = g2.getComposite();
+-			g2.setComposite(java.awt.AlphaComposite.getInstance(java.awt.AlphaComposite.SRC_OVER, 
+-			this.backgroundImageAlpha));
+-			java.awt.geom.Rectangle2D dest = new java.awt.geom.Rectangle2D.Double(0.0, 0.0, 
+-			this.backgroundImage.getWidth(null), 
+-			this.backgroundImage.getHeight(null));
+-			org.jfree.chart.util.Align.align(dest, chartArea, this.backgroundImageAlignment);
+-			g2.drawImage(this.backgroundImage, ((int) (dest.getX())), 
+-			((int) (dest.getY())), ((int) (dest.getWidth())), 
+-			((int) (dest.getHeight())), null);
+-			g2.setComposite(originalComposite);
+-		}
+

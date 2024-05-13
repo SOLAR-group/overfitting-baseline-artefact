@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1212,2 +1212,2 @@
+-		}
+-		this.plot.draw(g2, plotArea, anchor, null, plotInfo);
++		} 		g2.setComposite(java.awt.AlphaComposite.getInstance(java.awt.AlphaComposite.SRC_OVER, this.backgroundImageAlpha));
++
+

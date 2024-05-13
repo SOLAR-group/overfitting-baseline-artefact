@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1201,2 +1201,2 @@
+-
+-		java.util.Iterator iterator = this.subtitles.iterator();
++		if (true)
++			return; 		java.util.Iterator iterator = this.subtitles.iterator();
+

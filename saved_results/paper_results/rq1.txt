@@ -1,0 +1,8 @@
+Data for bugs for which correct patches exist:
+Median,Mean,Max
+2.0 4.102941176470588 45
+['submission', 'kPAR', 'Math-50', '9', '36', '0', '45']
+Data for all bugs for which patches were generated:
+Median,Mean,Max
+2.0 6.7146739130434785 179
+['submission', 'dynamoth', 'Math-41', '0', '3', '176', '179']

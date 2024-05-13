@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1148 +1148 @@
+-			g2.fill(chartArea);
++			g2.fill(chartArea); 			info = new org.jfree.chart.ChartRenderingInfo();
+

@@ -1,0 +1,6 @@
+--- /src/com/google/javascript/jscomp/WarningLevel.java
++++ /src/com/google/javascript/jscomp/WarningLevel.java
+@@ -79 +79 @@
+-		options.checkGlobalThisLevel = com.google.javascript.jscomp.CheckLevel.WARNING;
++
+

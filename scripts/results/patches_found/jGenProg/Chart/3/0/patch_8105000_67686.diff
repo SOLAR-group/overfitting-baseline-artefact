@@ -1,0 +1,130 @@
+--- /source/org/jfree/data/time/TimeSeries.java
++++ /source/org/jfree/data/time/TimeSeries.java
+@@ -634 +633,0 @@
+-			removeAgedItems(false);
+@@ -637,4 +635,0 @@
+-			if (notify) {
+-				fireSeriesChanged();
+-			}
+-		}
+@@ -642 +636,0 @@
+-	}
+@@ -651 +644,0 @@
+-	public void add(org.jfree.data.time.RegularTimePeriod period, double value) {
+@@ -653,2 +645,0 @@
+-		add(period, value, true);
+-	}
+@@ -664 +654,0 @@
+-	public void add(org.jfree.data.time.RegularTimePeriod period, double value, boolean notify) {
+@@ -666,3 +655,0 @@
+-		org.jfree.data.time.TimeSeriesDataItem item = new org.jfree.data.time.TimeSeriesDataItem(period, value);
+-		add(item, notify);
+-	}
+@@ -678 +664,0 @@
+-	public void add(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value) {
+@@ -680,2 +665,0 @@
+-		add(period, value, true);
+-	}
+@@ -691 +674,0 @@
+-	public void add(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value, boolean notify) {
+@@ -693,3 +675,0 @@
+-		org.jfree.data.time.TimeSeriesDataItem item = new org.jfree.data.time.TimeSeriesDataItem(period, value);
+-		add(item, notify);
+-	}
+@@ -704,9 +683,0 @@
+-	public void update(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value) {
+-		org.jfree.data.time.TimeSeriesDataItem temp = new org.jfree.data.time.TimeSeriesDataItem(period, value);
+-		int index = java.util.Collections.binarySearch(this.data, temp);
+-		if (index < 0) {
+-			throw new org.jfree.data.general.SeriesException("There is no existing value for the " + 
+-			"specified 'period'.");
+-		}
+-		update(index, value);
+-	}
+@@ -720,21 +690,0 @@
+-	public void update(int index, java.lang.Number value) {
+-		org.jfree.data.time.TimeSeriesDataItem item = ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index)));
+-		boolean iterate = false;
+-		java.lang.Number oldYN = item.getValue();
+-		if (oldYN != null) {
+-			double oldY = oldYN.doubleValue();
+-			if (!java.lang.Double.isNaN(oldY)) {
+-				iterate = (oldY <= this.minY) || (oldY >= this.maxY);
+-			}
+-		}
+-		item.setValue(value);
+-		if (iterate) {
+-			findBoundsByIteration();
+-		} else 
+-		if (value != null) {
+-			double yy = value.doubleValue();
+-			this.minY = minIgnoreNaN(this.minY, yy);
+-			this.maxY = maxIgnoreNaN(this.maxY, yy);
+-		}
+-		fireSeriesChanged();
+-	}
+@@ -750,5 +700,55 @@
+-	public org.jfree.data.time.TimeSeries addAndOrUpdate(org.jfree.data.time.TimeSeries series) {
+-		org.jfree.data.time.TimeSeries overwritten = new org.jfree.data.time.TimeSeries("Overwritten values from: " + 
+-		getKey());
+-		for (int i = 0; i < series.getItemCount(); i++) {
+-			org.jfree.data.time.TimeSeriesDataItem item = series.getRawDataItem(i);
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+@@ -756 +756 @@
+-			item.getValue());
++			item.getValue()); 			removeAgedItems(false); 			if (notify) { 				fireSeriesChanged();}}} 	public void add(org.jfree.data.time.RegularTimePeriod period, double value) { 		add(period, value, true);} 	public void add(org.jfree.data.time.RegularTimePeriod period, double value, boolean notify) { 		org.jfree.data.time.TimeSeriesDataItem item = new org.jfree.data.time.TimeSeriesDataItem(period, value); 		add(item, notify);} 	public void add(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value) { 		add(period, value, true);} 	public void add(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value, boolean notify) { 		org.jfree.data.time.TimeSeriesDataItem item = new org.jfree.data.time.TimeSeriesDataItem(period, value); 		add(item, notify);} 	public void update(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value) { 		org.jfree.data.time.TimeSeriesDataItem temp = new org.jfree.data.time.TimeSeriesDataItem(period, value); 		int index = java.util.Collections.binarySearch(this.data, temp); 		if (index < 0) { 			throw new org.jfree.data.general.SeriesException("There is no existing value for the " + "specified 'period'.");} 		update(index, value);} 	public void update(int index, java.lang.Number value) { 		org.jfree.data.time.TimeSeriesDataItem item = ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index))); 		boolean iterate = false; 		java.lang.Number oldYN = item.getValue(); 		if (oldYN != null) { 			double oldY = oldYN.doubleValue(); 			if (!java.lang.Double.isNaN(oldY)) { 				iterate = (oldY <= this.minY) || (oldY >= this.maxY);}} 		item.setValue(value); 		if (iterate) { 			findBoundsByIteration();} else if (value != null) { 			double yy = value.doubleValue(); 			this.minY = minIgnoreNaN(this.minY, yy); 			this.maxY = maxIgnoreNaN(this.maxY, yy);} 		fireSeriesChanged();} 	public org.jfree.data.time.TimeSeries addAndOrUpdate(org.jfree.data.time.TimeSeries series) { 		org.jfree.data.time.TimeSeries overwritten = new org.jfree.data.time.TimeSeries("Overwritten values from: " + getKey()); 		for (int i = 0; i < series.getItemCount(); i++) { 			org.jfree.data.time.TimeSeriesDataItem item = series.getRawDataItem(i); 			org.jfree.data.time.TimeSeriesDataItem oldItem = addOrUpdate(item.getPeriod(), item.getValue());
+

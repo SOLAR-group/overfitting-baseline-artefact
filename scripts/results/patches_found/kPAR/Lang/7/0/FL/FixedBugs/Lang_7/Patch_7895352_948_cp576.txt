@@ -1,0 +1,47 @@
+--- /src/main/java/org/apache/commons/lang3/JavaVersion.java
++++ /src/main/java/org/apache/commons/lang3/JavaVersion.java
+@@ -153,16 +153,6 @@ public enum JavaVersion {
+     }
+ 
+     //-----------------------------------------------------------------------
+-    /**
+-     * <p>The string value is overridden to return the standard name.</p>
+-     *
+-     * <p>For example, <code>"1.5"</code>.</p>
+-     *
+-     * @return the name, not null
+-     */
+-    @Override
+-    public String toString() {
+-        return name;
+-    }
++    
+ 
+ }
+diff --git a/src/main/java/org/apache/commons/lang3/LocaleUtils.java b/src/main/java/org/apache/commons/lang3/LocaleUtils.java
+index 7568f2c6..c1c63cef 100644
+--- /src/main/java/org/apache/commons/lang3/LocaleUtils.java
++++ /src/main/java/org/apache/commons/lang3/LocaleUtils.java
+@@ -95,7 +95,7 @@ public class LocaleUtils {
+         }
+         char ch0 = str.charAt(0);
+         char ch1 = str.charAt(1);
+-        if (ch0 < 'a' || ch0 > 'z' || ch1 < 'a' || ch1 > 'z') {
++        if (ch0 < 'a' || ch0 > 'z' || ch1 > 'z') {
+             throw new IllegalArgumentException("Invalid locale format: " + str);
+         }
+         if (len == 2) {
+diff --git a/src/main/java/org/apache/commons/lang3/SystemUtils.java b/src/main/java/org/apache/commons/lang3/SystemUtils.java
+index ae87e7c3..80e7eba0 100644
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property

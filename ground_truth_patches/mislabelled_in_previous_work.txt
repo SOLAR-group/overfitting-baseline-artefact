@@ -1,0 +1,9 @@
+This list contains patches that were marked as correct in previous work, but are in fact incorrect.
+Path in the current directory structure is given below, with an explanation why we deem the patches to be incorrect.
+
+xTestCluster/Patches/patchesAPI/Doverfitting/DynaMoth/Chart/patch1-Chart-1-DynaMoth.patch ; removes the return, causing NullPointerExcpetion at line 1800, not a fix
+xTestCluster/Patches/patchesEffectivenessICSE20/PFL/Doverfitting/TBar/Closure/patch3_2-Closure-2-TBar.patch ; leaves currentPropertyNames uninitialised in case it's null, then called in for loop which could error, not a fix
+xTestCluster/Patches/patchesEffectivenessICSE20/NFL/Doverfitting/Nopol/Lang/patch1_1-Lang-46-Nopol.patch
+Cache/Small/Doverfitting/Nopol/Lang/patch1-Lang-46-Nopol.patch 
+Cache/Large/Doverfitting/Nopol/Lang/patch0-Lang-46-Nopol.patch
+; the last three patches are the same and use a different variable in the precondition than human fix, apply only one change with respect to human patch, not a fix

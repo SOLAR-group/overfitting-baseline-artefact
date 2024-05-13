@@ -1,0 +1,9 @@
+--- /src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
++++ /src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
+@@ -345,4 +345,4 @@
+           int col = i + getArtificialVariableOffset();
+-          if (getBasicRow(col) == null) {
+-            columnsToDrop.add(col);
++          if ((!((org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables == columnsToDrop.size()) || (org.apache.commons.math.optimization.linear.SimplexTableau.this.restrictToNonNegative))) || ((!((org.apache.commons.math.optimization.linear.SimplexTableau.this.numDecisionVariables < org.apache.commons.math.optimization.linear.SimplexTableau.this.maxUlps) && (org.apache.commons.math.optimization.linear.SimplexTableau.DEFAULT_ULPS <= columnsToDrop.size()))) && (2 <= org.apache.commons.math.optimization.linear.SimplexTableau.this.numArtificialVariables))) {
++              columnsToDrop.add(col);
+           }

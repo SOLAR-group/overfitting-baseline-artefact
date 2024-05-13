@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
++++ /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
+@@ -322,2 +322,2 @@
+-		days -= org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect(start, end, java.util.Calendar.DAY_OF_MONTH, days);
+-		months -= org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect(start, end, java.util.Calendar.MONTH, months);
++		days -= org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect(start, end, java.util.Calendar.DAY_OF_MONTH, days); 		hours -= org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect(start, end, java.util.Calendar.HOUR_OF_DAY, hours);
++
+

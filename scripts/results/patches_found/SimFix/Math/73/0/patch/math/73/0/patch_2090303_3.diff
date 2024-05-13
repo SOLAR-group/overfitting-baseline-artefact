@@ -1,0 +1,20 @@
+--- /src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java
++++ /src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java
+@@ -129,9 +129,17 @@
+         }
+ 
+         // reduce interval if initial and max bracket the root
++// start of generated patch
++verifyBracketing(initial,max,f);
+         if (yInitial * yMax < 0) {
+             return solve(f, initial, yInitial, max, yMax, initial, yInitial);
+         }
++// end of generated patch
++/* start of original code
++        if (yInitial * yMax < 0) {
++            return solve(f, initial, yInitial, max, yMax, initial, yInitial);
++        }
++ end of original code*/
+ 
+ 
+         // full Brent algorithm starting with provided initial guess

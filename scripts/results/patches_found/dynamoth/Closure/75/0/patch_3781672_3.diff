@@ -1,0 +1,9 @@
+--- /src/com/google/javascript/jscomp/PeepholeFoldConstants.java
++++ /src/com/google/javascript/jscomp/PeepholeFoldConstants.java
+@@ -83,3 +83,5 @@
+       case Token.BITNOT:
+-        tryReduceOperandsForOp(subtree);
++        if (subtree.getCharno() != subtree.getLineno()) {
++          tryReduceOperandsForOp(subtree);
++        }
+         return tryFoldUnaryOperator(subtree);

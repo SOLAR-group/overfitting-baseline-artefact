@@ -1,0 +1,1453 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsDefAndNotNull3
+.
+Time: 1.281
+
+OK (1 test)
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsDefAndNotNull2
+.
+Time: 0.355
+
+OK (1 test)
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsDefAndNotNull1
+.
+Time: 0.374
+
+OK (1 test)
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsDef1
+.
+Time: 0.362
+
+OK (1 test)
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsFunctionOnNull
+.
+Time: 0.209
+
+OK (1 test)
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsArray
+.
+Time: 0.381
+
+OK (1 test)
+
+com.google.javascript.jscomp.TypeInferenceTest#testAssertWithIsDef
+.
+Time: 0.398
+
+OK (1 test)
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testClosure5
+.E
+Time: 0.427
+There was 1 failure:
+1) testClosure5(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isNull: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 196 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosure5(LooseTypeCheckTest.java:3680)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testClosure6
+.E
+Time: 0.401
+There was 1 failure:
+1) testClosure6(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. initializing variable
+found   : (null|string|undefined)
+required: string at [testcode] line 10 : 205, JSC_WRONG_ARGUMENT_COUNT. Function goog.isDefAndNotNull: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 206 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosure6(LooseTypeCheckTest.java:3689)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testClosure3
+.E
+Time: 0.429
+There was 1 failure:
+1) testClosure3(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isDefAndNotNull: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 205 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosure3(TypeCheckTest.java:4514)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testClosure3
+.E
+Time: 0.404
+There was 1 failure:
+1) testClosure3(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isDefAndNotNull: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 205 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosure3(LooseTypeCheckTest.java:3662)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testClosure4
+.E
+Time: 0.376
+There was 1 failure:
+1) testClosure4(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. initializing variable
+found   : (string|undefined)
+required: string at [testcode] line 10 : 200, JSC_WRONG_ARGUMENT_COUNT. Function goog.isDef: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 201 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosure4(TypeCheckTest.java:4523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testClosure4
+.E
+Time: 0.386
+There was 1 failure:
+1) testClosure4(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. initializing variable
+found   : (string|undefined)
+required: string at [testcode] line 10 : 200, JSC_WRONG_ARGUMENT_COUNT. Function goog.isDef: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 201 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosure4(LooseTypeCheckTest.java:3671)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testClosure1
+.E
+Time: 0.415
+There was 1 failure:
+1) testClosure1(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isDef: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 200 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosure1(TypeCheckTest.java:4496)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testClosure1
+.E
+Time: 0.432
+There was 1 failure:
+1) testClosure1(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isDef: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 200 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosure1(LooseTypeCheckTest.java:3644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testClosure2
+.E
+Time: 0.424
+There was 1 failure:
+1) testClosure2(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isNull: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 191, JSC_TYPE_MISMATCH. initializing variable
+found   : (null|string)
+required: string at [testcode] line 10 : 191 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosure2(TypeCheckTest.java:4505)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testClosure2
+.E
+Time: 0.414
+There was 1 failure:
+1) testClosure2(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isNull: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 195, JSC_TYPE_MISMATCH. initializing variable
+found   : (null|string)
+required: string at [testcode] line 10 : 195 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosure2(LooseTypeCheckTest.java:3653)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeInferenceTest#testAssertWithNotIsNull
+.
+Time: 0.413
+
+OK (1 test)
+
+com.google.javascript.jscomp.TypeCheckTest#testClosure5
+.E
+Time: 0.388
+There was 1 failure:
+1) testClosure5(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isNull: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 192 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosure5(TypeCheckTest.java:4532)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testClosure6
+.E
+Time: 0.392
+There was 1 failure:
+1) testClosure6(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_TYPE_MISMATCH. initializing variable
+found   : (null|string|undefined)
+required: string at [testcode] line 10 : 205, JSC_WRONG_ARGUMENT_COUNT. Function goog.isDefAndNotNull: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 10 : 206 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosure6(TypeCheckTest.java:4541)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testTypeOfReduction9
+.E
+Time: 0.38
+There was 1 failure:
+1) testTypeOfReduction9(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isArray: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7, JSC_TYPE_MISMATCH. inconsistent return type
+found   : (Array|string)
+required: string at [testcode] line 13 : 7 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testTypeOfReduction9(LooseTypeCheckTest.java:579)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testTypeOfReduction8
+.E
+Time: 0.406
+There was 1 failure:
+1) testTypeOfReduction8(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isString: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7, JSC_TYPE_MISMATCH. inconsistent return type
+found   : (number|string)
+required: string at [testcode] line 13 : 7 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testTypeOfReduction8(LooseTypeCheckTest.java:570)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testQualifiedNameReduction4
+.E
+Time: 0.375
+There was 1 failure:
+1) testQualifiedNameReduction4(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isString: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testQualifiedNameReduction4(TypeCheckTest.java:669)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testTypeOfReduction11
+.E
+Time: 0.37
+There was 1 failure:
+1) testTypeOfReduction11(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isObject: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypeOfReduction11(TypeCheckTest.java:608)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testInnerFunction6
+.E
+Time: 0.376
+There was 1 failure:
+1) testInnerFunction6(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6949)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testInnerFunction6(LooseTypeCheckTest.java:1605)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testInnerFunction7
+.E
+Time: 0.401
+There was 1 failure:
+1) testInnerFunction7(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at junit.framework.Assert.assertEquals(Assert.java:201)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6949)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testInnerFunction7(LooseTypeCheckTest.java:1618)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testTypeOfReduction13
+.E
+Time: 0.413
+There was 1 failure:
+1) testTypeOfReduction13(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isObject: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 12 : 42 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypeOfReduction13(TypeCheckTest.java:623)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testInnerFunction6
+.E
+Time: 0.415
+There was 1 failure:
+1) testInnerFunction6(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isFunction: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 11 : 20, JSC_WRONG_ARGUMENT_COUNT. Function x: called with 1 argument(s). Function requires at least 0 argument(s) and no more than 0 argument(s). at [testcode] line 11 : 42 expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10171)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testInnerFunction6(TypeCheckTest.java:1894)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testTypeOfReduction8
+.E
+Time: 0.386
+There was 1 failure:
+1) testTypeOfReduction8(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isString: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7, JSC_TYPE_MISMATCH. inconsistent return type
+found   : (number|string)
+required: string at [testcode] line 13 : 7 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypeOfReduction8(TypeCheckTest.java:581)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testInnerFunction7
+.E
+Time: 0.391
+There was 1 failure:
+1) testInnerFunction7(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isFunction: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 11 : 20, JSC_WRONG_ARGUMENT_COUNT. Function x: called with 1 argument(s). Function requires at least 0 argument(s) and no more than 0 argument(s). at [testcode] line 11 : 42 expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10171)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testInnerFunction7(TypeCheckTest.java:1907)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.TypeCheckTest#testTypeOfReduction9
+.E
+Time: 0.412
+There was 1 failure:
+1) testTypeOfReduction9(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isArray: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7, JSC_TYPE_MISMATCH. inconsistent return type
+found   : (Array|string)
+required: string at [testcode] line 13 : 7 expected:<0> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypeOfReduction9(TypeCheckTest.java:590)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsFunction
+.E
+Time: 0.397
+There was 1 failure:
+1) testGoogIsFunction(com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest)
+junit.framework.AssertionFailedError: expected:<null> but was:<(function (new:Object, *=): ?|null)>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testClosureFunction(ClosureReverseAbstractInterpreterTest.java:171)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testGoogIsFunction(ClosureReverseAbstractInterpreterTest.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testTypeOfReduction10
+.E
+Time: 0.404
+There was 1 failure:
+1) testTypeOfReduction10(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isArray: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testTypeOfReduction10(LooseTypeCheckTest.java:588)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testTypeOfReduction11
+.E
+Time: 0.421
+There was 1 failure:
+1) testTypeOfReduction11(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isObject: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testTypeOfReduction11(LooseTypeCheckTest.java:597)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testTypeOfReduction13
+.E
+Time: 0.404
+There was 1 failure:
+1) testTypeOfReduction13(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isObject: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 12 : 42 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testTypeOfReduction13(LooseTypeCheckTest.java:612)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsString1
+.E
+Time: 0.44
+There was 1 failure:
+1) testGoogIsString1(com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest)
+junit.framework.AssertionFailedError: expected:<null> but was:<(null|string)>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testClosureFunction(ClosureReverseAbstractInterpreterTest.java:171)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testGoogIsString1(ClosureReverseAbstractInterpreterTest.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.LooseTypeCheckTest#testQualifiedNameReduction4
+.E
+Time: 0.444
+There was 1 failure:
+1) testQualifiedNameReduction4(com.google.javascript.jscomp.LooseTypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isString: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypesMultipleWarnings(LooseTypeCheckTest.java:6944)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testClosureTypes(LooseTypeCheckTest.java:6912)
+	at com.google.javascript.jscomp.LooseTypeCheckTest.testQualifiedNameReduction4(LooseTypeCheckTest.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsNull2
+.E
+Time: 0.444
+There was 1 failure:
+1) testGoogIsNull2(com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest)
+junit.framework.AssertionFailedError: expected:<number> but was:<(null|number)>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testClosureFunction(ClosureReverseAbstractInterpreterTest.java:171)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testGoogIsNull2(ClosureReverseAbstractInterpreterTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsNull1
+.
+Time: 0.431
+
+OK (1 test)
+
+com.google.javascript.jscomp.TypeInferenceTest#testNoThisInference
+.E
+Time: 0.238
+There was 1 failure:
+1) testNoThisInference(com.google.javascript.jscomp.TypeInferenceTest)
+java.lang.IllegalArgumentException: Node cannot be refined. 
+THIS 1 [source_file: [testcode]] : Object
+
+	at com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter.declareNameInScope(ChainableReverseAbstractInterpreter.java:175)
+	at com.google.javascript.jscomp.type.ClosureReverseAbstractInterpreter.restrictParameter(ClosureReverseAbstractInterpreter.java:239)
+	at com.google.javascript.jscomp.type.ClosureReverseAbstractInterpreter.getPreciserScopeKnowingConditionOutcome(ClosureReverseAbstractInterpreter.java:220)
+	at com.google.javascript.jscomp.TypeInference.branchedFlowThrough(TypeInference.java:235)
+	at com.google.javascript.jscomp.TypeInference.branchedFlowThrough(TypeInference.java:64)
+	at com.google.javascript.jscomp.DataFlowAnalysis$BranchedForwardDataFlowAnalysis.flow(DataFlowAnalysis.java:447)
+	at com.google.javascript.jscomp.DataFlowAnalysis.analyze(DataFlowAnalysis.java:212)
+	at com.google.javascript.jscomp.DataFlowAnalysis.analyze(DataFlowAnalysis.java:180)
+	at com.google.javascript.jscomp.TypeInferenceTest.inFunction(TypeInferenceTest.java:126)
+	at com.google.javascript.jscomp.TypeInferenceTest.testNoThisInference(TypeInferenceTest.java:1003)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsNumber
+.E
+Time: 0.423
+There was 1 failure:
+1) testGoogIsNumber(com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest)
+junit.framework.AssertionFailedError: expected:<null> but was:<(null|number)>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testClosureFunction(ClosureReverseAbstractInterpreterTest.java:171)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testGoogIsNumber(ClosureReverseAbstractInterpreterTest.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsBoolean2
+.E
+Time: 0.431
+There was 1 failure:
+1) testGoogIsBoolean2(com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest)
+junit.framework.AssertionFailedError: expected:<(NoObject|string)> but was:<(NoObject|boolean|string)>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testClosureFunction(ClosureReverseAbstractInterpreterTest.java:171)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testGoogIsBoolean2(ClosureReverseAbstractInterpreterTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsBoolean1
+.E
+Time: 0.48
+There was 1 failure:
+1) testGoogIsBoolean1(com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest)
+junit.framework.AssertionFailedError: expected:<null> but was:<(boolean|null)>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testClosureFunction(ClosureReverseAbstractInterpreterTest.java:171)
+	at com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest.testGoogIsBoolean1(ClosureReverseAbstractInterpreterTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsObjectOnNull
+.
+Time: 0.265
+
+OK (1 test)
+
+com.google.javascript.jscomp.ClosureReverseAbstractInterpreterTest#testGoogIsArrayOnNull
+.
+Time: 0.275
+
+OK (1 test)
+
+com.google.javascript.jscomp.TypeCheckTest#testTypeOfReduction10
+.E
+Time: 0.372
+There was 1 failure:
+1) testTypeOfReduction10(com.google.javascript.jscomp.TypeCheckTest)
+junit.framework.AssertionFailedError: unexpected warning(s) : JSC_WRONG_ARGUMENT_COUNT. Function goog.isArray: called with 0 argument(s). Function requires at least 1 argument(s) and no more than 1 argument(s). at [testcode] line 13 : 7 expected:<0> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:283)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:195)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypesMultipleWarnings(TypeCheckTest.java:10166)
+	at com.google.javascript.jscomp.TypeCheckTest.testClosureTypes(TypeCheckTest.java:10131)
+	at com.google.javascript.jscomp.TypeCheckTest.testTypeOfReduction10(TypeCheckTest.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2549,2 +2549,2 @@
+-		state.setPlotArea(area);
+-
++		if (true)
++			return;
+

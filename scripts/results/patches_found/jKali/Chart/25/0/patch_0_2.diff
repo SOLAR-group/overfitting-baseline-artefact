@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
++++ /source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+@@ -198,2 +198,2 @@
+-
+-
++		if (true)
++			return;
+

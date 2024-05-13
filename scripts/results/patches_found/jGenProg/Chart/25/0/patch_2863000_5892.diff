@@ -1,0 +1,108 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2855 +2854,0 @@
+-		if (hasData && (renderer != null)) {
+@@ -2857,46 +2855,0 @@
+-			foundData = true;
+-			org.jfree.chart.renderer.category.CategoryItemRendererState state = renderer.initialise(g2, dataArea, 
+-			this, index, info);
+-			int columnCount = currentDataset.getColumnCount();
+-			int rowCount = currentDataset.getRowCount();
+-			int passCount = renderer.getPassCount();
+-			for (int pass = 0; pass < passCount; pass++) {
+-				if (this.columnRenderingOrder == org.jfree.chart.util.SortOrder.ASCENDING) {
+-					for (int column = 0; column < columnCount; column++) {
+-						if (this.rowRenderingOrder == org.jfree.chart.util.SortOrder.ASCENDING) {
+-							for (int row = 0; row < rowCount; row++) {
+-								renderer.drawItem(g2, state, dataArea, this, 
+-								domainAxis, rangeAxis, currentDataset, 
+-								row, column, pass);
+-							}
+-						} else 
+-						{
+-							for (int row = rowCount - 1; row >= 0; row--) {
+-								renderer.drawItem(g2, state, dataArea, this, 
+-								domainAxis, rangeAxis, currentDataset, 
+-								row, column, pass);
+-							}
+-						}
+-					}
+-				} else 
+-				{
+-					for (int column = columnCount - 1; column >= 0; column--) {
+-						if (this.rowRenderingOrder == org.jfree.chart.util.SortOrder.ASCENDING) {
+-							for (int row = 0; row < rowCount; row++) {
+-								renderer.drawItem(g2, state, dataArea, this, 
+-								domainAxis, rangeAxis, currentDataset, 
+-								row, column, pass);
+-							}
+-						} else 
+-						{
+-							for (int row = rowCount - 1; row >= 0; row--) {
+-								renderer.drawItem(g2, state, dataArea, this, 
+-								domainAxis, rangeAxis, currentDataset, 
+-								row, column, pass);
+-							}
+-						}
+-					}
+-				}
+-			}
+-		}
+-		return foundData;
+@@ -2904 +2856,0 @@
+-	}
+@@ -2914 +2866,49 @@
+-	protected void drawDomainGridlines(java.awt.Graphics2D g2, java.awt.geom.Rectangle2D dataArea) {
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+@@ -2942 +2942 @@
+-		}
++		} 		return foundData;} 	protected void drawDomainGridlines(java.awt.Graphics2D g2, java.awt.geom.Rectangle2D dataArea) { 		if (isDomainGridlinesVisible()) { 			org.jfree.chart.axis.CategoryAnchor anchor = getDomainGridlinePosition(); 			org.jfree.chart.util.RectangleEdge domainAxisEdge = getDomainAxisEdge(); 			java.awt.Stroke gridStroke = getDomainGridlineStroke(); 			java.awt.Paint gridPaint = getDomainGridlinePaint(); 			if ((gridStroke != null) && (gridPaint != null)) { 				org.jfree.data.category.CategoryDataset data = getDataset(); 				if (data != null) { 					org.jfree.chart.axis.CategoryAxis axis = getDomainAxis(); 					if (axis != null) { 						int columnCount = data.getColumnCount(); 						for (int c = 0; c < columnCount; c++) { 							double xx = axis.getCategoryJava2DCoordinate(anchor, c, columnCount, dataArea, domainAxisEdge); 							org.jfree.chart.renderer.category.CategoryItemRenderer renderer1 = getRenderer(); 							if (renderer1 != null) { 								renderer1.drawDomainGridline(g2, this, dataArea, xx);}}}}}}
+

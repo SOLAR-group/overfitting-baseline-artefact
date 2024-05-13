@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1189,2 +1189,2 @@
+-
+-		org.jfree.chart.entity.EntityCollection entities = null;
++		if (true)
++			return; 		org.jfree.chart.entity.EntityCollection entities = null;
+

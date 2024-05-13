@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
++++ /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+@@ -303 +303 @@
+-		double sd = 0.0;
++		double sd = 0.0; 		this.data = new org.jfree.data.KeyedObjects2D();
+

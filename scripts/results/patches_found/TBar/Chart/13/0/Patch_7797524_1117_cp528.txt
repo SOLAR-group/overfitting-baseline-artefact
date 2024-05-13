@@ -1,0 +1,12 @@
+--- /source/org/jfree/chart/block/BorderArrangement.java
++++ /source/org/jfree/chart/block/BorderArrangement.java
+@@ -449,7 +449,8 @@ public class BorderArrangement implements Arrangement, Serializable {
+             Size2D size = this.leftBlock.arrange(g2, c3);
+             w[2] = size.width;
+         }
+-        h[3] = h[2];
++        h[3] = h[2];
++	clear();
+         if (this.rightBlock != null) {
+             RectangleConstraint c4 = new RectangleConstraint(0.0,
+                     new Range(0.0, constraint.getWidth() - w[2]),

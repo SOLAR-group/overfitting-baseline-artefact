@@ -1,0 +1,14 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -231,7 +231,10 @@ public class PiePlot3D extends PiePlot implements Serializable {
+         insets.trim(plotArea);
+ 
+         Rectangle2D originalPlotArea = (Rectangle2D) plotArea.clone();
+-        if (info != null) {
++        if (info == null) {
++    return;
++}
++if (info != null) {
+             info.setPlotArea(plotArea);
+             info.setDataArea(plotArea);
+         }

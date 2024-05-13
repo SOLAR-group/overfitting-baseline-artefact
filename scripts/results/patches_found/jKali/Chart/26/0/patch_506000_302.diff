@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2565,2 +2565,2 @@
+-			getRenderer().drawBackground(g2, this, dataArea);
+-		} else 
++			if (true)
++				return; 			getRenderer().drawBackground(g2, this, dataArea);} else 
+

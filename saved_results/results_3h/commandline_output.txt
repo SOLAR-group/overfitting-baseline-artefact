@@ -1,0 +1,38 @@
+time ./reproduction.sh 3
+Gathering data about existing labels from previous work.. 
+all_patches_with_labels: 21298
+unique_patches_with_labels: 18996
+Labelling patches from the results/patches_found folder..
+Extracting unique patches..
+Unique patches by tool and bug:
+    2471 results/unique_by_tool_and_bug.csv
+Unique patches by bug only:
+    2304 results/unique_by_bug.csv
+Unique unlabelled patches:
+    2088 results/fordrr.csv
+Preprocessing data..
+bugs for which a patch was generated: 155
+bugs with a correct patch: 43
+patches for bugs with a correct patch: 1086
+unique labelled for bugs with a correct patch: 106
+unique unlabelled patches: 366
+rm: results/Autotest_check*: No such file or directory
+Gathering data about existing labels from previous work.. and from manual and test execution analysis if files exits..
+all_patches_with_labels: 21691
+unique_patches_with_labels: 19388
+Labelling patches from the results/patches_found folder..
+Extracting unique patches..
+Unique patches by tool and bug:
+    2471 results/unique_by_tool_and_bug.csv
+Unique patches by bug only:
+    2304 results/unique_by_bug.csv
+Unique unlabelled patches:
+    1722 results/fordrr.csv
+Preprocessing data..
+bugs for which a patch was generated: 155
+bugs with a correct patch: 43
+patches for bugs with a correct patch: 1086
+unique labelled for bugs with a correct patch: 472
+unique unlabelled patches: 0
+Analysing data to calculate probability of finding a correct patch at random..
+./reproduction.sh 3  30.63s user 3.95s system 217% cpu 15.914 total

@@ -1,0 +1,11 @@
+--- /source/org/jfree/chart/title/LegendTitle.java
++++ /source/org/jfree/chart/title/LegendTitle.java
+@@ -543,4 +543,6 @@
+         }
+-        if (!(obj instanceof LegendTitle)) {
+-            return false;   
++        if (true) {
++            if (!(obj instanceof LegendTitle)) {
++                return false;
++            }
+         }

@@ -1,0 +1,11 @@
+--- /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
++++ /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
+@@ -430,7 +430,7 @@ public class DurationFormatUtils {
+         return buffer.toString();
+     }
+     static int reduceAndCorrect(Calendar start, Calendar end, int field, int difference) {
+-        end.add( field, -1 * difference );
++        end.add( field, field );
+         int endValue = end.get(field);
+         int startValue = start.get(field);
+         if (endValue < startValue) {

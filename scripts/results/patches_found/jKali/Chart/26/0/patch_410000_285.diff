@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2553,2 +2553,2 @@
+-		insets.trim(area);
+-
++		if (true)
++			return;
+

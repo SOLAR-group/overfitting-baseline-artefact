@@ -1,0 +1,12 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2540,0 +2541,3 @@
++		if (true)
++			return;
++
+@@ -2543 +2545,0 @@
+-		if (state == null) {
+@@ -2547,2 +2548,0 @@
+-			state = new org.jfree.chart.plot.PlotRenderingInfo(null);
+-		}
+

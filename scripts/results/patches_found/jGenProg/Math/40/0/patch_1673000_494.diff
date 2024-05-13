@@ -1,0 +1,113 @@
+--- /src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java
++++ /src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java
+@@ -265,2 +264,0 @@
+-						--end;
+-					}
+@@ -269 +266,0 @@
+-					nextX = java.lang.Double.NaN;
+@@ -271 +267,0 @@
+-				}
+@@ -273 +268,0 @@
+-			} while (java.lang.Double.isNaN(nextX) && ((end - start) > 1) );
+@@ -275 +269,0 @@
+-			if (java.lang.Double.isNaN(nextX)) {
+@@ -277,4 +270,0 @@
+-				nextX = xA + (0.5 * (xB - xA));
+-				start = signChangeIndex - 1;
+-				end = signChangeIndex;
+-			}
+@@ -283,2 +272,0 @@
+-			final double nextY = computeObjectiveValue(nextX);
+-			if (org.apache.commons.math.util.Precision.equals(nextY, 0.0, 1)) {
+@@ -287,2 +274,0 @@
+-				return nextX;
+-			}
+@@ -290 +275,0 @@
+-			if ((nbPoints > 2) && ((end - start) != nbPoints)) {
+@@ -294,4 +278,0 @@
+-				nbPoints = end - start;
+-				java.lang.System.arraycopy(x, start, x, 0, nbPoints);
+-				java.lang.System.arraycopy(y, start, y, 0, nbPoints);
+-				signChangeIndex -= start;
+@@ -299 +279,0 @@
+-			} else if (nbPoints == x.length) {
+@@ -302 +281,0 @@
+-				nbPoints--;
+@@ -305 +283,0 @@
+-				if (signChangeIndex >= ((x.length + 1) / 2)) {
+@@ -307,4 +284,0 @@
+-					java.lang.System.arraycopy(x, 1, x, 0, nbPoints);
+-					java.lang.System.arraycopy(y, 1, y, 0, nbPoints);
+-					--signChangeIndex;
+-				}
+@@ -312 +285,0 @@
+-			}
+@@ -316,5 +288,0 @@
+-			java.lang.System.arraycopy(x, signChangeIndex, x, signChangeIndex + 1, nbPoints - signChangeIndex);
+-			x[signChangeIndex] = nextX;
+-			java.lang.System.arraycopy(y, signChangeIndex, y, signChangeIndex + 1, nbPoints - signChangeIndex);
+-			y[signChangeIndex] = nextY;
+-			++nbPoints;
+@@ -323 +290,0 @@
+-			if ((nextY * yA) <= 0) {
+@@ -325,6 +291,0 @@
+-				xB = nextX;
+-				yB = nextY;
+-				absYB = org.apache.commons.math.util.FastMath.abs(yB);
+-				++agingA;
+-				agingB = 0;
+-			} else {
+@@ -332,5 +292,0 @@
+-				xA = nextX;
+-				yA = nextY;
+-				absYA = org.apache.commons.math.util.FastMath.abs(yA);
+-				agingA = 0;
+-				++agingB;
+@@ -339 +295,45 @@
+-				signChangeIndex++;
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++						signChangeIndex++;} 					nextX = java.lang.Double.NaN;}} while (java.lang.Double.isNaN(nextX) && ((end - start) > 1) ); 			if (java.lang.Double.isNaN(nextX)) { 				nextX = xA + (0.5 * (xB - xA)); 				start = signChangeIndex - 1; 				end = signChangeIndex;} 			final double nextY = computeObjectiveValue(nextX); 			if (org.apache.commons.math.util.Precision.equals(nextY, 0.0, 1)) { 				return nextX;} 			if ((nbPoints > 2) && ((end - start) != nbPoints)) { 				nbPoints = end - start; 				java.lang.System.arraycopy(x, start, x, 0, nbPoints); 				java.lang.System.arraycopy(y, start, y, 0, nbPoints); 				signChangeIndex -= start;} else if (nbPoints == x.length) { 				nbPoints--; 				if (signChangeIndex >= ((x.length + 1) / 2)) { 					java.lang.System.arraycopy(x, 1, x, 0, nbPoints); 					java.lang.System.arraycopy(y, 1, y, 0, nbPoints); 					--signChangeIndex;}} 			java.lang.System.arraycopy(x, signChangeIndex, x, signChangeIndex + 1, nbPoints - signChangeIndex); 			x[signChangeIndex] = nextX; 			java.lang.System.arraycopy(y, signChangeIndex, y, signChangeIndex + 1, nbPoints - signChangeIndex); 			y[signChangeIndex] = nextY; 			++nbPoints; 			if ((nextY * yA) <= 0) { 				xB = nextX; 				yB = nextY; 				absYB = org.apache.commons.math.util.FastMath.abs(yB); 				++agingA; 				agingB = 0;} else { 				xA = nextX; 				yA = nextY; 				absYA = org.apache.commons.math.util.FastMath.abs(yA); 				agingA = 0; 				++agingB; 				signChangeIndex++;
+

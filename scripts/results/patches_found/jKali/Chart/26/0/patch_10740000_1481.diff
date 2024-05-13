@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1201,2 +1201,2 @@
+-			if (e != null) {
+-				entities.addAll(e);
++			if (true)
++				return; 			if (e != null) { 				entities.addAll(e);
+

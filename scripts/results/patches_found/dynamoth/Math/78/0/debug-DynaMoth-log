@@ -1,0 +1,87 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest#testSmallStep
+.
+Time: 29.185
+
+OK (1 test)
+
+org.apache.commons.math.distribution.GammaDistributionTest#testValues
+.
+Time: 17.038
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest#testStepSize
+.
+Time: 8.41
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesStepInterpolatorTest#derivativesConsistency
+.
+Time: 0.041
+
+OK (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testRemoveMultiple
+.
+Time: 8.225
+
+OK (1 test)
+
+org.apache.commons.math.ode.FirstOrderConverterTest#testSmallStep
+.
+Time: 0.036
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testTwoSets
+.
+Time: 7.599
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testUnstableDerivative
+.
+Time: 0.036
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest#testSmallStep
+.
+Time: 0.04
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest#testSolveAccuracySin
+.
+Time: 7.497
+
+OK (1 test)
+
+org.apache.commons.math.distribution.BetaDistributionTest#testCumulative
+.
+Time: 97.571
+
+OK (1 test)
+
+org.apache.commons.math.distribution.ChiSquareDistributionTest#testInverseCumulativeProbabilities
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest#derivativesConsistency
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.distribution.NormalDistributionTest#testInverseCumulativeProbabilities
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest#serialization
+.

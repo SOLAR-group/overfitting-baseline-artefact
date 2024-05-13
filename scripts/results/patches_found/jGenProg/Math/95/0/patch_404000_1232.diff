@@ -1,0 +1,28 @@
+--- /src/java/org/apache/commons/math/distribution/FDistributionImpl.java
++++ /src/java/org/apache/commons/math/distribution/FDistributionImpl.java
+@@ -148,2 +147,0 @@
+-		return ret;
+-	}
+@@ -157,7 +154,0 @@
+-	public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) {
+-		if (degreesOfFreedom <= 0.0) {
+-			throw new java.lang.IllegalArgumentException(
+-			"degrees of freedom must be positive.");
+-		}
+-		this.numeratorDegreesOfFreedom = degreesOfFreedom;
+-	}
+@@ -169,2 +160,11 @@
+-	public double getNumeratorDegreesOfFreedom() {
+-		return numeratorDegreesOfFreedom;
++
++
++
++
++
++
++
++
++
++
++		return numeratorDegreesOfFreedom;} 	public void setNumeratorDegreesOfFreedom(double degreesOfFreedom) { 		if (degreesOfFreedom <= 0.0) { 			throw new java.lang.IllegalArgumentException("degrees of freedom must be positive.");} 		this.numeratorDegreesOfFreedom = degreesOfFreedom;} 	public double getNumeratorDegreesOfFreedom() { 		return numeratorDegreesOfFreedom;
+

@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1144,2 +1144,2 @@
+-
+-
++		if (true)
++			return;
+

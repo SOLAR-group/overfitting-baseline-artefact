@@ -1,0 +1,6 @@
+--- /src/java/org/apache/commons/lang/WordUtils.java
++++ /src/java/org/apache/commons/lang/WordUtils.java
+@@ -623 +623 @@
+-			upper = lower;
++			upper = lower; 			if ((upper == (-1)) || (upper > str.length())) { 				upper = str.length();}
+

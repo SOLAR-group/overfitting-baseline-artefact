@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -236 +236 @@
+-		row.setObject(columnKey, object);
++
+

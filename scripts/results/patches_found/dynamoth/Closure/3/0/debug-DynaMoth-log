@@ -1,0 +1,3223 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testDoNotInlineCatchExpression1a
+.E
+Time: 1.394
+There was 1 failure:
+1) testDoNotInlineCatchExpression1a(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var a;try{throw Error("");}catch(err){a=err+1}return a.stack}
+Result: function _func(){var a;try{throw Error("");}catch(err){}}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                TRY 2 [source_file: expected0]
+                    BLOCK 2 [source_file: expected0]
+                        THROW 3 [source_file: expected0]
+                            CALL 3 [free_call: 1] [source_file: expected0]
+                                NAME Error 3 [source_file: expected0]
+                                STRING  3 [source_file: expected0]
+                    BLOCK 4 [source_file: expected0]
+                        CATCH 4 [source_file: expected0]
+                            NAME err 4 [source_file: expected0]
+                            BLOCK 4 [source_file: expected0]
+                                EXPR_RESULT 4 [source_file: expected0]
+                                    ASSIGN 4 [source_file: expected0]
+                                        NAME a 4 [source_file: expected0]
+                                        ADD 4 [source_file: expected0]
+                                            NAME err 4 [source_file: expected0]
+                                            NUMBER 1.0 4 [source_file: expected0]
+                RETURN 6 [source_file: expected0]
+                    GETPROP 6 [source_file: expected0]
+                        NAME a 6 [source_file: expected0]
+                        STRING stack 6 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                TRY 2 [source_file: testcode]
+                    BLOCK 2 [source_file: testcode]
+                        THROW 3 [source_file: testcode]
+                            CALL 3 [free_call: 1] [source_file: testcode]
+                                NAME Error 3 [source_file: testcode]
+                                STRING  3 [source_file: testcode]
+                    BLOCK 4 [source_file: testcode]
+                        CATCH 4 [source_file: testcode]
+                            NAME err 4 [source_file: testcode]
+                            BLOCK 4 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    TRY 2 [source_file: expected0]
+        BLOCK 2 [source_file: expected0]
+            THROW 3 [source_file: expected0]
+                CALL 3 [free_call: 1] [source_file: expected0]
+                    NAME Error 3 [source_file: expected0]
+                    STRING  3 [source_file: expected0]
+        BLOCK 4 [source_file: expected0]
+            CATCH 4 [source_file: expected0]
+                NAME err 4 [source_file: expected0]
+                BLOCK 4 [source_file: expected0]
+                    EXPR_RESULT 4 [source_file: expected0]
+                        ASSIGN 4 [source_file: expected0]
+                            NAME a 4 [source_file: expected0]
+                            ADD 4 [source_file: expected0]
+                                NAME err 4 [source_file: expected0]
+                                NUMBER 1.0 4 [source_file: expected0]
+    RETURN 6 [source_file: expected0]
+        GETPROP 6 [source_file: expected0]
+            NAME a 6 [source_file: expected0]
+            STRING stack 6 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    TRY 2 [source_file: testcode]
+        BLOCK 2 [source_file: testcode]
+            THROW 3 [source_file: testcode]
+                CALL 3 [free_call: 1] [source_file: testcode]
+                    NAME Error 3 [source_file: testcode]
+                    STRING  3 [source_file: testcode]
+        BLOCK 4 [source_file: testcode]
+            CATCH 4 [source_file: testcode]
+                NAME err 4 [source_file: testcode]
+                BLOCK 4 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.noInline(FlowSensitiveInlineVariablesTest.java:567)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testDoNotInlineCatchExpression1a(FlowSensitiveInlineVariablesTest.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineIntoExpressions
+.E
+Time: 0.31
+There was 1 failure:
+1) testInlineIntoExpressions(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;print(1+1)}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            NUMBER 1.0 1 [source_file: expected0]
+                            NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                NUMBER 1.0 1 [source_file: expected0]
+                NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineIntoExpressions(FlowSensitiveInlineVariablesTest.java:210)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineIfNameIsLeftSideOfAssign
+.E
+Time: 0.32
+There was 1 failure:
+1) testInlineIfNameIsLeftSideOfAssign(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;x=print(1)+1}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            CALL 1 [free_call: 1] [source_file: expected0]
+                                NAME print 1 [source_file: expected0]
+                                NUMBER 1.0 1 [source_file: expected0]
+                            NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                CALL 1 [free_call: 1] [source_file: expected0]
+                    NAME print 1 [source_file: expected0]
+                    NUMBER 1.0 1 [source_file: expected0]
+                NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineIfNameIsLeftSideOfAssign(FlowSensitiveInlineVariablesTest.java:438)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineSameVariableInStraightLine
+.E
+Time: 0.614
+There was 1 failure:
+1) testInlineSameVariableInStraightLine(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;print(1);print(2)}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 1.0 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 2.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 2.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineSameVariableInStraightLine(FlowSensitiveInlineVariablesTest.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.IntegrationTest#testFlowSensitiveInlineVariables2
+.
+Time: 0.131
+
+OK (1 test)
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testDoNotInlineCatchExpression1
+.E
+Time: 0.339
+There was 1 failure:
+1) testDoNotInlineCatchExpression1(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var a;try{throw Error("");}catch(err){a=err}return a.stack}
+Result: function _func(){var a;try{throw Error("");}catch(err){}}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                TRY 2 [source_file: expected0]
+                    BLOCK 2 [source_file: expected0]
+                        THROW 3 [source_file: expected0]
+                            CALL 3 [free_call: 1] [source_file: expected0]
+                                NAME Error 3 [source_file: expected0]
+                                STRING  3 [source_file: expected0]
+                    BLOCK 4 [source_file: expected0]
+                        CATCH 4 [source_file: expected0]
+                            NAME err 4 [source_file: expected0]
+                            BLOCK 4 [source_file: expected0]
+                                EXPR_RESULT 4 [source_file: expected0]
+                                    ASSIGN 4 [source_file: expected0]
+                                        NAME a 4 [source_file: expected0]
+                                        NAME err 4 [source_file: expected0]
+                RETURN 6 [source_file: expected0]
+                    GETPROP 6 [source_file: expected0]
+                        NAME a 6 [source_file: expected0]
+                        STRING stack 6 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                TRY 2 [source_file: testcode]
+                    BLOCK 2 [source_file: testcode]
+                        THROW 3 [source_file: testcode]
+                            CALL 3 [free_call: 1] [source_file: testcode]
+                                NAME Error 3 [source_file: testcode]
+                                STRING  3 [source_file: testcode]
+                    BLOCK 4 [source_file: testcode]
+                        CATCH 4 [source_file: testcode]
+                            NAME err 4 [source_file: testcode]
+                            BLOCK 4 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    TRY 2 [source_file: expected0]
+        BLOCK 2 [source_file: expected0]
+            THROW 3 [source_file: expected0]
+                CALL 3 [free_call: 1] [source_file: expected0]
+                    NAME Error 3 [source_file: expected0]
+                    STRING  3 [source_file: expected0]
+        BLOCK 4 [source_file: expected0]
+            CATCH 4 [source_file: expected0]
+                NAME err 4 [source_file: expected0]
+                BLOCK 4 [source_file: expected0]
+                    EXPR_RESULT 4 [source_file: expected0]
+                        ASSIGN 4 [source_file: expected0]
+                            NAME a 4 [source_file: expected0]
+                            NAME err 4 [source_file: expected0]
+    RETURN 6 [source_file: expected0]
+        GETPROP 6 [source_file: expected0]
+            NAME a 6 [source_file: expected0]
+            STRING stack 6 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    TRY 2 [source_file: testcode]
+        BLOCK 2 [source_file: testcode]
+            THROW 3 [source_file: testcode]
+                CALL 3 [free_call: 1] [source_file: testcode]
+                    NAME Error 3 [source_file: testcode]
+                    STRING  3 [source_file: testcode]
+        BLOCK 4 [source_file: testcode]
+            CATCH 4 [source_file: testcode]
+                NAME err 4 [source_file: testcode]
+                BLOCK 4 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.noInline(FlowSensitiveInlineVariablesTest.java:567)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testDoNotInlineCatchExpression1(FlowSensitiveInlineVariablesTest.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testShadowedVariableInnerFunction
+.E
+Time: 0.342
+There was 1 failure:
+1) testShadowedVariableInnerFunction(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;print(1)||function(){var x$$1;print(1)}()}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    OR 1 [source_file: expected0]
+                        CALL 1 [free_call: 1] [source_file: expected0]
+                            NAME print 1 [source_file: expected0]
+                            NUMBER 1.0 1 [source_file: expected0]
+                        CALL 1 [free_call: 1] [source_file: expected0]
+                            FUNCTION  1 [source_file: expected0]
+                                NAME  1 [source_file: expected0]
+                                PARAM_LIST 1 [source_file: expected0]
+                                BLOCK 1 [source_file: expected0]
+                                    VAR 1 [source_file: expected0]
+                                        NAME x$$1 1 [source_file: expected0]
+                                    EXPR_RESULT 1 [source_file: expected0]
+                                        CALL 1 [free_call: 1] [source_file: expected0]
+                                            NAME print 1 [source_file: expected0]
+                                            NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        OR 1 [source_file: expected0]
+            CALL 1 [free_call: 1] [source_file: expected0]
+                NAME print 1 [source_file: expected0]
+                NUMBER 1.0 1 [source_file: expected0]
+            CALL 1 [free_call: 1] [source_file: expected0]
+                FUNCTION  1 [source_file: expected0]
+                    NAME  1 [source_file: expected0]
+                    PARAM_LIST 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+                        VAR 1 [source_file: expected0]
+                            NAME x$$1 1 [source_file: expected0]
+                        EXPR_RESULT 1 [source_file: expected0]
+                            CALL 1 [free_call: 1] [source_file: expected0]
+                                NAME print 1 [source_file: expected0]
+                                NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testShadowedVariableInnerFunction(FlowSensitiveInlineVariablesTest.java:319)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineExpressions1
+.E
+Time: 0.341
+There was 1 failure:
+1) testInlineExpressions1(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var a;var b;var x;print(a+b)}
+Result: function _func(){var a;var b;var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            NAME a 1 [source_file: expected0]
+                            NAME b 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME b 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                NAME a 1 [source_file: expected0]
+                NAME b 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME b 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineExpressions1(FlowSensitiveInlineVariablesTest.java:214)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineInDifferentPaths
+.E
+Time: 0.696
+There was 1 failure:
+1) testInlineInDifferentPaths(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;if(print)print(1);else print(2)}
+Result: function _func(){var x;if(print);else;}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                IF 1 [source_file: expected0]
+                    NAME print 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+                        EXPR_RESULT 1 [source_file: expected0]
+                            CALL 1 [free_call: 1] [source_file: expected0]
+                                NAME print 1 [source_file: expected0]
+                                NUMBER 1.0 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+                        EXPR_RESULT 1 [source_file: expected0]
+                            CALL 1 [free_call: 1] [source_file: expected0]
+                                NAME print 1 [source_file: expected0]
+                                NUMBER 2.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+                IF 1 [source_file: testcode]
+                    NAME print 1 [source_file: testcode]
+                    BLOCK 1 [source_file: testcode]
+                    BLOCK 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineInDifferentPaths(FlowSensitiveInlineVariablesTest.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineExpressions13
+.E
+Time: 0.836
+There was 1 failure:
+1) testInlineExpressions13(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+Please report this problem.
+null
+  Node(FUNCTION _func): testcode:1:0
+function _func() {var a = 1, b = 2;var x = a;var y = b;var z = x + y;var i = z;var j = z + y;var k = i;}
+  Parent(SCRIPT): testcode:1:0
+function _func() {var a = 1, b = 2;var x = a;var y = b;var z = x + y;var i = z;var j = z + y;var k = i;}
+
+	at com.google.javascript.jscomp.NodeUtil.isStatementBlock(NodeUtil.java:1738)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate.canInline(FlowSensitiveInlineVariables.java:391)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate.access$100(FlowSensitiveInlineVariables.java:250)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope(FlowSensitiveInlineVariables.java:155)
+	at com.google.javascript.jscomp.NodeTraversal.pushScope(NodeTraversal.java:568)
+	at com.google.javascript.jscomp.NodeTraversal.traverseFunction(NodeTraversal.java:526)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:490)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:498)
+	at com.google.javascript.jscomp.NodeTraversal.traverseBranch(NodeTraversal.java:498)
+	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:304)
+	at com.google.javascript.jscomp.NodeTraversal.traverseRoots(NodeTraversal.java:285)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariables.process(FlowSensitiveInlineVariables.java:177)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest$1.process(FlowSensitiveInlineVariablesTest.java:49)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:804)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineExpressions13(FlowSensitiveInlineVariablesTest.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	... 41 more
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testIssue698
+.E
+Time: 0.292
+There was 1 failure:
+1) testIssue698(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;unknown.length<2&&(unknown="0"+unknown);x=""+unknown;unknown.length<3&&(unknown="0"+unknown);x=x+unknown;return x}
+Result: function _func(){var x;unknown.length<2&&(unknown="0"+unknown);unknown.length<3&&(unknown="0"+unknown);x=x+unknown;return x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    AND 1 [source_file: expected0]
+                        LT 1 [source_file: expected0]
+                            GETPROP 1 [source_file: expected0]
+                                NAME unknown 1 [source_file: expected0]
+                                STRING length 1 [source_file: expected0]
+                            NUMBER 2.0 1 [source_file: expected0]
+                        ASSIGN 1 [source_file: expected0]
+                            NAME unknown 1 [source_file: expected0]
+                            ADD 1 [source_file: expected0]
+                                STRING 0 1 [source_file: expected0]
+                                NAME unknown 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            STRING  1 [source_file: expected0]
+                            NAME unknown 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    AND 1 [source_file: expected0]
+                        LT 1 [source_file: expected0]
+                            GETPROP 1 [source_file: expected0]
+                                NAME unknown 1 [source_file: expected0]
+                                STRING length 1 [source_file: expected0]
+                            NUMBER 3.0 1 [source_file: expected0]
+                        ASSIGN 1 [source_file: expected0]
+                            NAME unknown 1 [source_file: expected0]
+                            ADD 1 [source_file: expected0]
+                                STRING 0 1 [source_file: expected0]
+                                NAME unknown 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            NAME x 1 [source_file: expected0]
+                            NAME unknown 1 [source_file: expected0]
+                RETURN 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    AND 1 [source_file: testcode]
+                        LT 1 [source_file: testcode]
+                            GETPROP 1 [source_file: testcode]
+                                NAME unknown 1 [source_file: testcode]
+                                STRING length 1 [source_file: testcode]
+                            NUMBER 2.0 1 [source_file: testcode]
+                        ASSIGN 1 [source_file: testcode]
+                            NAME unknown 1 [source_file: testcode]
+                            ADD 1 [source_file: testcode]
+                                STRING 0 1 [source_file: testcode]
+                                NAME unknown 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    AND 1 [source_file: testcode]
+                        LT 1 [source_file: testcode]
+                            GETPROP 1 [source_file: testcode]
+                                NAME unknown 1 [source_file: testcode]
+                                STRING length 1 [source_file: testcode]
+                            NUMBER 3.0 1 [source_file: testcode]
+                        ASSIGN 1 [source_file: testcode]
+                            NAME unknown 1 [source_file: testcode]
+                            ADD 1 [source_file: testcode]
+                                STRING 0 1 [source_file: testcode]
+                                NAME unknown 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        NAME x 1 [source_file: testcode]
+                        ADD 1 [source_file: testcode]
+                            NAME x 1 [source_file: testcode]
+                            NAME unknown 1 [source_file: testcode]
+                RETURN 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        AND 1 [source_file: expected0]
+            LT 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME unknown 1 [source_file: expected0]
+                    STRING length 1 [source_file: expected0]
+                NUMBER 2.0 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                NAME unknown 1 [source_file: expected0]
+                ADD 1 [source_file: expected0]
+                    STRING 0 1 [source_file: expected0]
+                    NAME unknown 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                STRING  1 [source_file: expected0]
+                NAME unknown 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        AND 1 [source_file: expected0]
+            LT 1 [source_file: expected0]
+                GETPROP 1 [source_file: expected0]
+                    NAME unknown 1 [source_file: expected0]
+                    STRING length 1 [source_file: expected0]
+                NUMBER 3.0 1 [source_file: expected0]
+            ASSIGN 1 [source_file: expected0]
+                NAME unknown 1 [source_file: expected0]
+                ADD 1 [source_file: expected0]
+                    STRING 0 1 [source_file: expected0]
+                    NAME unknown 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                NAME x 1 [source_file: expected0]
+                NAME unknown 1 [source_file: expected0]
+    RETURN 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        AND 1 [source_file: testcode]
+            LT 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    NAME unknown 1 [source_file: testcode]
+                    STRING length 1 [source_file: testcode]
+                NUMBER 2.0 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                NAME unknown 1 [source_file: testcode]
+                ADD 1 [source_file: testcode]
+                    STRING 0 1 [source_file: testcode]
+                    NAME unknown 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        AND 1 [source_file: testcode]
+            LT 1 [source_file: testcode]
+                GETPROP 1 [source_file: testcode]
+                    NAME unknown 1 [source_file: testcode]
+                    STRING length 1 [source_file: testcode]
+                NUMBER 3.0 1 [source_file: testcode]
+            ASSIGN 1 [source_file: testcode]
+                NAME unknown 1 [source_file: testcode]
+                ADD 1 [source_file: testcode]
+                    STRING 0 1 [source_file: testcode]
+                    NAME unknown 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            NAME x 1 [source_file: testcode]
+            ADD 1 [source_file: testcode]
+                NAME x 1 [source_file: testcode]
+                NAME unknown 1 [source_file: testcode]
+    RETURN 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testIssue698(FlowSensitiveInlineVariablesTest.java:487)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testDoNotInlineCatchExpression3
+.E
+Time: 0.283
+There was 1 failure:
+1) testDoNotInlineCatchExpression3(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var a;try{throw Error("");}catch(err){err=x;a=err}return a.stack}
+Result: function _func(){var a;try{throw Error("");}catch(err){err=x}}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                TRY 2 [source_file: expected0]
+                    BLOCK 2 [source_file: expected0]
+                        THROW 3 [source_file: expected0]
+                            CALL 3 [free_call: 1] [source_file: expected0]
+                                NAME Error 3 [source_file: expected0]
+                                STRING  3 [source_file: expected0]
+                    BLOCK 4 [source_file: expected0]
+                        CATCH 4 [source_file: expected0]
+                            NAME err 4 [source_file: expected0]
+                            BLOCK 4 [source_file: expected0]
+                                EXPR_RESULT 4 [source_file: expected0]
+                                    ASSIGN 4 [source_file: expected0]
+                                        NAME err 4 [source_file: expected0]
+                                        NAME x 4 [source_file: expected0]
+                                EXPR_RESULT 5 [source_file: expected0]
+                                    ASSIGN 5 [source_file: expected0]
+                                        NAME a 5 [source_file: expected0]
+                                        NAME err 5 [source_file: expected0]
+                RETURN 7 [source_file: expected0]
+                    GETPROP 7 [source_file: expected0]
+                        NAME a 7 [source_file: expected0]
+                        STRING stack 7 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                TRY 2 [source_file: testcode]
+                    BLOCK 2 [source_file: testcode]
+                        THROW 3 [source_file: testcode]
+                            CALL 3 [free_call: 1] [source_file: testcode]
+                                NAME Error 3 [source_file: testcode]
+                                STRING  3 [source_file: testcode]
+                    BLOCK 4 [source_file: testcode]
+                        CATCH 4 [source_file: testcode]
+                            NAME err 4 [source_file: testcode]
+                            BLOCK 4 [source_file: testcode]
+                                EXPR_RESULT 4 [source_file: testcode]
+                                    ASSIGN 4 [source_file: testcode]
+                                        NAME err 4 [source_file: testcode]
+                                        NAME x 4 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    TRY 2 [source_file: expected0]
+        BLOCK 2 [source_file: expected0]
+            THROW 3 [source_file: expected0]
+                CALL 3 [free_call: 1] [source_file: expected0]
+                    NAME Error 3 [source_file: expected0]
+                    STRING  3 [source_file: expected0]
+        BLOCK 4 [source_file: expected0]
+            CATCH 4 [source_file: expected0]
+                NAME err 4 [source_file: expected0]
+                BLOCK 4 [source_file: expected0]
+                    EXPR_RESULT 4 [source_file: expected0]
+                        ASSIGN 4 [source_file: expected0]
+                            NAME err 4 [source_file: expected0]
+                            NAME x 4 [source_file: expected0]
+                    EXPR_RESULT 5 [source_file: expected0]
+                        ASSIGN 5 [source_file: expected0]
+                            NAME a 5 [source_file: expected0]
+                            NAME err 5 [source_file: expected0]
+    RETURN 7 [source_file: expected0]
+        GETPROP 7 [source_file: expected0]
+            NAME a 7 [source_file: expected0]
+            STRING stack 7 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    TRY 2 [source_file: testcode]
+        BLOCK 2 [source_file: testcode]
+            THROW 3 [source_file: testcode]
+                CALL 3 [free_call: 1] [source_file: testcode]
+                    NAME Error 3 [source_file: testcode]
+                    STRING  3 [source_file: testcode]
+        BLOCK 4 [source_file: testcode]
+            CATCH 4 [source_file: testcode]
+                NAME err 4 [source_file: testcode]
+                BLOCK 4 [source_file: testcode]
+                    EXPR_RESULT 4 [source_file: testcode]
+                        ASSIGN 4 [source_file: testcode]
+                            NAME err 4 [source_file: testcode]
+                            NAME x 4 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.noInline(FlowSensitiveInlineVariablesTest.java:567)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testDoNotInlineCatchExpression3(FlowSensitiveInlineVariablesTest.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testIssue777
+.E
+Time: 0.897
+There was 1 failure:
+1) testIssue777(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function f(cmd,ta){var temp;var temp2=cmd>>2;cmd=STACKTOP;var src=temp2;var dest=cmd>>2;var stop=src+37;for(;src<stop;src++,dest++)HEAP32[dest]=HEAP32[src];temp2=ta>>2;ta=STACKTOP;STACKTOP+=8;HEAP32[ta>>2]=HEAP32[temp2];HEAP32[ta+4>>2]=HEAP32[temp2+1]}
+Result: function f(cmd,ta){var temp;cmd=STACKTOP;var src=temp2;var dest=cmd>>2;for(;src<stop;src++,dest++)HEAP32[dest]=HEAP32[src];ta=STACKTOP;STACKTOP+=8;HEAP32[ta>>2]=HEAP32[temp2];HEAP32[ta+4>>2]=HEAP32[temp2+1]}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION f 1 [source_file: expected0]
+            NAME f 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+                NAME cmd 1 [source_file: expected0]
+                NAME ta 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME temp 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME temp2 1 [source_file: expected0]
+                        RSH 1 [source_file: expected0]
+                            NAME cmd 1 [source_file: expected0]
+                            NUMBER 2.0 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME cmd 1 [source_file: expected0]
+                        NAME STACKTOP 1 [is_constant_name: 1] [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME src 1 [source_file: expected0]
+                        NAME temp2 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME dest 1 [source_file: expected0]
+                        RSH 1 [source_file: expected0]
+                            NAME cmd 1 [source_file: expected0]
+                            NUMBER 2.0 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME stop 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            NAME src 1 [source_file: expected0]
+                            NUMBER 37.0 1 [source_file: expected0]
+                FOR 1 [source_file: expected0]
+                    EMPTY 1 [source_file: expected0]
+                    LT 1 [source_file: expected0]
+                        NAME src 1 [source_file: expected0]
+                        NAME stop 1 [source_file: expected0]
+                    COMMA 1 [source_file: expected0]
+                        INC 1 [incrdecr: 1] [source_file: expected0]
+                            NAME src 1 [source_file: expected0]
+                        INC 1 [incrdecr: 1] [source_file: expected0]
+                            NAME dest 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+                        EXPR_RESULT 1 [source_file: expected0]
+                            ASSIGN 1 [source_file: expected0]
+                                GETELEM 1 [source_file: expected0]
+                                    NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                                    NAME dest 1 [source_file: expected0]
+                                GETELEM 1 [source_file: expected0]
+                                    NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                                    NAME src 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME temp2 1 [source_file: expected0]
+                        RSH 1 [source_file: expected0]
+                            NAME ta 1 [source_file: expected0]
+                            NUMBER 2.0 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME ta 1 [source_file: expected0]
+                        NAME STACKTOP 1 [is_constant_name: 1] [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN_ADD 1 [source_file: expected0]
+                        NAME STACKTOP 1 [is_constant_name: 1] [source_file: expected0]
+                        NUMBER 8.0 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        GETELEM 1 [source_file: expected0]
+                            NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                            RSH 1 [source_file: expected0]
+                                NAME ta 1 [source_file: expected0]
+                                NUMBER 2.0 1 [source_file: expected0]
+                        GETELEM 1 [source_file: expected0]
+                            NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                            NAME temp2 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        GETELEM 1 [source_file: expected0]
+                            NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                            RSH 1 [source_file: expected0]
+                                ADD 1 [source_file: expected0]
+                                    NAME ta 1 [source_file: expected0]
+                                    NUMBER 4.0 1 [source_file: expected0]
+                                NUMBER 2.0 1 [source_file: expected0]
+                        GETELEM 1 [source_file: expected0]
+                            NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                            ADD 1 [source_file: expected0]
+                                NAME temp2 1 [source_file: expected0]
+                                NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION f 1 [source_file: testcode]
+            NAME f 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+                NAME cmd 1 [source_file: testcode]
+                NAME ta 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME temp 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        NAME cmd 1 [source_file: testcode]
+                        NAME STACKTOP 1 [is_constant_name: 1] [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME src 1 [source_file: testcode]
+                        NAME temp2 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME dest 1 [source_file: testcode]
+                        RSH 1 [source_file: testcode]
+                            NAME cmd 1 [source_file: testcode]
+                            NUMBER 2.0 1 [source_file: testcode]
+                FOR 1 [source_file: testcode]
+                    EMPTY 1 [source_file: testcode]
+                    LT 1 [source_file: testcode]
+                        NAME src 1 [source_file: testcode]
+                        NAME stop 1 [source_file: testcode]
+                    COMMA 1 [source_file: testcode]
+                        INC 1 [incrdecr: 1] [source_file: testcode]
+                            NAME src 1 [source_file: testcode]
+                        INC 1 [incrdecr: 1] [source_file: testcode]
+                            NAME dest 1 [source_file: testcode]
+                    BLOCK 1 [source_file: testcode]
+                        EXPR_RESULT 1 [source_file: testcode]
+                            ASSIGN 1 [source_file: testcode]
+                                GETELEM 1 [source_file: testcode]
+                                    NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                                    NAME dest 1 [source_file: testcode]
+                                GETELEM 1 [source_file: testcode]
+                                    NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                                    NAME src 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        NAME ta 1 [source_file: testcode]
+                        NAME STACKTOP 1 [is_constant_name: 1] [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN_ADD 1 [source_file: testcode]
+                        NAME STACKTOP 1 [is_constant_name: 1] [source_file: testcode]
+                        NUMBER 8.0 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        GETELEM 1 [source_file: testcode]
+                            NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                            RSH 1 [source_file: testcode]
+                                NAME ta 1 [source_file: testcode]
+                                NUMBER 2.0 1 [source_file: testcode]
+                        GETELEM 1 [source_file: testcode]
+                            NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                            NAME temp2 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        GETELEM 1 [source_file: testcode]
+                            NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                            RSH 1 [source_file: testcode]
+                                ADD 1 [source_file: testcode]
+                                    NAME ta 1 [source_file: testcode]
+                                    NUMBER 4.0 1 [source_file: testcode]
+                                NUMBER 2.0 1 [source_file: testcode]
+                        GETELEM 1 [source_file: testcode]
+                            NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                            ADD 1 [source_file: testcode]
+                                NAME temp2 1 [source_file: testcode]
+                                NUMBER 1.0 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME temp 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME temp2 1 [source_file: expected0]
+            RSH 1 [source_file: expected0]
+                NAME cmd 1 [source_file: expected0]
+                NUMBER 2.0 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME cmd 1 [source_file: expected0]
+            NAME STACKTOP 1 [is_constant_name: 1] [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME src 1 [source_file: expected0]
+            NAME temp2 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME dest 1 [source_file: expected0]
+            RSH 1 [source_file: expected0]
+                NAME cmd 1 [source_file: expected0]
+                NUMBER 2.0 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME stop 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                NAME src 1 [source_file: expected0]
+                NUMBER 37.0 1 [source_file: expected0]
+    FOR 1 [source_file: expected0]
+        EMPTY 1 [source_file: expected0]
+        LT 1 [source_file: expected0]
+            NAME src 1 [source_file: expected0]
+            NAME stop 1 [source_file: expected0]
+        COMMA 1 [source_file: expected0]
+            INC 1 [incrdecr: 1] [source_file: expected0]
+                NAME src 1 [source_file: expected0]
+            INC 1 [incrdecr: 1] [source_file: expected0]
+                NAME dest 1 [source_file: expected0]
+        BLOCK 1 [source_file: expected0]
+            EXPR_RESULT 1 [source_file: expected0]
+                ASSIGN 1 [source_file: expected0]
+                    GETELEM 1 [source_file: expected0]
+                        NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                        NAME dest 1 [source_file: expected0]
+                    GETELEM 1 [source_file: expected0]
+                        NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                        NAME src 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME temp2 1 [source_file: expected0]
+            RSH 1 [source_file: expected0]
+                NAME ta 1 [source_file: expected0]
+                NUMBER 2.0 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME ta 1 [source_file: expected0]
+            NAME STACKTOP 1 [is_constant_name: 1] [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN_ADD 1 [source_file: expected0]
+            NAME STACKTOP 1 [is_constant_name: 1] [source_file: expected0]
+            NUMBER 8.0 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETELEM 1 [source_file: expected0]
+                NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                RSH 1 [source_file: expected0]
+                    NAME ta 1 [source_file: expected0]
+                    NUMBER 2.0 1 [source_file: expected0]
+            GETELEM 1 [source_file: expected0]
+                NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                NAME temp2 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            GETELEM 1 [source_file: expected0]
+                NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                RSH 1 [source_file: expected0]
+                    ADD 1 [source_file: expected0]
+                        NAME ta 1 [source_file: expected0]
+                        NUMBER 4.0 1 [source_file: expected0]
+                    NUMBER 2.0 1 [source_file: expected0]
+            GETELEM 1 [source_file: expected0]
+                NAME HEAP32 1 [is_constant_name: 1] [source_file: expected0]
+                ADD 1 [source_file: expected0]
+                    NAME temp2 1 [source_file: expected0]
+                    NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME temp 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            NAME cmd 1 [source_file: testcode]
+            NAME STACKTOP 1 [is_constant_name: 1] [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME src 1 [source_file: testcode]
+            NAME temp2 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME dest 1 [source_file: testcode]
+            RSH 1 [source_file: testcode]
+                NAME cmd 1 [source_file: testcode]
+                NUMBER 2.0 1 [source_file: testcode]
+    FOR 1 [source_file: testcode]
+        EMPTY 1 [source_file: testcode]
+        LT 1 [source_file: testcode]
+            NAME src 1 [source_file: testcode]
+            NAME stop 1 [source_file: testcode]
+        COMMA 1 [source_file: testcode]
+            INC 1 [incrdecr: 1] [source_file: testcode]
+                NAME src 1 [source_file: testcode]
+            INC 1 [incrdecr: 1] [source_file: testcode]
+                NAME dest 1 [source_file: testcode]
+        BLOCK 1 [source_file: testcode]
+            EXPR_RESULT 1 [source_file: testcode]
+                ASSIGN 1 [source_file: testcode]
+                    GETELEM 1 [source_file: testcode]
+                        NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                        NAME dest 1 [source_file: testcode]
+                    GETELEM 1 [source_file: testcode]
+                        NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                        NAME src 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            NAME ta 1 [source_file: testcode]
+            NAME STACKTOP 1 [is_constant_name: 1] [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN_ADD 1 [source_file: testcode]
+            NAME STACKTOP 1 [is_constant_name: 1] [source_file: testcode]
+            NUMBER 8.0 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETELEM 1 [source_file: testcode]
+                NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                RSH 1 [source_file: testcode]
+                    NAME ta 1 [source_file: testcode]
+                    NUMBER 2.0 1 [source_file: testcode]
+            GETELEM 1 [source_file: testcode]
+                NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                NAME temp2 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            GETELEM 1 [source_file: testcode]
+                NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                RSH 1 [source_file: testcode]
+                    ADD 1 [source_file: testcode]
+                        NAME ta 1 [source_file: testcode]
+                        NUMBER 4.0 1 [source_file: testcode]
+                    NUMBER 2.0 1 [source_file: testcode]
+            GETELEM 1 [source_file: testcode]
+                NAME HEAP32 1 [is_constant_name: 1] [source_file: testcode]
+                ADD 1 [source_file: testcode]
+                    NAME temp2 1 [source_file: testcode]
+                    NUMBER 1.0 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:373)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:342)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:330)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testIssue777(FlowSensitiveInlineVariablesTest.java:503)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineExpressions11
+.E
+Time: 0.333
+There was 1 failure:
+1) testInlineExpressions11(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;print(x+1)}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            NAME x 1 [source_file: expected0]
+                            NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                NAME x 1 [source_file: expected0]
+                NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineExpressions11(FlowSensitiveInlineVariablesTest.java:274)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineExpression8
+.E
+Time: 0.666
+There was 1 failure:
+1) testInlineExpression8(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var a;var b;var x;print(a+b);print(a-b)}
+Result: function _func(){var a;var b;var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            NAME a 1 [source_file: expected0]
+                            NAME b 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        SUB 1 [source_file: expected0]
+                            NAME a 1 [source_file: expected0]
+                            NAME b 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME b 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                NAME a 1 [source_file: expected0]
+                NAME b 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            SUB 1 [source_file: expected0]
+                NAME a 1 [source_file: expected0]
+                NAME b 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME b 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineExpression8(FlowSensitiveInlineVariablesTest.java:252)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineExpression9
+.E
+Time: 0.666
+There was 1 failure:
+1) testInlineExpression9(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var a;var b;var x;if(g)print(a+b);print(a-b)}
+Result: function _func(){var a;var b;var x;if(g);}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                IF 1 [source_file: expected0]
+                    NAME g 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+                        EXPR_RESULT 1 [source_file: expected0]
+                            CALL 1 [free_call: 1] [source_file: expected0]
+                                NAME print 1 [source_file: expected0]
+                                ADD 1 [source_file: expected0]
+                                    NAME a 1 [source_file: expected0]
+                                    NAME b 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        SUB 1 [source_file: expected0]
+                            NAME a 1 [source_file: expected0]
+                            NAME b 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME b 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+                IF 1 [source_file: testcode]
+                    NAME g 1 [source_file: testcode]
+                    BLOCK 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    IF 1 [source_file: expected0]
+        NAME g 1 [source_file: expected0]
+        BLOCK 1 [source_file: expected0]
+            EXPR_RESULT 1 [source_file: expected0]
+                CALL 1 [free_call: 1] [source_file: expected0]
+                    NAME print 1 [source_file: expected0]
+                    ADD 1 [source_file: expected0]
+                        NAME a 1 [source_file: expected0]
+                        NAME b 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            SUB 1 [source_file: expected0]
+                NAME a 1 [source_file: expected0]
+                NAME b 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME b 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+    IF 1 [source_file: testcode]
+        NAME g 1 [source_file: testcode]
+        BLOCK 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineExpression9(FlowSensitiveInlineVariablesTest.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.IntegrationTest#testFlowSensitiveInlineVariables1
+.
+Time: 0.038
+
+OK (1 test)
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineArguments
+.E
+Time: 0.34
+There was 1 failure:
+1) testInlineArguments(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function f(x,y){print(1)}
+Result: function f(x,y){}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION f 1 [source_file: expected0]
+            NAME f 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+                NAME x 1 [source_file: expected0]
+                NAME y 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION f 1 [source_file: testcode]
+            NAME f 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+                NAME x 1 [source_file: testcode]
+                NAME y 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:373)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:342)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:330)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineArguments(FlowSensitiveInlineVariablesTest.java:452)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testNoInlineGetProp3
+.E
+Time: 0.351
+There was 1 failure:
+1) testNoInlineGetProp3(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;print(function(){1*a.b.c})}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        FUNCTION  1 [source_file: expected0]
+                            NAME  1 [source_file: expected0]
+                            PARAM_LIST 1 [source_file: expected0]
+                            BLOCK 1 [source_file: expected0]
+                                EXPR_RESULT 1 [source_file: expected0]
+                                    MUL 1 [source_file: expected0]
+                                        NUMBER 1.0 1 [source_file: expected0]
+                                        GETPROP 1 [source_file: expected0]
+                                            GETPROP 1 [source_file: expected0]
+                                                NAME a 1 [source_file: expected0]
+                                                STRING b 1 [source_file: expected0]
+                                            STRING c 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            FUNCTION  1 [source_file: expected0]
+                NAME  1 [source_file: expected0]
+                PARAM_LIST 1 [source_file: expected0]
+                BLOCK 1 [source_file: expected0]
+                    EXPR_RESULT 1 [source_file: expected0]
+                        MUL 1 [source_file: expected0]
+                            NUMBER 1.0 1 [source_file: expected0]
+                            GETPROP 1 [source_file: expected0]
+                                GETPROP 1 [source_file: expected0]
+                                    NAME a 1 [source_file: expected0]
+                                    STRING b 1 [source_file: expected0]
+                                STRING c 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testNoInlineGetProp3(FlowSensitiveInlineVariablesTest.java:339)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testSimpleAssign
+.E
+Time: 0.304
+There was 1 failure:
+1) testSimpleAssign(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;print(1)}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testSimpleAssign(FlowSensitiveInlineVariablesTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testSimpleForIn
+.E
+Time: 0.305
+There was 1 failure:
+1) testSimpleForIn(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var a;var b;var x;a in b}
+Result: function _func(){var a;var b;var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    IN 1 [source_file: expected0]
+                        NAME a 1 [source_file: expected0]
+                        NAME b 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME b 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        IN 1 [source_file: expected0]
+            NAME a 1 [source_file: expected0]
+            NAME b 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME b 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testSimpleForIn(FlowSensitiveInlineVariablesTest.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testDefinitionAfterUse
+.E
+Time: 0.3
+There was 1 failure:
+1) testDefinitionAfterUse(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;print(0);x=1}
+Result: function _func(){var x;x=1}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 0.0 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                        NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        NAME x 1 [source_file: testcode]
+                        NUMBER 1.0 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 0.0 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            NAME x 1 [source_file: testcode]
+            NUMBER 1.0 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testDefinitionAfterUse(FlowSensitiveInlineVariablesTest.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineExpressions3
+.E
+Time: 0.315
+There was 1 failure:
+1) testInlineExpressions3(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var a;var b;var x;x=a+b;print(a-b)}
+Result: function _func(){var a;var b;var x;x=a+b}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                        ADD 1 [source_file: expected0]
+                            NAME a 1 [source_file: expected0]
+                            NAME b 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        SUB 1 [source_file: expected0]
+                            NAME a 1 [source_file: expected0]
+                            NAME b 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME b 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        NAME x 1 [source_file: testcode]
+                        ADD 1 [source_file: testcode]
+                            NAME a 1 [source_file: testcode]
+                            NAME b 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+            ADD 1 [source_file: expected0]
+                NAME a 1 [source_file: expected0]
+                NAME b 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            SUB 1 [source_file: expected0]
+                NAME a 1 [source_file: expected0]
+                NAME b 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME b 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            NAME x 1 [source_file: testcode]
+            ADD 1 [source_file: testcode]
+                NAME a 1 [source_file: testcode]
+                NAME b 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineExpressions3(FlowSensitiveInlineVariablesTest.java:223)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testRemoveWithLabels
+.E
+Time: 0.318
+There was 1 failure:
+1) testRemoveWithLabels(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x=1;L:;print(2)}
+Result: function _func(){var x=1;L:;}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                        NUMBER 1.0 1 [source_file: expected0]
+                LABEL 1 [source_file: expected0]
+                    LABEL_NAME L 1 [source_file: expected0]
+                    BLOCK 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 2.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+                        NUMBER 1.0 1 [source_file: testcode]
+                LABEL 1 [source_file: testcode]
+                    LABEL_NAME L 1 [source_file: testcode]
+                    BLOCK 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+    LABEL 1 [source_file: expected0]
+        LABEL_NAME L 1 [source_file: expected0]
+        BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 2.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+            NUMBER 1.0 1 [source_file: testcode]
+    LABEL 1 [source_file: testcode]
+        LABEL_NAME L 1 [source_file: testcode]
+        BLOCK 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testRemoveWithLabels(FlowSensitiveInlineVariablesTest.java:375)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testSimpleVar
+.E
+Time: 0.334
+There was 1 failure:
+1) testSimpleVar(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;print(1)}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testSimpleVar(FlowSensitiveInlineVariablesTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testMultiDefinitionsBeforeUse
+.E
+Time: 0.345
+There was 1 failure:
+1) testMultiDefinitionsBeforeUse(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x=0;print(1)}
+Result: function _func(){var x=0}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                        NUMBER 0.0 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+                        NUMBER 0.0 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+            NUMBER 0.0 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+            NUMBER 0.0 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testMultiDefinitionsBeforeUse(FlowSensitiveInlineVariablesTest.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testTransitiveDependencies2
+.E
+Time: 0.685
+There was 1 failure:
+1) testTransitiveDependencies2(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function f(x){var a;var b=x;var c;x=3;return b}
+Result: function f(x){var a;var c;x=3}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION f 1 [source_file: expected0]
+            NAME f 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+                NAME x 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME c 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                        NUMBER 3.0 1 [source_file: expected0]
+                RETURN 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION f 1 [source_file: testcode]
+            NAME f 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+                NAME x 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME c 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        NAME x 1 [source_file: testcode]
+                        NUMBER 3.0 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME c 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+            NUMBER 3.0 1 [source_file: expected0]
+    RETURN 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME c 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            NAME x 1 [source_file: testcode]
+            NUMBER 3.0 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:373)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:342)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:330)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testTransitiveDependencies2(FlowSensitiveInlineVariablesTest.java:543)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testTransitiveDependencies1
+.E
+Time: 0.372
+There was 1 failure:
+1) testTransitiveDependencies1(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function f(x){var a;var b=x;x=3;return b}
+Result: function f(x){var a;x=3;return b}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION f 1 [source_file: expected0]
+            NAME f 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+                NAME x 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME a 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                        NUMBER 3.0 1 [source_file: expected0]
+                RETURN 1 [source_file: expected0]
+                    NAME b 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION f 1 [source_file: testcode]
+            NAME f 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+                NAME x 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME a 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        NAME x 1 [source_file: testcode]
+                        NUMBER 3.0 1 [source_file: testcode]
+                RETURN 1 [source_file: testcode]
+                    NAME b 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME a 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+            NUMBER 3.0 1 [source_file: expected0]
+    RETURN 1 [source_file: expected0]
+        NAME b 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME a 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            NAME x 1 [source_file: testcode]
+            NUMBER 3.0 1 [source_file: testcode]
+    RETURN 1 [source_file: testcode]
+        NAME b 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:373)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:342)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:330)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testTransitiveDependencies1(FlowSensitiveInlineVariablesTest.java:537)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testAssignmentBeforeDefinition
+.E
+Time: 0.382
+There was 1 failure:
+1) testAssignmentBeforeDefinition(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){x=1;var x;print(0)}
+Result: function _func(){x=1;var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    ASSIGN 1 [source_file: expected0]
+                        NAME x 1 [source_file: expected0]
+                        NUMBER 1.0 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                EXPR_RESULT 1 [source_file: expected0]
+                    CALL 1 [free_call: 1] [source_file: expected0]
+                        NAME print 1 [source_file: expected0]
+                        NUMBER 0.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                EXPR_RESULT 1 [source_file: testcode]
+                    ASSIGN 1 [source_file: testcode]
+                        NAME x 1 [source_file: testcode]
+                        NUMBER 1.0 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        ASSIGN 1 [source_file: expected0]
+            NAME x 1 [source_file: expected0]
+            NUMBER 1.0 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    EXPR_RESULT 1 [source_file: expected0]
+        CALL 1 [free_call: 1] [source_file: expected0]
+            NAME print 1 [source_file: expected0]
+            NUMBER 0.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    EXPR_RESULT 1 [source_file: testcode]
+        ASSIGN 1 [source_file: testcode]
+            NAME x 1 [source_file: testcode]
+            NUMBER 1.0 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testAssignmentBeforeDefinition(FlowSensitiveInlineVariablesTest.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testSwitchCase
+.E
+Time: 0.355
+There was 1 failure:
+1) testSwitchCase(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;switch(1){}}
+Result: function _func(){var x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: expected0] [input_id: InputId: expected0]
+        FUNCTION _func 1 [source_file: expected0]
+            NAME _func 1 [source_file: expected0]
+            PARAM_LIST 1 [source_file: expected0]
+            BLOCK 1 [source_file: expected0]
+                VAR 1 [source_file: expected0]
+                    NAME x 1 [source_file: expected0]
+                SWITCH 1 [source_file: expected0]
+                    NUMBER 1.0 1 [source_file: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]
+        FUNCTION _func 1 [source_file: testcode]
+            NAME _func 1 [source_file: testcode]
+            PARAM_LIST 1 [source_file: testcode]
+            BLOCK 1 [source_file: testcode]
+                VAR 1 [source_file: testcode]
+                    NAME x 1 [source_file: testcode]
+
+
+Subtree1: BLOCK 1 [source_file: expected0]
+    VAR 1 [source_file: expected0]
+        NAME x 1 [source_file: expected0]
+    SWITCH 1 [source_file: expected0]
+        NUMBER 1.0 1 [source_file: expected0]
+
+
+Subtree2: BLOCK 1 [source_file: testcode]
+    VAR 1 [source_file: testcode]
+        NAME x 1 [source_file: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:905)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:447)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:411)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:389)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:571)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testSwitchCase(FlowSensitiveInlineVariablesTest.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

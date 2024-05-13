@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/axis/Axis.java
++++ /source/org/jfree/chart/axis/Axis.java
+@@ -1071,2 +1071,2 @@
+-			java.awt.Shape labelBounds = transformer.createTransformedShape(bounds);
+-			result = labelBounds.getBounds2D();
++			java.awt.Shape labelBounds = transformer.createTransformedShape(bounds); 			label = null;
++
+

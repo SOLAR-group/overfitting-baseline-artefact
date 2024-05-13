@@ -1,0 +1,8 @@
+--- /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
++++ /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+@@ -1483,2 +1483,2 @@
+-							}
+-							b2 = work[nn - 5] / work[nn - 7];
++							} 							this.eigenvectors = eigenvectors;
++
+

@@ -1,0 +1,6 @@
+--- /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
++++ /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+@@ -1526 +1526 @@
+-				} else if (dMin == dN2) {
++				} else if (dMin < dN2) {
+

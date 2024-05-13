@@ -1,0 +1,432 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+com.google.javascript.jscomp.NameAnalyzerTest#testIssue284
+.E
+Time: 1.882
+There was 1 failure:
+1) testIssue284(com.google.javascript.jscomp.NameAnalyzerTest)
+junit.framework.AssertionFailedError: 
+Expected: 
+Result: goog.inherits(ns.PageSelectionModel.ChangeEvent,ns.PageSelectionModel.FooEvent)
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        EXPR_RESULT
+            CALL
+                GETPROP
+                    NAME goog
+                    STRING inherits
+                GETPROP
+                    GETPROP
+                        NAME ns
+                        STRING PageSelectionModel
+                    STRING ChangeEvent
+                GETPROP
+                    GETPROP
+                        NAME ns
+                        STRING PageSelectionModel
+                    STRING FooEvent
+
+
+Subtree1: SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+
+
+Subtree2: SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+    EXPR_RESULT
+        CALL
+            GETPROP
+                NAME goog
+                STRING inherits
+            GETPROP
+                GETPROP
+                    NAME ns
+                    STRING PageSelectionModel
+                STRING ChangeEvent
+            GETPROP
+                GETPROP
+                    NAME ns
+                    STRING PageSelectionModel
+                STRING FooEvent
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:872)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:433)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:358)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:327)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:315)
+	at com.google.javascript.jscomp.NameAnalyzerTest.testIssue284(NameAnalyzerTest.java:1644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.rhino.NodeTest#testCheckTreeEqualsStringDifferent
+.
+Time: 0.457
+
+OK (1 test)
+
+com.google.javascript.jscomp.FunctionNamesTest#testFunctionsNamesAndIds
+.E
+Time: 1.004
+There was 1 failure:
+1) testFunctionsNamesAndIds(com.google.javascript.jscomp.FunctionNamesTest)
+junit.framework.AssertionFailedError: Node structure normalization invalidated.
+Expected: 
+Result: goog.widget=function(str){this.member_fn=function(){};local_fn=function(){};(function(a){})(1)};function foo(){function bar(){}}literal={f1:function(){},f2:function(){}};goog.array.map(arr,function named(){});goog.array.map(arr,function(){});named_twice=function quax(){};recliteral={l1:{l2:function(){}}};namedliteral={n1:function litnamed(){}};namedrecliteral={n1:{n2:function reclitnamed(){}}};numliteral={1:function(){}};recnumliteral={1:{a:function(){}}}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: externs]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        EXPR_RESULT
+            ASSIGN
+                GETPROP
+                    NAME goog
+                    STRING widget
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                        NAME str
+                    BLOCK
+                        EXPR_RESULT
+                            ASSIGN
+                                GETPROP
+                                    THIS
+                                    STRING member_fn
+                                FUNCTION 
+                                    NAME 
+                                    PARAM_LIST
+                                    BLOCK
+                        EXPR_RESULT
+                            ASSIGN
+                                NAME local_fn
+                                FUNCTION 
+                                    NAME 
+                                    PARAM_LIST
+                                    BLOCK
+                        EXPR_RESULT
+                            CALL [free_call: 1]
+                                FUNCTION  [parenthesized: true]
+                                    NAME 
+                                    PARAM_LIST
+                                        NAME a
+                                    BLOCK
+                                NUMBER 1.0
+        FUNCTION foo
+            NAME foo
+            PARAM_LIST
+            BLOCK
+                FUNCTION bar
+                    NAME bar
+                    PARAM_LIST
+                    BLOCK
+        EXPR_RESULT
+            ASSIGN
+                NAME literal
+                OBJECTLIT
+                    STRING f1
+                        FUNCTION 
+                            NAME 
+                            PARAM_LIST
+                            BLOCK
+                    STRING f2
+                        FUNCTION 
+                            NAME 
+                            PARAM_LIST
+                            BLOCK
+        EXPR_RESULT
+            CALL
+                GETPROP
+                    GETPROP
+                        NAME goog
+                        STRING array
+                    STRING map
+                NAME arr
+                FUNCTION named
+                    NAME named
+                    PARAM_LIST
+                    BLOCK
+        EXPR_RESULT
+            CALL
+                GETPROP
+                    GETPROP
+                        NAME goog
+                        STRING array
+                    STRING map
+                NAME arr
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+        EXPR_RESULT
+            ASSIGN
+                NAME named_twice
+                FUNCTION quax
+                    NAME quax
+                    PARAM_LIST
+                    BLOCK
+        EXPR_RESULT
+            ASSIGN
+                NAME recliteral
+                OBJECTLIT
+                    STRING l1
+                        OBJECTLIT
+                            STRING l2
+                                FUNCTION 
+                                    NAME 
+                                    PARAM_LIST
+                                    BLOCK
+        EXPR_RESULT
+            ASSIGN
+                NAME namedliteral
+                OBJECTLIT
+                    STRING n1
+                        FUNCTION litnamed
+                            NAME litnamed
+                            PARAM_LIST
+                            BLOCK
+        EXPR_RESULT
+            ASSIGN
+                NAME namedrecliteral
+                OBJECTLIT
+                    STRING n1
+                        OBJECTLIT
+                            STRING n2
+                                FUNCTION reclitnamed
+                                    NAME reclitnamed
+                                    PARAM_LIST
+                                    BLOCK
+        EXPR_RESULT
+            ASSIGN
+                NAME numliteral
+                OBJECTLIT
+                    STRING 1 [quoted: 1]
+                        FUNCTION 
+                            NAME 
+                            PARAM_LIST
+                            BLOCK
+        EXPR_RESULT
+            ASSIGN
+                NAME recnumliteral
+                OBJECTLIT
+                    STRING 1 [quoted: 1]
+                        OBJECTLIT
+                            STRING a
+                                FUNCTION 
+                                    NAME 
+                                    PARAM_LIST
+                                    BLOCK
+
+
+Subtree1: SCRIPT [synthetic: 1] [input_id: InputId: externs]
+
+
+Subtree2: SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+    EXPR_RESULT
+        ASSIGN
+            GETPROP
+                NAME goog
+                STRING widget
+            FUNCTION 
+                NAME 
+                PARAM_LIST
+                    NAME str
+                BLOCK
+                    EXPR_RESULT
+                        ASSIGN
+                            GETPROP
+                                THIS
+                                STRING member_fn
+                            FUNCTION 
+                                NAME 
+                                PARAM_LIST
+                                BLOCK
+                    EXPR_RESULT
+                        ASSIGN
+                            NAME local_fn
+                            FUNCTION 
+                                NAME 
+                                PARAM_LIST
+                                BLOCK
+                    EXPR_RESULT
+                        CALL [free_call: 1]
+                            FUNCTION  [parenthesized: true]
+                                NAME 
+                                PARAM_LIST
+                                    NAME a
+                                BLOCK
+                            NUMBER 1.0
+    FUNCTION foo
+        NAME foo
+        PARAM_LIST
+        BLOCK
+            FUNCTION bar
+                NAME bar
+                PARAM_LIST
+                BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME literal
+            OBJECTLIT
+                STRING f1
+                    FUNCTION 
+                        NAME 
+                        PARAM_LIST
+                        BLOCK
+                STRING f2
+                    FUNCTION 
+                        NAME 
+                        PARAM_LIST
+                        BLOCK
+    EXPR_RESULT
+        CALL
+            GETPROP
+                GETPROP
+                    NAME goog
+                    STRING array
+                STRING map
+            NAME arr
+            FUNCTION named
+                NAME named
+                PARAM_LIST
+                BLOCK
+    EXPR_RESULT
+        CALL
+            GETPROP
+                GETPROP
+                    NAME goog
+                    STRING array
+                STRING map
+            NAME arr
+            FUNCTION 
+                NAME 
+                PARAM_LIST
+                BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME named_twice
+            FUNCTION quax
+                NAME quax
+                PARAM_LIST
+                BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME recliteral
+            OBJECTLIT
+                STRING l1
+                    OBJECTLIT
+                        STRING l2
+                            FUNCTION 
+                                NAME 
+                                PARAM_LIST
+                                BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME namedliteral
+            OBJECTLIT
+                STRING n1
+                    FUNCTION litnamed
+                        NAME litnamed
+                        PARAM_LIST
+                        BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME namedrecliteral
+            OBJECTLIT
+                STRING n1
+                    OBJECTLIT
+                        STRING n2
+                            FUNCTION reclitnamed
+                                NAME reclitnamed
+                                PARAM_LIST
+                                BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME numliteral
+            OBJECTLIT
+                STRING 1 [quoted: 1]
+                    FUNCTION 
+                        NAME 
+                        PARAM_LIST
+                        BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME recnumliteral
+            OBJECTLIT
+                STRING 1 [quoted: 1]
+                    OBJECTLIT
+                        STRING a
+                            FUNCTION 
+                                NAME 
+                                PARAM_LIST
+                                BLOCK
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:888)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:433)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:358)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:327)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:315)
+	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:547)
+	at com.google.javascript.jscomp.FunctionNamesTest.testFunctionsNamesAndIds(FunctionNamesTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

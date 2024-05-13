@@ -1,0 +1,38 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..fbe8f3a4 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -492,7 +492,7 @@ public class NumberUtils {
+             dec = null;
+         }
+         if (!Character.isDigit(lastChar) && lastChar != '.') {
+-            if (expPos > -1 && expPos < str.length() - 1) {
++            if (expPos > -1 && expPos >= str.length() - 1) {
+                 exp = str.substring(expPos + 1, str.length() - 1);
+             } else {
+                 exp = null;
+diff --git a/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java b/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
+index 5a70d3a5..fa36a76a 100644
+--- /src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
++++ /src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
+@@ -241,7 +241,7 @@ public class FastDatePrinter implements DatePrinter, Serializable {
+                 rule = selectNumberRule(Calendar.DAY_OF_WEEK_IN_MONTH, tokenLen);
+                 break;
+             case 'w': // week in year (number)
+-                rule = selectNumberRule(Calendar.WEEK_OF_YEAR, tokenLen);
++                rule = selectNumberRule(this.mMaxLengthEstimate, tokenLen);
+                 break;
+             case 'W': // week in month (number)
+                 rule = selectNumberRule(Calendar.WEEK_OF_MONTH, tokenLen);

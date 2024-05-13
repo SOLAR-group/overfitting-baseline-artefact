@@ -1,0 +1,29 @@
+--- /src/java/org/apache/commons/math/linear/BigMatrixImpl.java
++++ /src/java/org/apache/commons/math/linear/BigMatrixImpl.java
+@@ -987,6 +987,18 @@
+             throw new IllegalArgumentException("vector has wrong length");
+         }
+         final int nRows = this.getRowDimension();
++// start of generated patch
++ final int nCols=this.getColumnDimension();
++ final BigDecimal[] out=new BigDecimal[nRows];
++for(int row=0;row<nRows;row++){
++BigDecimal sum=ZERO;
++for(int i=0;i<nCols;i++){
++sum=sum.add(data[row][i].multiply(v[i]));
++}
++out[row]=sum;
++}
++// end of generated patch
++/* start of original code
+         final int nCols = this.getColumnDimension();
+         final BigDecimal[] out = new BigDecimal[v.length];
+         for (int row = 0; row < nRows; row++) {
+@@ -996,6 +1008,7 @@
+             }
+             out[row] = sum;
+         }
++ end of original code*/
+         return out;
+     }
+     

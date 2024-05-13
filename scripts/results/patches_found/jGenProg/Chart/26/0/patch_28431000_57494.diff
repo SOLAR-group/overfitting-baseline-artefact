@@ -1,0 +1,142 @@
+--- /source/org/jfree/chart/util/RectangleInsets.java
++++ /source/org/jfree/chart/util/RectangleInsets.java
+@@ -362,2 +361,0 @@
+-		return result;
+-	}
+@@ -372,7 +369,0 @@
+-	public double calculateTopOutset(double height) {
+-		double result = this.top;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = (height / ((1 - this.top) - this.bottom)) * this.top;
+-		}
+-		return result;
+-	}
+@@ -387,7 +377,0 @@
+-	public double calculateBottomInset(double height) {
+-		double result = this.bottom;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = this.bottom * height;
+-		}
+-		return result;
+-	}
+@@ -402,7 +385,0 @@
+-	public double calculateBottomOutset(double height) {
+-		double result = this.bottom;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = (height / ((1 - this.top) - this.bottom)) * this.bottom;
+-		}
+-		return result;
+-	}
+@@ -417,7 +393,0 @@
+-	public double calculateLeftInset(double width) {
+-		double result = this.left;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = this.left * width;
+-		}
+-		return result;
+-	}
+@@ -432,7 +401,0 @@
+-	public double calculateLeftOutset(double width) {
+-		double result = this.left;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = (width / ((1 - this.left) - this.right)) * this.left;
+-		}
+-		return result;
+-	}
+@@ -447,7 +409,0 @@
+-	public double calculateRightInset(double width) {
+-		double result = this.right;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = this.right * width;
+-		}
+-		return result;
+-	}
+@@ -462,7 +417,0 @@
+-	public double calculateRightOutset(double width) {
+-		double result = this.right;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = (width / ((1 - this.left) - this.right)) * this.right;
+-		}
+-		return result;
+-	}
+@@ -477,3 +425,0 @@
+-	public double trimWidth(double width) {
+-		return (width - calculateLeftInset(width)) - calculateRightInset(width);
+-	}
+@@ -488,3 +433,0 @@
+-	public double extendWidth(double width) {
+-		return (width + calculateLeftOutset(width)) + calculateRightOutset(width);
+-	}
+@@ -499,4 +441,0 @@
+-	public double trimHeight(double height) {
+-		return (height - 
+-		calculateTopInset(height)) - calculateBottomInset(height);
+-	}
+@@ -511 +450,62 @@
+-	public double extendHeight(double height) {
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+@@ -513 +513 @@
+-		calculateTopOutset(height)) + calculateBottomOutset(height);
++		calculateTopOutset(height)) + calculateBottomOutset(height);} 	public double calculateTopOutset(double height) { 		double result = this.top; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = (height / ((1 - this.top) - this.bottom)) * this.top;} 		return result;} 	public double calculateBottomInset(double height) { 		double result = this.bottom; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = this.bottom * height;} 		return result;} 	public double calculateBottomOutset(double height) { 		double result = this.bottom; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = (height / ((1 - this.top) - this.bottom)) * this.bottom;} 		return result;} 	public double calculateLeftInset(double width) { 		double result = this.left; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = this.left * width;} 		return result;} 	public double calculateLeftOutset(double width) { 		double result = this.left; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = (width / ((1 - this.left) - this.right)) * this.left;} 		return result;} 	public double calculateRightInset(double width) { 		double result = this.right; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = this.right * width;} 		return result;} 	public double calculateRightOutset(double width) { 		double result = this.right; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = (width / ((1 - this.left) - this.right)) * this.right;} 		return result;} 	public double trimWidth(double width) { 		return (width - calculateLeftInset(width)) - calculateRightInset(width);} 	public double extendWidth(double width) { 		return (width + calculateLeftOutset(width)) + calculateRightOutset(width);} 	public double trimHeight(double height) { 		return (height - calculateTopInset(height)) - calculateBottomInset(height);} 	public double extendHeight(double height) { 		return (height + calculateTopOutset(height)) + calculateBottomOutset(height);
+

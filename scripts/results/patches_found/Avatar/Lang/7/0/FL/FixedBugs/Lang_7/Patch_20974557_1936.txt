@@ -1,0 +1,41 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..a3fff8fa 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -507,7 +507,10 @@ public class NumberUtils {
+                         && exp == null
+                         && (numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric))) {
+                         try {
+-                            return createLong(numeric);
++                            if (numeric != null) {
++	return createLong(numeric);
++}
++
+                         } catch (NumberFormatException nfe) { // NOPMD
+                             // Too big for a long
+                         }
+diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+index 28f2e4f0..ff1afd24 100644
+--- /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
++++ /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+@@ -141,7 +141,7 @@ public class DurationFormatUtils {
+             minutes = (int) (durationMillis / DateUtils.MILLIS_PER_MINUTE);
+             durationMillis = durationMillis - (minutes * DateUtils.MILLIS_PER_MINUTE);
+         }
+-        if (Token.containsTokenWithValue(tokens, s) ) {
++        if (Token.containsTokenWithValue(tokens, M) ) {
+             seconds = (int) (durationMillis / DateUtils.MILLIS_PER_SECOND);
+             durationMillis = durationMillis - (seconds * DateUtils.MILLIS_PER_SECOND);
+         }

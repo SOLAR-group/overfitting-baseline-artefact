@@ -1,0 +1,9 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1148 +1148,2 @@
+-			g2.fill(chartArea);
++			if (true)
++				return;
+@@ -1150 +1150,0 @@
+-
+

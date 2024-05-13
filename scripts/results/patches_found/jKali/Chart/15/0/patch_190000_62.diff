@@ -1,0 +1,19 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -269,0 +270,7 @@
++		if (true)
++			return;
++
++
++
++
++
+@@ -272,7 +278,0 @@
+-		if (isCircular()) {
+-			double min = java.lang.Math.min(linkW, linkH) / 2;
+-			linkX = (((linkX + linkX) + linkW) / 2) - min;
+-			linkY = (((linkY + linkY) + linkH) / 2) - min;
+-			linkW = 2 * min;
+-			linkH = 2 * min;
+-		}
+

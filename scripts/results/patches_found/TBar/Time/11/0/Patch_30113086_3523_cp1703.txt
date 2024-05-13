@@ -1,0 +1,11 @@
+--- /src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java
++++ /src/main/java/org/joda/time/tz/DateTimeZoneBuilder.java
+@@ -359,7 +359,7 @@ public class DateTimeZoneBuilder {
+             // Copy it since we're going to destroy it.
+             rs = new RuleSet(rs);
+ 
+-            while ((next = rs.nextTransition(millis, saveMillis)) != null) {
++            while (((next = rs.nextTransition(millis, saveMillis)) != null) && (millis % 1000L == 0)) {
+                 if (addTransition(transitions, next)) {
+                     if (tailZone != null) {
+                         // Got the extra transition before DSTZone.

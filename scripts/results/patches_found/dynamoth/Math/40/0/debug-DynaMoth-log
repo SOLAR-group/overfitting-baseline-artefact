@@ -1,0 +1,3075 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testNonInvertible
+.
+Time: 0.617
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest#testEventsNoConvergence
+.
+Time: 0.837
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionPenaltyAdapterTest#testStartSimplexInsideRange
+.
+Time: 1.164
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testTwoAxes
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$TwoAxes BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$TwoAxes END
+
+Time: 0.501
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesStepInterpolatorTest#derivativesConsistency
+.
+Time: 1.676
+
+OK (1 test)
+
+org.apache.commons.math.ode.FirstOrderConverterTest#testSmallStep
+.
+Time: 0.014
+
+OK (1 test)
+
+org.apache.commons.math.ode.FirstOrderConverterTest#testBigStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.SecantSolverTest#testBadEndpoints
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest#testSolveAccuracySin
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testMulFirstRev
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.MullerSolver2Test#testSinFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionPenaltyAdapterTest#testHalfBounded
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testIllConditioned
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testFasterThanNewton
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testSphere
+.
+Time: 0.134
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testCircleFitting
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testRootEndpoints
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.events.ReappearingEventTest#testGragg
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937aTest#testNextInversionDeviate
+.
+Time: 0.01
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest#testEvents
+.
+Time: 0.015
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testIllConditioned
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.NordsieckStepInterpolatorTest#derivativesConsistency
+.
+Time: 0.034
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testEllipse
+.
+Time: 0.299
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.MullerSolverTest#testQuinticFunction
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.MersenneTwisterTest#testNextBeta
+.
+Time: 0.014
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testEventManagement
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testLeastSquares1
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testRedundantEquations
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testLeastSquares3
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testLeastSquares2
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testIncreasingTolerance
+.
+Time: 0.021
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSolutionRightSide
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.SecantSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.distribution.GammaDistributionTest#testSampling
+.
+Time: 0.011
+
+OK (1 test)
+
+org.apache.commons.math.ode.JacobianMatricesTest#testInternalDifferentiation
+.
+Time: 0.102
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testUnpreconditionedSolution
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.EulerIntegratorTest#testBackward
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest#checkClone
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest#testLaguerreOrthogonality
+.
+Time: 0.022
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizerTest#testBadFunction
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest#serialization
+.
+Time: 0.033
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest#testBackward
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.RandomDataTest#testNextInversionDeviate
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.events.EventStateTest#closeEvents
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testMulNeitherRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testMulBoth
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well512aTest#testNextGamma
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testOneSet
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497bTest#testNextT
+.
+Time: 0.009
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.CurveFitterTest#testMath304
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.distribution.TDistributionTest#testInverseCumulativeProbabilities
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497bTest#testNextBeta
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.HarmonicFitterTest#testNoError
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testAckley
+.
+Time: 0.138
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testMulFirst
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497bTest#testNextF
+.
+Time: 0.012
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest#testIncreasingTolerance
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testMulNeitherRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackWatson
+.
+Time: 0.026
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BrentSolverTest#testRootEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testOneSet
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest#testWrongDerivative
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.ConjugateGradientTest#testUnpreconditionedSolution
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.BrentOptimizerTest#testQuinticMin
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMinStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RiddersSolverTest#testQuinticFunction
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest#testKepler
+.
+Time: 0.016
+
+OK (1 test)
+
+org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateRealOptimizerTest#testCircleFitting
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.HarmonicFitterTest#testUnsorted
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testNoDependency
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.MidpointStepInterpolatorTest#serialization
+.
+Time: 0.017
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497aTest#testNextGamma
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testTrivial
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testIssue596
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackFreudensteinRoth
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testQuinticZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testRemoveSingle
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.distribution.FDistributionTest#testSmallDegreesOfFreedom
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testInconsistentEquations
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest#derivativesConsistency
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest#serialization
+.
+Time: 0.01
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testIncreasingTolerance
+.
+Time: 0.02
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testMissedEndEvent
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest#testMinStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testKepler
+.
+Time: 0.012
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testTwoAxes
+.
+Time: 0.283
+
+OK (1 test)
+
+org.apache.commons.math.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolatorTest#testPreconditions
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.CurveFitterTest#testMath372
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testCircleFitting
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testNonSelfAdjointPreconditioner
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.LaguerreSolverTest#testQuadraticFunction
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.TrapezoidIntegratorTest#testSinFunction
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.HarmonicFitterTest#testTinyVariationsData
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testElliRotated
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$ElliRotated BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$ElliRotated END
+
+Time: 3.592
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937cTest#testNextT
+.
+Time: 0.008
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSolutionBelowSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.PowellOptimizerTest#testMaximizeQuadratic
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.GaussianFitterTest#testMath519
+.
+Time: 0.01
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937cTest#testNextF
+.
+Time: 0.008
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testDecreasingSteps
+.
+Time: 0.027
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testMaximize
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$MinusElli BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$MinusElli END
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$MinusElli BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$MinusElli END
+
+Time: 0.053
+
+OK (1 test)
+
+org.apache.commons.math.distribution.TDistributionTest#testSampling
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testCircleFittingBadInit
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testQuinticZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest#testKepler
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testSmallStep
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest#testEventsErrors
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497aTest#testNextInversionDeviate
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackLinearFullRank
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937aTest#testNextF
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testNonInversible
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testCircleFittingBadInit
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesStepInterpolatorTest#serialization
+.
+Time: 0.017
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.EulerIntegratorTest#testDecreasingSteps
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testIncNeither
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testEvents
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.LaguerreSolverTest#testParameters
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillStepInterpolatorTest#serialization
+.
+Time: 0.012
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937aTest#testNextT
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.HarmonicFitterTest#testInitialGuess
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testNonSelfAdjointOperator
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest#testSmallStep
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testIncBothRev
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testSsDiffPow
+.
+Time: 0.317
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSolutionRightSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.LegendreGaussIntegratorTest#testSinFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolatorTest#testParaboloid
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testMath199
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest#testStepSize
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testSolutionRightSide
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.JacobianMatricesTest#testFinalResult
+.
+Time: 0.016
+
+OK (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testRemoveMultiple
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testTwoSets
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.JacobianMatricesTest#testParameterizable
+.
+Time: 0.018
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest#testSmallStep
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.SecantSolverTest#testSolutionAboveSide
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerMultiDirectionalTest#testMaximize1
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerMultiDirectionalTest#testMaximize2
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.AbstractRandomGeneratorTest#testNextChiSquare
+.
+Time: 0.015
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSolutionLeftSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well1024aTest#testNextBeta
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionPenaltyAdapterTest#testUnbounded
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testIllConditioned
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.HarmonicFitterTest#test1PercentError
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testMulLast
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest#serialization
+.
+Time: 0.012
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testQRColumnsPermutation
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testMoreEstimatedParametersUnsorted
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.PolynomialFitterTest#testRedundantUnsolvable
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest#testMinStep
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSolutionRightSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest#testSolveSin
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#backward
+.
+Time: 0.016
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.NewtonSolverTest#testSinZero
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.EulerIntegratorTest#testSmallStep
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.random.AbstractRandomGeneratorTest#testNextF
+.
+Time: 0.01
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testMoreEstimatedParametersSimple
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.EulerStepInterpolatorTest#serialization
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionMappingAdapterTest#testUnbounded
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testIncBoth
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest#testKepler
+.
+Time: 0.012
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testDiffPow
+.
+Time: 0.196
+
+OK (1 test)
+
+org.apache.commons.math.random.AbstractRandomGeneratorTest#testNextT
+.
+Time: 0.009
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizerTest#testQuinticMin
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.MullerSolver2Test#testParameters
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testTwoSets
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.ConjugateGradientTest#testUnpreconditionedSolutionWithInitialGuess
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackBox3Dimensional
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackLinearRank1
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testBigStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.BitsStreamGeneratorTest#testNextF
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest#testDecreasingSteps
+.
+Time: 0.017
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RiddersSolverTest#testSinFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937aTest#testNextGamma
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.SecantSolverTest#testSolutionBelowSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testCigar
+.
+Time: 0.097
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest#testMisc
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest#testBackward
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testMoreEstimatedParametersUnsorted
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testMulFirst
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerMultiDirectionalTest#testMinimize2
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937cTest#testNextGamma
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerMultiDirectionalTest#testMinimize1
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testNonPositiveDefinitePreconditioner
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testNoDependency
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testRootEndpoints
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testQuinticZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.PowellOptimizerTest#testSumSinc
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.events.OverlappingEventsTest#testOverlappingEvents1
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.events.OverlappingEventsTest#testOverlappingEvents0
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.ContinuousOutputModelTest#testRandomAccess
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testMoreEstimatedParametersUnsorted
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerTest#testBoundaries
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.distribution.FDistributionTest#testInverseCumulativeProbabilities
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BrentSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testNonInversible
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest#testIncreasingTolerance
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testMaximize2
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testMaximize1
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.BracketFinderTest#testMinimumIsOnIntervalBoundary
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testIncBothRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest#testBigStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.JacobianMatricesTest#testHighAccuracyExternalDifferentiation
+.
+Time: 0.138
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testColumnsPermutation
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest#checkClone
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest#testBackward
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497aTest#testNextT
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.distribution.ChiSquaredDistributionTest#testSampling
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerMultiDirectionalTest#testMath283
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497aTest#testNextF
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testTrivial
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackPowellSingular
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.random.Well512aTest#testNextInversionDeviate
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testRosenbrock
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.BitsStreamGeneratorTest#testNextChiSquare
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BisectionSolverTest#testQuinticZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testMulBothRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillStepInterpolatorTest#testDerivativesConsistency
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.random.BitsStreamGeneratorTest#testNextT
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testCircleFitting
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.SecantSolverTest#testSolutionLeftSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testIncreasingTolerance
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSolutionAboveSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testIncLast
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.RandomDataTest#testNextChiSquare
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testIncLast
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.NordsieckStepInterpolatorTest#serialization
+.
+Time: 0.009
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest#testVariableSteps
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testSolutionBelowSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest#testBackward
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.MullerSolver2Test#testQuinticFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerMultiDirectionalTest#testPowell
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackBrownAlmostLinear
+.
+Time: 0.01
+
+OK (1 test)
+
+org.apache.commons.math.optimization.MultiStartMultivariateRealOptimizerTest#testRosenbrock
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest#derivativesConsistency
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BrentSolverTest#testInitialGuess
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest#testBackward
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testRemoveXY
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.ContinuousOutputModelTest#testModelsMerging
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.ContinuousOutputModelTest#testBoundaries
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.BrentOptimizerTest#testQuinticMinStatistics
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testIncNeitherRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.SecantSolverTest#testSolutionRightSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testRedundantEquations
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54StepInterpolatorTest#derivativesConsistency
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.SimpsonIntegratorTest#testSinFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937cTest#testNextBeta
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testMinimize1
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testVariableSteps
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testMinimize2
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testIncFirstRev
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackKowalikOsborne
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.GaussianFitterTest#testFit06
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.GaussianFitterTest#testFit05
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.distribution.GammaDistributionTest#testValues
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.GaussianFitterTest#testFit07
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.GaussianFitterTest#testFit01
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.GaussianFitterTest#testFit04
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937cTest#testNextInversionDeviate
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.BracketFinderTest#testCubicMax
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testIssue631
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.MullerSolver2Test#testExpm1Function
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testUnstableDerivative
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.PowellOptimizerTest#testQuadratic
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testRosen
+.
+Time: 0.155
+
+OK (1 test)
+
+org.apache.commons.math.distribution.BetaDistributionTest#testCumulative
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testMulLastRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest#derivativesConsistency
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.util.IncrementorTest#testAboveMaxCount
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSolutionBelowSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well1024aTest#testNextT
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerNelderMeadTest#testPowell
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackOsborne2
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest#serialization
+.
+Time: 0.01
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#backward
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.random.Well1024aTest#testNextF
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.random.RandomDataTest#testNextBeta
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest#testDecreasingSteps
+.
+Time: 0.019
+
+OK (1 test)
+
+org.apache.commons.math.random.MersenneTwisterTest#testNextInversionDeviate
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest#testBigStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testOneSet
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testCigar
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Cigar BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Cigar END
+
+Time: 0.01
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testColumnsPermutation
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolatorTest#testPlane
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackOsborne1
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.AbstractRandomGeneratorTest#testNextInversionDeviate
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497bTest#testNextInversionDeviate
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497aTest#testNextBeta
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#polynomial
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackChebyquad
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.RombergIntegratorTest#testSinFunction
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BisectionSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well512aTest#testNextT
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.random.Well1024aTest#testNextGamma
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testTwoSets
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest#testLegendreOrthogonality
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testMulLastRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testMinStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853StepInterpolatorTest#checklone
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.linear.ConjugateGradientTest#testPreconditionedSolution2
+.
+Time: 0.035
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testInconsistentEquations
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well512aTest#testNextF
+.
+Time: 0.007
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testVariableSteps
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.dfp.BracketingNthOrderBrentSolverDFPTest#testNeta
+.
+Time: 0.329
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testUnpreconditionedInPlaceSolutionWithInitialGuess
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest#testStepSize
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.linear.ConjugateGradientTest#testPreconditionedSolution
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testIncreasingTolerance
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testSphere
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Sphere BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Sphere END
+
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.HighamHall54IntegratorTest#testEvents
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testIncFirstRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testIncFirst
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testCircleFittingGoodInit
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest#testKepler
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testElliRotated
+.
+Time: 0.266
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testIncFirst
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testMissedEndEvent
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionMappingAdapterTest#testHalfBounded
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.events.ReappearingEventTest#testDormandPrince
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest#testStepSize
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937aTest#testNextBeta
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testRosen
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Rosen BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Rosen END
+
+Time: 0.2
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.PolynomialFitterTest#testSmallError
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackBrownDennis
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackRosenbrok
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testInference
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSolutionAboveSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testMulNeither
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54StepInterpolatorTest#serialization
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testConstrainedRosen
+.
+Time: 0.145
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.SimpsonIntegratorTest#testQuinticFunction
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testSolutionAboveSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well1024aTest#testNextInversionDeviate
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.LaguerreSolverTest#testLinearFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ThreeEighthesIntegratorTest#testDecreasingSteps
+.
+Time: 0.018
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.AdamsBashforthIntegratorTest#testMinStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.PolynomialFitterTest#testNoError
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testTablet
+.
+Time: 0.121
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testKepler
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.FirstOrderConverterTest#testDecreasingSteps
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerTest#testBeforeEnd
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testBadEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testConstrainedRosen
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Rosen BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Rosen END
+
+Time: 0.137
+
+OK (1 test)
+
+org.apache.commons.math.util.IncrementorTest#testBulkIncrement
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest#testJacobiOrthogonality
+.
+Time: 0.077
+
+OK (1 test)
+
+org.apache.commons.math.linear.ConjugateGradientTest#testEventManagement
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.JacobianMatricesTest#testAnalyticalDifferentiation
+.
+Time: 0.109
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest#testBigStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizerTest#testSinMin
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testUnpreconditionedSolutionWithInitialGuess
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testIncBoth
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.RandomDataTest#testNextGamma
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.distribution.NormalDistributionTest#testMath280
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest#testSolveBadAccuracy
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.events.EventStateTest#testIssue695
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.MidpointStepInterpolatorTest#testDerivativesConsistency
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testSsDiffPow
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$SsDiffPow BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$SsDiffPow END
+
+Time: 0.146
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSolutionAboveSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest#testHermiteOrthogonality
+.
+Time: 0.011
+
+OK (1 test)
+
+org.apache.commons.math.random.AbstractRandomGeneratorTest#testNextGamma
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testRootEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testMulLast
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.EulerIntegratorTest#testStepSize
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testMoreEstimatedParametersSimple
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testSolutionLeftSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testUnstableDerivative
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testBadEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testMulBothRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497aTest#testNextChiSquare
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.BracketFinderTest#testIntervalBoundsOrdering
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testMoreEstimatedParametersSimple
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.EulerIntegratorTest#testBigStep
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.BracketFinderTest#testCubicMin
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.distribution.FDistributionTest#testSampling
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.distribution.ChiSquaredDistributionTest#testSmallDf
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testEvents
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RiddersSolverTest#testParameters
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BisectionSolverTest#testMath369
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.LegendreGaussIntegratorTest#testQuinticFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerStepInterpolatorTest#checklone
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testRootEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937cTest#testNextChiSquare
+.
+Time: 0.005
+
+OK (1 test)
+
+org.apache.commons.math.optimization.MultiStartDifferentiableMultivariateVectorialOptimizerTest#testTrivial
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testMulBoth
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.SimplexOptimizerMultiDirectionalTest#testRosenbrock
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testIncLastRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.fitting.PolynomialFitterTest#testRedundantSolvable
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.MersenneTwisterTest#testNextGamma
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.distribution.NormalDistributionTest#testInverseCumulativeProbabilities
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testInconsistentSizes1
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testInconsistentSizes2
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testBackward
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.random.Well512aTest#testNextChiSquare
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.util.IncrementorTest#testReset
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testIncNeitherRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testNoDependency
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionPenaltyAdapterTest#testStartSimplexOutsideRange
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizerTest#testInconsistentSizes
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.BitsStreamGeneratorTest#testNextBeta
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GraggBulirschStoerIntegratorTest#testBackward
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.EulerStepInterpolatorTest#derivativesConsistency
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testMulNeither
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackJennrichSampson
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.CMAESOptimizerTest#testRastrigin
+.
+Time: 0.748
+
+OK (1 test)
+
+org.apache.commons.math.util.IncrementorTest#testBelowMaxCount
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.RandomDataTest#testNextF
+.
+Time: 0.009
+
+OK (1 test)
+
+org.apache.commons.math.util.IncrementorTest#testCanIncrement2
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.distribution.ChiSquaredDistributionTest#testInverseCumulativeProbabilities
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BrentSolverTest#testBadEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.MullerSolverTest#testExpm1Function
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.TrapezoidIntegratorTest#testQuinticFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.JacobianMatricesTest#testLowAccuracyExternalDifferentiation
+.
+Time: 0.026
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.SecantSolverTest#testRootEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testStepSize
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders9
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.BitsStreamGeneratorTest#testNextGamma
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders7
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders8
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders5
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders6
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders3
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders4
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders1
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders2
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497bTest#testNextChiSquare
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testQuinticZero
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest#testKepler
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.random.BitsStreamGeneratorTest#testNextInversionDeviate
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.ConjugateGradientTest#testNonPositiveDefinitePreconditioner
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testTrivial
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.AdamsMoultonIntegratorTest#testMinStep
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well19937aTest#testNextChiSquare
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.util.IncrementorTest#testCanIncrement1
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.MullerSolverTest#testParameters
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.GillIntegratorTest#testUnstableDerivative
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.RandomDataTest#testNextT
+.
+Time: 0.008
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testIncLastRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.MersenneTwisterTest#testNextChiSquare
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.dfp.BracketingNthOrderBrentSolverDFPTest#testConvergenceOnFunctionAccuracy
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSolutionBelowSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.SecantSolverTest#testQuinticZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders10
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders11
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.distribution.FDistributionTest#testLargeDegreesOfFreedom
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.MersenneTwisterTest#testNextT
+.
+Time: 0.009
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders18
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders19
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders16
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well44497bTest#testNextGamma
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders17
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders14
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RiddersSolverTest#testExpm1Function
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders15
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders12
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.distribution.TDistributionTest#testSmallDf
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders13
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.NonLinearConjugateGradientOptimizerTest#testRedundantEquations
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.distribution.GammaDistributionTest#testInverseCumulativeProbabilities
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.MersenneTwisterTest#testNextF
+.
+Time: 0.009
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtilsTest#testSolveNoRoot
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.RombergIntegratorTest#testQuinticFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackHelicalValley
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testRastrigin
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Rastrigin BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Rastrigin END
+
+Time: 0.015
+
+OK (1 test)
+
+org.apache.commons.math.util.IncrementorTest#testAlternateException
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionMappingAdapterTest#testStartSimplexInsideRange
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.NewtonSolverTest#testQuinticZero
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.MullerSolverTest#testSinFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.univariate.BrentOptimizerTest#testMinEndpoints
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testBadEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSolutionLeftSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testConvergenceOnFunctionAccuracy
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.DormandPrince54IntegratorTest#testSmallLastStep
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaStepInterpolatorTest#derivativesConsistency
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.LaguerreSolverTest#testQuinticFunction
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.ode.nonstiff.MidpointIntegratorTest#testSmallStep
+.
+Time: 0.002
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testPreconditionedSolution2
+.
+Time: 0.053
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackLinearRank1ZeroColsAndRows
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.integration.LegendreGaussIntegratorTest#testExactIntegration
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testBadEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.polynomials.PolynomialsUtilsTest#testChebyshevOrthogonality
+.
+Time: 0.107
+
+OK (1 test)
+
+org.apache.commons.math.distribution.NormalDistributionTest#testSampling
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.random.Well512aTest#testNextBeta
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputOverlapTest#testIncNeither
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.sampling.StepNormalizerOutputTest#testMulFirstRev
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSolutionLeftSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testCigTab
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$CigTab BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$CigTab END
+
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionPenaltyAdapterTest#testOptimumOutsideRange
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testMaxEvaluations
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.GaussNewtonOptimizerTest#testInconsistentEquations
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.general.MinpackTest#testMinpackBard
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.linear.SymmLQTest#testSolveSaunders20
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest#testIssue716
+.E
+Time: 0.001
+There was 1 failure:
+1) testIssue716(org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest)
+org.apache.commons.math.exception.TooManyEvaluationsException: illegal state: maximal count (100) exceeded: evaluations
+	at org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.incrementEvaluationCount(BaseAbstractUnivariateRealSolver.java:296)
+	at org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.computeObjectiveValue(BaseAbstractUnivariateRealSolver.java:153)
+	at org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve(BracketingNthOrderBrentSolver.java:283)
+	at org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.solve(BaseAbstractUnivariateRealSolver.java:190)
+	at org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.solve(BracketingNthOrderBrentSolver.java:394)
+	at org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest.testIssue716(BracketingNthOrderBrentSolverTest.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest#testBackward
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.random.Well1024aTest#testNextChiSquare
+.
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.random.AbstractRandomGeneratorTest#testNextBeta
+.
+Time: 0.003
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testTablet
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Tablet BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Tablet END
+
+Time: 0.004
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest#testEllipse
+.org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Elli BEGIN
+org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest$Elli END
+
+Time: 0.026
+
+OK (1 test)
+
+org.apache.commons.math.optimization.direct.MultivariateFunctionMappingAdapterTest#testOptimumOutsideRange
+.
+Time: 0
+
+OK (1 test)
+

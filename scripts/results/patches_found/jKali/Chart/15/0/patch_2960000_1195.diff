@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1216,2 +1216,2 @@
+-		if (info != null) {
+-			plotInfo = info.getPlotInfo();
++		if (true)
++			return; 		if (info != null) { 			plotInfo = info.getPlotInfo();
+

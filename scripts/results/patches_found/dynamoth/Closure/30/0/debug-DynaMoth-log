@@ -1,0 +1,420 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testIssue698
+.E
+Time: 2.144
+There was 1 failure:
+1) testIssue698(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x;unknown.length<2&&(unknown="0"+unknown);x=""+unknown;unknown.length<3&&(unknown="0"+unknown);x=x+unknown;return x}
+Result: function _func(){var x;unknown.length<2&&(unknown="0"+unknown);unknown.length<3&&(unknown="0"+unknown);return""+unknown+unknown}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        FUNCTION _func
+            NAME _func
+            PARAM_LIST
+            BLOCK
+                VAR
+                    NAME x
+                EXPR_RESULT
+                    AND
+                        LT
+                            GETPROP
+                                NAME unknown
+                                STRING length
+                            NUMBER 2.0
+                        ASSIGN [parenthesized: true]
+                            NAME unknown
+                            ADD
+                                STRING 0
+                                NAME unknown
+                EXPR_RESULT
+                    ASSIGN
+                        NAME x
+                        ADD
+                            STRING 
+                            NAME unknown
+                EXPR_RESULT
+                    AND
+                        LT
+                            GETPROP
+                                NAME unknown
+                                STRING length
+                            NUMBER 3.0
+                        ASSIGN [parenthesized: true]
+                            NAME unknown
+                            ADD
+                                STRING 0
+                                NAME unknown
+                EXPR_RESULT
+                    ASSIGN
+                        NAME x
+                        ADD
+                            NAME x
+                            NAME unknown
+                RETURN
+                    NAME x
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        FUNCTION _func
+            NAME _func
+            PARAM_LIST
+            BLOCK
+                VAR
+                    NAME x
+                EXPR_RESULT
+                    AND
+                        LT
+                            GETPROP
+                                NAME unknown
+                                STRING length
+                            NUMBER 2.0
+                        ASSIGN [parenthesized: true]
+                            NAME unknown
+                            ADD
+                                STRING 0
+                                NAME unknown
+                EXPR_RESULT
+                    AND
+                        LT
+                            GETPROP
+                                NAME unknown
+                                STRING length
+                            NUMBER 3.0
+                        ASSIGN [parenthesized: true]
+                            NAME unknown
+                            ADD
+                                STRING 0
+                                NAME unknown
+                RETURN
+                    ADD
+                        ADD
+                            STRING 
+                            NAME unknown
+                        NAME unknown
+
+
+Subtree1: BLOCK
+    VAR
+        NAME x
+    EXPR_RESULT
+        AND
+            LT
+                GETPROP
+                    NAME unknown
+                    STRING length
+                NUMBER 2.0
+            ASSIGN [parenthesized: true]
+                NAME unknown
+                ADD
+                    STRING 0
+                    NAME unknown
+    EXPR_RESULT
+        ASSIGN
+            NAME x
+            ADD
+                STRING 
+                NAME unknown
+    EXPR_RESULT
+        AND
+            LT
+                GETPROP
+                    NAME unknown
+                    STRING length
+                NUMBER 3.0
+            ASSIGN [parenthesized: true]
+                NAME unknown
+                ADD
+                    STRING 0
+                    NAME unknown
+    EXPR_RESULT
+        ASSIGN
+            NAME x
+            ADD
+                NAME x
+                NAME unknown
+    RETURN
+        NAME x
+
+
+Subtree2: BLOCK
+    VAR
+        NAME x
+    EXPR_RESULT
+        AND
+            LT
+                GETPROP
+                    NAME unknown
+                    STRING length
+                NUMBER 2.0
+            ASSIGN [parenthesized: true]
+                NAME unknown
+                ADD
+                    STRING 0
+                    NAME unknown
+    EXPR_RESULT
+        AND
+            LT
+                GETPROP
+                    NAME unknown
+                    STRING length
+                NUMBER 3.0
+            ASSIGN [parenthesized: true]
+                NAME unknown
+                ADD
+                    STRING 0
+                    NAME unknown
+    RETURN
+        ADD
+            ADD
+                STRING 
+                NAME unknown
+            NAME unknown
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:873)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:434)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:398)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:376)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:443)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testIssue698(FlowSensitiveInlineVariablesTest.java:423)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.rhino.NodeTest#testCheckTreeEqualsStringDifferent
+.
+Time: 0.525
+
+OK (1 test)
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testCanInlineAcrossNoSideEffect
+.E
+Time: 0.619
+There was 1 failure:
+1) testCanInlineAcrossNoSideEffect(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var y;var x=noSFX(y),z=noSFX();noSFX();noSFX(),print(x)}
+Result: function _func(){var y;var x,z=noSFX();noSFX();noSFX(),print(noSFX(y))}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        FUNCTION _func
+            NAME _func
+            PARAM_LIST
+            BLOCK
+                VAR
+                    NAME y
+                VAR
+                    NAME x
+                        CALL [free_call: 1]
+                            NAME noSFX
+                            NAME y
+                    NAME z
+                        CALL [free_call: 1]
+                            NAME noSFX
+                EXPR_RESULT
+                    CALL [free_call: 1]
+                        NAME noSFX
+                EXPR_RESULT
+                    COMMA
+                        CALL [free_call: 1]
+                            NAME noSFX
+                        CALL [free_call: 1]
+                            NAME print
+                            NAME x
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        FUNCTION _func
+            NAME _func
+            PARAM_LIST
+            BLOCK
+                VAR
+                    NAME y
+                VAR
+                    NAME x
+                    NAME z
+                        CALL [side_effect_flags: 15] [free_call: 1]
+                            NAME noSFX
+                EXPR_RESULT
+                    CALL [side_effect_flags: 15] [free_call: 1]
+                        NAME noSFX
+                EXPR_RESULT
+                    COMMA
+                        CALL [side_effect_flags: 15] [free_call: 1]
+                            NAME noSFX
+                        CALL [free_call: 1]
+                            NAME print
+                            CALL [side_effect_flags: 15] [free_call: 1]
+                                NAME noSFX
+                                NAME y
+
+
+Subtree1: NAME x
+    CALL [free_call: 1]
+        NAME noSFX
+        NAME y
+
+
+Subtree2: NAME x
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:873)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:434)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:398)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:376)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:443)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.noInline(FlowSensitiveInlineVariablesTest.java:439)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testCanInlineAcrossNoSideEffect(FlowSensitiveInlineVariablesTest.java:363)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testInlineAcrossSideEffect1
+.E
+Time: 0.671
+There was 1 failure:
+1) testInlineAcrossSideEffect1(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var y;var x=noSFX(y);print(x)}
+Result: function _func(){var y;var x;print(noSFX(y))}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        FUNCTION _func
+            NAME _func
+            PARAM_LIST
+            BLOCK
+                VAR
+                    NAME y
+                VAR
+                    NAME x
+                        CALL [free_call: 1]
+                            NAME noSFX
+                            NAME y
+                EXPR_RESULT
+                    CALL [free_call: 1]
+                        NAME print
+                        NAME x
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        FUNCTION _func
+            NAME _func
+            PARAM_LIST
+            BLOCK
+                VAR
+                    NAME y
+                VAR
+                    NAME x
+                EXPR_RESULT
+                    CALL [free_call: 1]
+                        NAME print
+                        CALL [side_effect_flags: 15] [free_call: 1]
+                            NAME noSFX
+                            NAME y
+
+
+Subtree1: NAME x
+    CALL [free_call: 1]
+        NAME noSFX
+        NAME y
+
+
+Subtree2: NAME x
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:873)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:434)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:398)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:376)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:443)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.noInline(FlowSensitiveInlineVariablesTest.java:439)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testInlineAcrossSideEffect1(FlowSensitiveInlineVariablesTest.java:329)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

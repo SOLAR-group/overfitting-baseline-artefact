@@ -1,0 +1,160 @@
+--- /source/org/jfree/chart/axis/Axis.java
++++ /source/org/jfree/chart/axis/Axis.java
+@@ -1113,75 +1112,0 @@
+-		if (edge == org.jfree.chart.util.RectangleEdge.TOP) {
+-			java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(
+-			getLabelAngle(), labelBounds.getCenterX(), 
+-			labelBounds.getCenterY());
+-			java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+-			labelBounds = rotatedLabelBounds.getBounds2D();
+-			float w = ((float) (labelBounds.getWidth()));
+-			float h = ((float) (labelBounds.getHeight()));
+-			float labelx = ((float) (dataArea.getCenterX()));
+-			float labely = ((float) ((state.getCursor() - insets.getBottom()) - 
+-			(h / 2.0)));
+-			org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, 
+-			org.jfree.chart.text.TextAnchor.CENTER, getLabelAngle(), org.jfree.chart.text.TextAnchor.CENTER);
+-			hotspot = new java.awt.geom.Rectangle2D.Float(labelx - (w / 2.0F), 
+-			labely - (h / 2.0F), w, h);
+-			state.cursorUp((insets.getTop() + labelBounds.getHeight()) + 
+-			insets.getBottom());
+-		} else 
+-		if (edge == org.jfree.chart.util.RectangleEdge.BOTTOM) {
+-			java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(
+-			getLabelAngle(), labelBounds.getCenterX(), 
+-			labelBounds.getCenterY());
+-			java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+-			labelBounds = rotatedLabelBounds.getBounds2D();
+-			float w = ((float) (labelBounds.getWidth()));
+-			float h = ((float) (labelBounds.getHeight()));
+-			float labelx = ((float) (dataArea.getCenterX()));
+-			float labely = ((float) ((state.getCursor() + insets.getTop()) + 
+-			(h / 2.0)));
+-			org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, 
+-			org.jfree.chart.text.TextAnchor.CENTER, getLabelAngle(), org.jfree.chart.text.TextAnchor.CENTER);
+-			hotspot = new java.awt.geom.Rectangle2D.Float(labelx - (w / 2.0F), 
+-			labely - (h / 2.0F), w, h);
+-			state.cursorDown((insets.getTop() + labelBounds.getHeight()) + 
+-			insets.getBottom());
+-		} else 
+-		if (edge == org.jfree.chart.util.RectangleEdge.LEFT) {
+-			java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(
+-			getLabelAngle() - (java.lang.Math.PI / 2.0), labelBounds.getCenterX(), 
+-			labelBounds.getCenterY());
+-			java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+-			labelBounds = rotatedLabelBounds.getBounds2D();
+-			float w = ((float) (labelBounds.getWidth()));
+-			float h = ((float) (labelBounds.getHeight()));
+-			float labelx = ((float) ((state.getCursor() - insets.getRight()) - 
+-			(w / 2.0)));
+-			float labely = ((float) (dataArea.getCenterY()));
+-			org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, 
+-			org.jfree.chart.text.TextAnchor.CENTER, getLabelAngle() - (java.lang.Math.PI / 2.0), 
+-			org.jfree.chart.text.TextAnchor.CENTER);
+-			hotspot = new java.awt.geom.Rectangle2D.Float(labelx - (w / 2.0F), 
+-			labely - (h / 2.0F), w, h);
+-			state.cursorLeft((insets.getLeft() + labelBounds.getWidth()) + 
+-			insets.getRight());
+-		} else 
+-		if (edge == org.jfree.chart.util.RectangleEdge.RIGHT) {
+-
+-			java.awt.geom.AffineTransform t = java.awt.geom.AffineTransform.getRotateInstance(
+-			getLabelAngle() + (java.lang.Math.PI / 2.0), 
+-			labelBounds.getCenterX(), labelBounds.getCenterY());
+-			java.awt.Shape rotatedLabelBounds = t.createTransformedShape(labelBounds);
+-			labelBounds = rotatedLabelBounds.getBounds2D();
+-			float w = ((float) (labelBounds.getWidth()));
+-			float h = ((float) (labelBounds.getHeight()));
+-			float labelx = ((float) ((state.getCursor() + 
+-			insets.getLeft()) + (w / 2.0)));
+-			float labely = ((float) (dataArea.getY() + (dataArea.getHeight() / 
+-			2.0)));
+-			org.jfree.chart.text.TextUtilities.drawRotatedString(label, g2, labelx, labely, 
+-			org.jfree.chart.text.TextAnchor.CENTER, getLabelAngle() + (java.lang.Math.PI / 2.0), 
+-			org.jfree.chart.text.TextAnchor.CENTER);
+-			hotspot = new java.awt.geom.Rectangle2D.Float(labelx - (w / 2.0F), 
+-			labely - (h / 2.0F), w, h);
+-			state.cursorRight((insets.getLeft() + labelBounds.getWidth()) + 
+-			insets.getRight());
+@@ -1189 +1114,76 @@
+-		}
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+@@ -1197 +1197 @@
+-		}
++		} 		if ((plotState != null) && (hotspot != null)) { 			org.jfree.chart.ChartRenderingInfo owner = plotState.getOwner(); 			org.jfree.chart.entity.EntityCollection entities = owner.getEntityCollection(); 			if (entities != null) { 				entities.add(new org.jfree.chart.entity.AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL));}}
+

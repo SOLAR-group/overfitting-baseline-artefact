@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -267,2 +267,2 @@
+-		double linkY = plotArea.getY() + (gapVertical / 2);
+-		double linkW = plotArea.getWidth() - gapHorizontal;
++		if (true)
++			return; 		double linkY = plotArea.getY() + (gapVertical / 2); 		double linkW = plotArea.getWidth() - gapHorizontal;
+

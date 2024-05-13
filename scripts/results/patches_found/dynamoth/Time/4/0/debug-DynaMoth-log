@@ -1,0 +1,176 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+org.joda.time.TestPeriod_Constructors#testConstructor_RP_RP7
+.
+Time: 0.424
+
+OK (1 test)
+
+org.joda.time.TestPeriod_Constructors#testConstructor_RP_RP8
+.
+Time: 0.174
+
+OK (1 test)
+
+org.joda.time.TestYearMonth_Basics#testCompareTo
+.
+Time: 0.136
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testGetFormatter3
+.
+Time: 0.047
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testGetFormatter2
+.
+Time: 0.091
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testGetFormatter1
+.
+Time: 0.085
+
+OK (1 test)
+
+org.joda.time.chrono.TestISOChronology#testPartialDayOfYearAdd
+.
+Time: 0.175
+
+OK (1 test)
+
+org.joda.time.TestLocalDateTime_Basics#testCompareTo
+.
+Time: 0.135
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith2
+.
+Time: 0.024
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith3e
+.
+Time: 0.053
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith1
+.
+Time: 0.049
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith3d
+.
+Time: 0.049
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith3f
+.
+Time: 0.052
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith4
+.
+Time: 0.049
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith3
+.E
+Time: 0.05
+There was 1 failure:
+1) testWith3(org.joda.time.TestPartial_Basics)
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.fail(Assert.java:53)
+	at org.joda.time.TestPartial_Basics.testWith3(TestPartial_Basics.java:364)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+org.joda.time.TestPeriod_Constructors#testConstructor_RP_RP_PeriodType8
+.
+Time: 0.204
+
+OK (1 test)
+
+org.joda.time.TestPeriod_Constructors#testConstructor_RP_RP_PeriodType7
+.
+Time: 0.203
+
+OK (1 test)
+
+org.joda.time.TestDateTimeUtils#testIsContiguous_RP_GJChronology
+.
+Time: 0.138
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith3a
+.
+Time: 0.048
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith3c
+.
+Time: 0.045
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testWith3b
+.
+Time: 0.046
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testToString5
+.
+Time: 0.047
+
+OK (1 test)
+
+org.joda.time.TestLocalDate_Basics#testCompareTo
+.
+Time: 0.137
+
+OK (1 test)
+
+org.joda.time.TestYearMonthDay_Basics#testCompareTo
+.
+Time: 0.137
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testToString3
+.
+Time: 0.089
+
+OK (1 test)
+
+org.joda.time.TestPartial_Basics#testToString4
+.
+Time: 0.046
+
+OK (1 test)
+
+org.joda.time.TestDateTimeUtils#testIsContiguous_RP
+.
+Time: 0.129
+
+OK (1 test)
+
+org.joda.time.TestMonthDay_Basics#testCompareTo
+.
+Time: 0.132
+
+OK (1 test)
+

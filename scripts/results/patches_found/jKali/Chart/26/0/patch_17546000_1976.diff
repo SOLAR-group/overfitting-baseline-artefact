@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1181,2 +1181,2 @@
+-		nonTitleArea.setRect(chartArea);
+-		this.padding.trim(nonTitleArea);
++		if (true)
++			return; 		nonTitleArea.setRect(chartArea); 		this.padding.trim(nonTitleArea);
+

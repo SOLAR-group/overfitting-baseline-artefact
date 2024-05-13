@@ -1,0 +1,12 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -234,4 +234,4 @@
+-		if (info != null) {
+-			info.setPlotArea(plotArea);
+-			info.setDataArea(plotArea);
+-		}
++		if (true)
++			return;
++
++
+

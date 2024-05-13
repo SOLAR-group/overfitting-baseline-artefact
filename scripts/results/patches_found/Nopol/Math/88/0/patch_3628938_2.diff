@@ -1,0 +1,13 @@
+--- /src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
++++ /src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
+@@ -336,5 +336,7 @@
+             if (basicRow != null) {
+-                for (int j = getNumObjectiveFunctions(); j < getNumObjectiveFunctions() + i; j++) {
+-                    if (tableau.getEntry(basicRow, j) == 1) {
+-                         coefficients[i] = 0;
++                if ((org.apache.commons.math.optimization.linear.SimplexTableau.this.numSlackVariables) != (coefficients.length)) {
++                    for (int j = getNumObjectiveFunctions(); j < getNumObjectiveFunctions() + i; j++) {
++                        if (tableau.getEntry(basicRow, j) == 1) {
++                            coefficients[i] = 0;
++                        }
+                     }

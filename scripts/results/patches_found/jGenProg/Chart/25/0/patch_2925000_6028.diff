@@ -1,0 +1,10 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -238,3 +238,3 @@
+-		if (columnIndex < 0) {
+-			this.columnKeys.add(columnKey);
+-		}
++
++
++
+

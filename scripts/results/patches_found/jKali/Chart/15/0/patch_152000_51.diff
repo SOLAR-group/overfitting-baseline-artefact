@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -265,2 +265,2 @@
+-
+-		double linkX = plotArea.getX() + (gapHorizontal / 2);
++		if (true)
++			return; 		double linkX = plotArea.getX() + (gapHorizontal / 2);
+

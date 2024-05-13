@@ -1,0 +1,213 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+com.google.javascript.rhino.NodeTest#testCheckTreeEqualsStringDifferent
+.
+Time: 1.151
+
+OK (1 test)
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest#testIssue794b
+.E
+Time: 0.966
+There was 1 failure:
+1) testIssue794b(com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest)
+junit.framework.AssertionFailedError: 
+Expected: function _func(){var x=1;try{x=x+someFunction()}catch(e){}x=x+1;try{x=x+someFunction()}catch(e$$1){}return x}
+Result: function _func(){var x;try{x=1+someFunction()}catch(e){}try{x=x+1+someFunction()}catch(e$$1){}return x}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        FUNCTION _func
+            NAME _func
+            PARAM_LIST
+            BLOCK
+                VAR
+                    NAME x
+                        NUMBER 1.0
+                TRY
+                    BLOCK
+                        EXPR_RESULT
+                            ASSIGN
+                                NAME x
+                                ADD
+                                    NAME x
+                                    CALL [free_call: 1]
+                                        NAME someFunction
+                    BLOCK
+                        CATCH
+                            NAME e
+                            BLOCK
+                EXPR_RESULT
+                    ASSIGN
+                        NAME x
+                        ADD
+                            NAME x
+                            NUMBER 1.0
+                TRY
+                    BLOCK
+                        EXPR_RESULT
+                            ASSIGN
+                                NAME x
+                                ADD
+                                    NAME x
+                                    CALL [free_call: 1]
+                                        NAME someFunction
+                    BLOCK
+                        CATCH
+                            NAME e$$1
+                            BLOCK
+                RETURN
+                    NAME x
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        FUNCTION _func
+            NAME _func
+            PARAM_LIST
+            BLOCK
+                VAR
+                    NAME x
+                TRY
+                    BLOCK
+                        EXPR_RESULT
+                            ASSIGN
+                                NAME x
+                                ADD
+                                    NUMBER 1.0
+                                    CALL [free_call: 1]
+                                        NAME someFunction
+                    BLOCK
+                        CATCH
+                            NAME e
+                            BLOCK
+                TRY
+                    BLOCK
+                        EXPR_RESULT
+                            ASSIGN
+                                NAME x
+                                ADD
+                                    ADD
+                                        NAME x
+                                        NUMBER 1.0
+                                    CALL [free_call: 1]
+                                        NAME someFunction
+                    BLOCK
+                        CATCH
+                            NAME e$$1
+                            BLOCK
+                RETURN
+                    NAME x
+
+
+Subtree1: BLOCK
+    VAR
+        NAME x
+            NUMBER 1.0
+    TRY
+        BLOCK
+            EXPR_RESULT
+                ASSIGN
+                    NAME x
+                    ADD
+                        NAME x
+                        CALL [free_call: 1]
+                            NAME someFunction
+        BLOCK
+            CATCH
+                NAME e
+                BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME x
+            ADD
+                NAME x
+                NUMBER 1.0
+    TRY
+        BLOCK
+            EXPR_RESULT
+                ASSIGN
+                    NAME x
+                    ADD
+                        NAME x
+                        CALL [free_call: 1]
+                            NAME someFunction
+        BLOCK
+            CATCH
+                NAME e$$1
+                BLOCK
+    RETURN
+        NAME x
+
+
+Subtree2: BLOCK
+    VAR
+        NAME x
+    TRY
+        BLOCK
+            EXPR_RESULT
+                ASSIGN
+                    NAME x
+                    ADD
+                        NUMBER 1.0
+                        CALL [free_call: 1]
+                            NAME someFunction
+        BLOCK
+            CATCH
+                NAME e
+                BLOCK
+    TRY
+        BLOCK
+            EXPR_RESULT
+                ASSIGN
+                    NAME x
+                    ADD
+                        ADD
+                            NAME x
+                            NUMBER 1.0
+                        CALL [free_call: 1]
+                            NAME someFunction
+        BLOCK
+            CATCH
+                NAME e$$1
+                BLOCK
+    RETURN
+        NAME x
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:892)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:445)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:409)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:387)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.inline(FlowSensitiveInlineVariablesTest.java:526)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.noInline(FlowSensitiveInlineVariablesTest.java:522)
+	at com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest.testIssue794b(FlowSensitiveInlineVariablesTest.java:513)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

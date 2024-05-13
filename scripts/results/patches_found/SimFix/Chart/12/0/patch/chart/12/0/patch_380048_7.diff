@@ -1,0 +1,22 @@
+--- /source/org/jfree/chart/plot/MultiplePiePlot.java
++++ /source/org/jfree/chart/plot/MultiplePiePlot.java
+@@ -145,9 +145,19 @@
+         this.dataset = dataset;
+         PiePlot piePlot = new PiePlot(null);
+         this.pieChart = new JFreeChart(piePlot);
++// start of generated patch
++this.pieChart.removeLegend();
++if(dataset!=null){
++dataset.addChangeListener(this);
++}
++this.dataExtractOrder=TableOrder.BY_COLUMN;
++this.pieChart.setBackgroundPaint(null);
++// end of generated patch
++/* start of original code
+         this.pieChart.removeLegend();
+         this.dataExtractOrder = TableOrder.BY_COLUMN;
+         this.pieChart.setBackgroundPaint(null);
++ end of original code*/
+         TextTitle seriesTitle = new TextTitle("Series Title",
+                 new Font("SansSerif", Font.BOLD, 12));
+         seriesTitle.setPosition(RectangleEdge.BOTTOM);

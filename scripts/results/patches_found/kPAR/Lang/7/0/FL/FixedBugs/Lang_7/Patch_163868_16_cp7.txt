@@ -1,0 +1,40 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..efa89f04 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -449,9 +449,7 @@ public class NumberUtils {
+         if (StringUtils.isBlank(str)) {
+             throw new NumberFormatException("A blank string is not a valid number");
+         }  
+-        if (str.startsWith("--")) {
+-            return null;
+-        }
++        
+         if (str.startsWith("0x") || str.startsWith("-0x") || str.startsWith("0X") || str.startsWith("-0X")) {
+             int hexDigits = str.length() - 2; // drop 0x
+             if (str.startsWith("-")) { // drop -
+diff --git a/src/main/java/org/apache/commons/lang3/time/DateUtils.java b/src/main/java/org/apache/commons/lang3/time/DateUtils.java
+index fa067466..e77563bc 100644
+--- /src/main/java/org/apache/commons/lang3/time/DateUtils.java
++++ /src/main/java/org/apache/commons/lang3/time/DateUtils.java
+@@ -1704,7 +1704,7 @@ public class DateUtils {
+             // The rest of the valid cases
+             case Calendar.DAY_OF_YEAR:
+             case Calendar.DATE:
+-                result += (calendar.get(Calendar.HOUR_OF_DAY) * MILLIS_PER_HOUR) / millisPerUnit;
++                result += (calendar.get(RANGE_WEEK_MONDAY) * MILLIS_PER_HOUR) / millisPerUnit;
+                 //$FALL-THROUGH$
+             case Calendar.HOUR_OF_DAY:
+                 result += (calendar.get(Calendar.MINUTE) * MILLIS_PER_MINUTE) / millisPerUnit;

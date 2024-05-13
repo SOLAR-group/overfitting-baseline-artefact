@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/util/RectangleInsets.java
++++ /source/org/jfree/chart/util/RectangleInsets.java
+@@ -451,2 +451,2 @@
+-		}
+-		return result;
++		} 		return width;
++
+

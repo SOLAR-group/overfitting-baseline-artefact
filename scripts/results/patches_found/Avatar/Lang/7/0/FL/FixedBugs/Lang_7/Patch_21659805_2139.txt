@@ -1,0 +1,40 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..1e560920 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -711,9 +711,7 @@ public class NumberUtils {
+      * @throws NumberFormatException if the value cannot be converted
+      */
+     public static BigDecimal createBigDecimal(String str) {
+-        if (str == null) {
+-            return null;
+-        }
++        
+         // handle JDK1.3.1 bug where "" throws IndexOutOfBoundsException
+         if (StringUtils.isBlank(str)) {
+             throw new NumberFormatException("A blank string is not a valid number");
+diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+index 28f2e4f0..002777d2 100644
+--- /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
++++ /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+@@ -129,7 +129,7 @@ public class DurationFormatUtils {
+         int seconds      = 0;
+         int milliseconds = 0;
+         
+-        if (Token.containsTokenWithValue(tokens, d) ) {
++        if ((Token.containsTokenWithValue(tokens, d)) || !(Token.containsTokenWithValue(tokens, m)) ) {
+             days = (int) (durationMillis / DateUtils.MILLIS_PER_DAY);
+             durationMillis = durationMillis - (days * DateUtils.MILLIS_PER_DAY);
+         }

@@ -1,0 +1,6 @@
+--- /src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java
++++ /src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java
+@@ -251 +251 @@
+-				java.lang.System.arraycopy(x, start, tmpX, start, end - start);
++				java.lang.System.arraycopy(x, start, tmpX, start, end - start); 				signChangeIndex = 2;
+

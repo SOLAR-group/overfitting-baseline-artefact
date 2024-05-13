@@ -1,0 +1,6 @@
+--- /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
++++ /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+@@ -1586 +1586 @@
+-				if ((dMin1 == dN1) && (dMin2 == dN2)) {
++				if (!((dMin1 == dN1) && (dMin2 == dN2))) {
+

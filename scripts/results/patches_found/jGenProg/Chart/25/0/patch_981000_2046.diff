@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -227 +227 @@
+-		int rowIndex = this.rowKeys.indexOf(rowKey);
++		int rowIndex = this.rowKeys.indexOf(rowKey); 		this.rowKeys = new java.util.ArrayList();
+

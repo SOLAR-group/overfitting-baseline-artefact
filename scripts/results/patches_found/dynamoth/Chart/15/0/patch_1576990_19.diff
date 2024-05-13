@@ -1,0 +1,15 @@
+--- /source/org/jfree/chart/plot/XYPlot.java
++++ /source/org/jfree/chart/plot/XYPlot.java
+@@ -4941,6 +4941,8 @@
+         int rendererCount = this.renderers.size();
+-        for (int i = 0; i < rendererCount; i++) {
+-            XYItemRenderer renderer = (XYItemRenderer) this.renderers.get(i);
+-            if (renderer != null) {
+-                renderer.addChangeListener(this);
++        if (true) {
++            for (int i = 0; i < rendererCount; i++) {
++                XYItemRenderer renderer = (XYItemRenderer) this.renderers.get(i);
++                if (renderer != null) {
++                    renderer.addChangeListener(this);
++                }
+             }

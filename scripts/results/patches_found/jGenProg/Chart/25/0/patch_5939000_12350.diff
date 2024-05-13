@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2578 +2578 @@
+-		org.jfree.chart.axis.AxisSpace space = calculateAxisSpace(g2, area);
++		org.jfree.chart.axis.AxisSpace space = calculateAxisSpace(g2, area); 		this.renderers = new org.jfree.chart.util.ObjectList();
+

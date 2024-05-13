@@ -1,0 +1,20 @@
+--- /source/org/jfree/data/statistics/BoxAndWhiskerCalculator.java
++++ /source/org/jfree/data/statistics/BoxAndWhiskerCalculator.java
+@@ -221,7 +221,7 @@
+         int count = values.size();
+-        if (count > 0) {
++        if (0 < count) {
+             if (count % 2 == 1) {
+                 if (count > 1) {
+-                    result = Statistics.calculateMedian(values, count / 2, 
+-                            count - 1);
++                    result = Statistics.calculateMedian(values, count / 2,
++                    count - 1);
+                 }
+@@ -232,4 +232,4 @@
+             else {
+-                result = Statistics.calculateMedian(values, count / 2, 
+-                        count - 1);
++                result = Statistics.calculateMedian(values, count / 2,
++                count - 1);
+             }

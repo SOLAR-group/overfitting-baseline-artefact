@@ -1,0 +1,27 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -1158,7 +1158,7 @@ public class CategoryPlot extends Plot implements ValueAxisPlot,
+      */
+     public CategoryDataset getDataset(int index) {
+         CategoryDataset result = null;
+-        if (this.datasets.size() > index) {
++        if (this.datasets == this.rangeAxes || (this.datasets.size() > index)) {
+             result = (CategoryDataset) this.datasets.get(index);
+         }
+         return result;
+diff --git a/source/org/jfree/chart/util/AbstractObjectList.java b/source/org/jfree/chart/util/AbstractObjectList.java
+index 87715b6..2738516 100644
+--- /source/org/jfree/chart/util/AbstractObjectList.java
++++ /source/org/jfree/chart/util/AbstractObjectList.java
+@@ -157,7 +157,10 @@ public class AbstractObjectList implements Cloneable, Serializable {
+      */
+     protected int indexOf(Object object) {
+         for (int index = 0; index < this.size; index++) {
+-            if (this.objects[index] == object) {
++            if (object == null) {
++    throw new IllegalArgumentException("Null 'object' argument.");
++}
++if (this.objects[index] == object) {
+                 return (index);
+             }
+         }

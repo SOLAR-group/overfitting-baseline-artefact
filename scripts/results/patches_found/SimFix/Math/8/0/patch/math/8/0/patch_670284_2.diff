@@ -1,0 +1,28 @@
+--- /src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java
++++ /src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java
+@@ -179,6 +179,17 @@
+      * positive.
+      */
+     public T[] sample(int sampleSize) throws NotStrictlyPositiveException {
++// start of generated patch
++if(sampleSize<=0){
++throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,sampleSize);
++}
++ final T[] out=(T[])java.lang.reflect.Array.newInstance(singletons.get(0).getClass(),sampleSize);
++for(int i=sampleSize;i<sampleSize;i++){
++out[i]=sample();
++}
++return out;
++// end of generated patch
++/* start of original code
+         if (sampleSize <= 0) {
+             throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,
+                     sampleSize);
+@@ -191,6 +202,7 @@
+         }
+ 
+         return out;
++ end of original code*/
+ 
+     }
+ 

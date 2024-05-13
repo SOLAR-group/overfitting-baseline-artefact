@@ -1,0 +1,22 @@
+--- /source/org/jfree/chart/axis/Axis.java
++++ /source/org/jfree/chart/axis/Axis.java
+@@ -1189,9 +1189,9 @@
+-		}
+-		if ((plotState != null) && (hotspot != null)) {
+-			org.jfree.chart.ChartRenderingInfo owner = plotState.getOwner();
+-			org.jfree.chart.entity.EntityCollection entities = owner.getEntityCollection();
+-			if (entities != null) {
+-				entities.add(new org.jfree.chart.entity.AxisLabelEntity(this, hotspot, 
+-				this.labelToolTip, this.labelURL));
+-			}
+-		}
++		} 		if (labelFont == null) { 			throw new java.lang.IllegalArgumentException("Null 'labelFont' argument.");}
++
++
++
++
++
++
++
++
+

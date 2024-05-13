@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -240,2 +240,2 @@
+-
+-		java.awt.Shape savedClip = g2.getClip();
++		if (true)
++			return; 		java.awt.Shape savedClip = g2.getClip();
+

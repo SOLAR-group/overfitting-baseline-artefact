@@ -1,0 +1,44 @@
+--- /src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java
++++ /src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java
+@@ -1749,7 +1749,7 @@ public class DSCompiler {
+             final int[] orders = getPartialDerivativeOrders(i);
+             double term = ds[dsOffset + i];
+             for (int k = 0; k < orders.length; ++k) {
+-                if (orders[k] > 0) {
++                if (orders[k] < 0) {
+                     try {
+                         term *= FastMath.pow(delta[k], orders[k]) /
+                                 ArithmeticUtils.factorial(orders[k]);
+diff --git a/src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java b/src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+index 674fb0ab2..df3b536f8 100644
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+@@ -106,13 +106,7 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+         }
+         final SubHyperplane<Euclidean1D> lowerCut =
+             new OrientedPoint(new Vector1D(lower), false).wholeHyperplane();
+-        if (Double.isInfinite(upper) && (upper > 0)) {
+-            // the tree must be open on the positive infinity side
+-            return new BSPTree<Euclidean1D>(lowerCut,
+-                                            new BSPTree<Euclidean1D>(Boolean.FALSE),
+-                                            new BSPTree<Euclidean1D>(Boolean.TRUE),
+-                                            null);
+-        }
++        
+ 
+         // the tree must be bounded on the two sides
+         final SubHyperplane<Euclidean1D> upperCut =
+diff --git a/src/main/java/org/apache/commons/math3/util/FastMath.java b/src/main/java/org/apache/commons/math3/util/FastMath.java
+index c5a198a61..f6e666158 100644
+--- /src/main/java/org/apache/commons/math3/util/FastMath.java
++++ /src/main/java/org/apache/commons/math3/util/FastMath.java
+@@ -2661,8 +2661,8 @@ public class FastMath {
+                 return Math.PI * F_1_2;
+             }
+ 
+-            if (y < 0 || 1 / y < 0) {
+-                return -Math.PI * F_1_2;
++            if ((y < 0 || 1 / y < 0) || (y > 0)) {
++                return -Math.PI * x;
+             }
+         }

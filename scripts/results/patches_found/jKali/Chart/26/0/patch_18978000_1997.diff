@@ -1,0 +1,20 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1197,8 +1197,8 @@
+-		while (iterator.hasNext()) {
+-			org.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title) (iterator.next()));
+-			org.jfree.chart.entity.EntityCollection e = drawTitle(currentTitle, g2, nonTitleArea, 
+-			entities != null);
+-			if (e != null) {
+-				entities.addAll(e);
+-			}
+-		} 
++		if (true)
++			return;
++
++
++
++
++
++
+

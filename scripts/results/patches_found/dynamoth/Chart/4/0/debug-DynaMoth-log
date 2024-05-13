@@ -1,0 +1,320 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+org.jfree.chart.renderer.xy.junit.XYStepRendererTests#testSerialization
+.
+Time: 85.159
+
+OK (1 test)
+
+org.jfree.chart.title.junit.LegendGraphicTests#testEquals
+.
+Time: 144.371
+
+OK (1 test)
+
+org.jfree.chart.needle.junit.LongNeedleTests#testEquals
+.
+Time: 0.016
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.XYBarRendererTests#testEquals
+.
+Time: 161.243
+
+OK (1 test)
+
+org.jfree.chart.block.junit.ColorBlockTests#testEquals
+.
+Time: 18.086
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.WaterfallBarRendererTests#testEquals
+.
+Time: 203.215
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.PiePlotTests#testSerialization
+.
+Time: 37.04
+
+OK (1 test)
+
+org.jfree.chart.plot.dial.junit.DialTextAnnotationTests#testSerialization
+.
+Time: 0.032
+
+OK (1 test)
+
+org.jfree.chart.plot.dial.junit.DialTextAnnotationTests#testEquals
+.
+Time: 36.494
+
+OK (1 test)
+
+org.jfree.chart.annotations.junit.XYPolygonAnnotationTests#testSerialization
+.
+Time: 0.034
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.BarRenderer3DTests#testHashcode
+.
+Time: 18.651
+
+OK (1 test)
+
+org.jfree.chart.axis.junit.DateAxisTests#testSerialization
+.
+Time: 18.507
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.XYLineAndShapeRendererTests#testSerialization
+.
+Time: 8.892
+
+OK (1 test)
+
+org.jfree.chart.renderer.junit.LookupPaintScaleTests#testEquals
+.
+Time: 18.002
+
+OK (1 test)
+
+org.jfree.chart.axis.junit.ExtendedCategoryAxisTests#testCloning2
+.
+Time: 108.813
+
+OK (1 test)
+
+org.jfree.chart.title.junit.DateTitleTests#testCloning
+.
+Time: 9.839
+
+OK (1 test)
+
+org.jfree.chart.title.junit.PaintScaleLegendTests#testCloning
+.
+Time: 8.328
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.XYBoxAndWhiskerRendererTests#testSerialization
+.
+Time: 17.614
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.CandlestickRendererTests#testSerialization
+.
+Time: 19.431
+
+OK (1 test)
+
+org.jfree.chart.axis.junit.SymbolAxisTests#testEquals
+.
+Time: 135.766
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.CompassPlotTests#testCloning
+.
+Time: 16.884
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.XYErrorRendererTests#testSerialization2
+.
+Time: 9.168
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.StackedBarRendererTests#testCloning
+.
+Time: 18.246
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.MeterIntervalTests#testSerialization
+.
+Time: 0.022
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.CategoryMarkerTests#testCloning
+.
+Time: 8.755
+
+OK (1 test)
+
+org.jfree.chart.block.junit.LabelBlockTests#testEquals
+.
+Time: 44.387
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.AbstractXYItemRendererTests#testCloning_LegendItemLabelGenerator
+.
+Time: 9.463
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.DeviationRendererTests#testSerialization
+.
+Time: 9.478
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.StackedXYAreaRenderer2Tests#testEquals
+.
+Time: 37.058
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.YIntervalRendererTests#testHashcode
+.
+Time: 19.214
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.CategoryMarkerTests#testEquals
+.
+Time: 93.494
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests#testCloning1
+.
+Time: 35.611
+
+OK (1 test)
+
+org.jfree.chart.needle.junit.WindNeedleTests#testEquals
+.
+Time: 8.414
+
+OK (1 test)
+
+org.jfree.chart.annotations.junit.XYBoxAnnotationTests#testCloning
+.
+Time: 0.035
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.AbstractCategoryItemRendererTests#testCloning2
+.
+Time: 46.212
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.XYPlotTests#testRemoveAnnotation
+.
+Time: 8.828
+
+OK (1 test)
+
+org.jfree.chart.title.junit.ShortTextTitleTests#testHashcode
+.
+Time: 9.034
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.MeterPlotTests#testEquals
+.java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.jfree.chart.renderer.xy.junit.XYLine3DRendererTests#testSerialization
+.java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.jfree.chart.plot.junit.PiePlot3DTests#testSerialization
+.
+Time: 687.54
+
+OK (1 test)
+
+
+Time: 300.548
+
+OK (1 test)
+
+
+Time: 0.006
+
+OK (1 test)
+
+org.jfree.chart.axis.junit.ValueAxisTests#testCloning
+.
+Time: 0.001
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests#testSerialization
+.
+Time: 0.008
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.PiePlotTests#testCloning_LegendLabelGenerator
+.
+Time: 0
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests#testHashcode
+.
+Time: 0.002
+
+OK (1 test)
+
+org.jfree.chart.plot.junit.SpiderWebPlotTests#testEquals
+.
+Time: 0.006
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests#testEquals
+.
+Time: 0
+
+OK (1 test)
+
+org.jfree.chart.plot.dial.junit.DialPlotTests#testCloning
+.
+Time: 0.001
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.XYBubbleRendererTests#testSerialization
+.
+Time: 0.004
+
+OK (1 test)
+
+org.jfree.chart.title.junit.CompositeTitleTests#testEquals
+.
+Time: 0.003
+
+OK (1 test)
+
+org.jfree.chart.junit.JFreeChartTests#testEquals2
+.
+Time: 0.028
+
+OK (1 test)
+
+org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests#testEquals
+.
+Time: 0
+
+OK (1 test)
+
+org.jfree.chart.renderer.xy.junit.StackedXYAreaRendererTests#testEquals
+.
+Time: 0.003
+
+OK (1 test)
+
+org.jfree.chart.junit.Standard

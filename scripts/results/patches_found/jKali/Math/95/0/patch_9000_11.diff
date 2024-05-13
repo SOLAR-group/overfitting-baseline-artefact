@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/math/distribution/FDistributionImpl.java
++++ /src/java/org/apache/commons/math/distribution/FDistributionImpl.java
+@@ -146,2 +146,2 @@
+-
+-		ret = d / (d - 2.0);
++		if (true)
++			return 0d; 		ret = d / (d - 2.0);
+

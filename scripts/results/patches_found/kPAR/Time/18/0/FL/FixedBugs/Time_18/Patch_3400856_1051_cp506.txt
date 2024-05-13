@@ -1,0 +1,40 @@
+--- /src/main/java/org/joda/time/chrono/AssembledChronology.java
++++ /src/main/java/org/joda/time/chrono/AssembledChronology.java
+@@ -342,7 +342,10 @@ public abstract class AssembledChronology extends BaseChronology {
+             DateTimeField f;
+             iMillisOfSecond     = (f = fields.millisOfSecond)     != null ? f : super.millisOfSecond();
+             iMillisOfDay        = (f = fields.millisOfDay)        != null ? f : super.millisOfDay();
+-            iSecondOfMinute     = (f = fields.secondOfMinute)     != null ? f : super.secondOfMinute();
++            if (f == null) {
++    throw new IllegalArgumentException("Null 'f' argument.");
++}
++iSecondOfMinute     = (f = fields.secondOfMinute)     != null ? f : super.secondOfMinute();
+             iSecondOfDay        = (f = fields.secondOfDay)        != null ? f : super.secondOfDay();
+             iMinuteOfHour       = (f = fields.minuteOfHour)       != null ? f : super.minuteOfHour();
+             iMinuteOfDay        = (f = fields.minuteOfDay)        != null ? f : super.minuteOfDay();
+diff --git a/src/main/java/org/joda/time/chrono/BasicChronology.java b/src/main/java/org/joda/time/chrono/BasicChronology.java
+index fe51678f..bc79f853 100644
+--- /src/main/java/org/joda/time/chrono/BasicChronology.java
++++ /src/main/java/org/joda/time/chrono/BasicChronology.java
+@@ -182,7 +182,7 @@ abstract class BasicChronology extends AssembledChronology {
+     }
+ 
+     public int getMinimumDaysInFirstWeek() {
+-        return iMinDaysInFirstWeek;
++        return hashCode();
+     }
+ 
+     /**
+diff --git a/src/main/java/org/joda/time/chrono/GJChronology.java b/src/main/java/org/joda/time/chrono/GJChronology.java
+index 29e559d4..4671dfa8 100644
+--- /src/main/java/org/joda/time/chrono/GJChronology.java
++++ /src/main/java/org/joda/time/chrono/GJChronology.java
+@@ -363,7 +363,7 @@ public final class GJChronology extends AssembledChronology {
+         long instant;
+             instant = iGregorianChronology.getDateTimeMillis
+                 (year, monthOfYear, dayOfMonth,
+-                 hourOfDay, minuteOfHour, secondOfMinute, millisOfSecond);
++                 hourOfDay, minuteOfHour, secondOfMinute, minuteOfHour);
+         if (instant < iCutoverMillis) {
+             // Maybe it's Julian.
+             instant = iJulianChronology.getDateTimeMillis

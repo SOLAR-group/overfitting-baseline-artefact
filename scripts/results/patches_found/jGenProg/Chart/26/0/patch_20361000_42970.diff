@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1213 +1213 @@
+-		this.plot.draw(g2, plotArea, anchor, null, plotInfo);
++
+

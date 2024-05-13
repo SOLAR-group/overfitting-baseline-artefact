@@ -1,0 +1,314 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+org.apache.commons.math.stat.inference.TestUtilsTest#testOneSampleTTest
+.java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.apache.commons.math.stat.inference.TTestFactoryTest#testSmallSamples
+.
+E
+Time: 53.498
+Time: 410.491
+There was 1 failure:
+
+OK1) testSmallSamples(org.apache.commons.math.stat.inference.TTestFactoryTest)
+ (1 test)
+
+junit.framework.AssertionFailedError: expected:<0.198727388935> but was:<0.037540549548524815>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:120)
+	at junit.framework.Assert.assertEquals(Assert.java:129)
+	at junit.framework.TestCase.assertEquals(TestCase.java:288)
+	at org.apache.commons.math.stat.inference.TTestTest.testSmallSamples(TTestTest.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+org.apache.commons.math.stat.correlation.PearsonsCorrelationTest#testPValueNearZero
+.E
+Time: 21.749
+There was 1 failure:
+1) testPValueNearZero(org.apache.commons.math.stat.correlation.PearsonsCorrelationTest)
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at org.apache.commons.math.stat.correlation.PearsonsCorrelationTest.testPValueNearZero(PearsonsCorrelationTest.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+org.apache.commons.math.stat.inference.TTestTest#testSmallSamples
+.
+Time: 11.479
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TestUtilsTest#testTwoSampleTHomoscedastic
+.
+Time: 23.177
+
+OK (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testInference
+.java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.apache.commons.math.stat.inference.TestUtilsTest#testSmallSamples
+
+Time: 376.135
+
+OK (1 test)
+
+.
+Time: 9.892
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TestUtilsTest#testPaired
+.
+Time: 20.737
+
+OK (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testRemoveMultiple
+.
+Time: 130.577
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TTestFactoryTest#testOneSampleT
+.
+Time: 11.215
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TTestFactoryTest#testTwoSampleTHomoscedastic
+.
+Time: 21.178
+
+OK (1 test)
+
+org.apache.commons.math.distribution.TDistributionTest#testSmallDf
+.java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testRandom
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testRemoveXY
+.
+Time: 149.006
+
+OK (1 test)
+
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.apache.commons.math.stat.inference.TTestFactoryTest#testTwoSampleTHeterscedastic
+.
+Time: 165.565
+
+OK (1 test)
+
+.java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testRemoveSingle
+
+Time: 174.945
+
+OK (1 test)
+
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at fr.inria.lille.repair.MethodTestRunner.main(MethodTestRunner.java:27)
+org.apache.commons.math.stat.inference.TTestFactoryTest#testPaired
+..
+Time: 157.503
+
+
+OK (1 test)
+
+Time: 11.186
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TTestTest#testTwoSampleTHomoscedastic
+.
+
+Time: 1,844.46
+
+OKTime: 0
+
+OK (1 test)
+
+ (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testPerfect
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TTestFactoryTest#testOneSampleTTest
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TTestTest#testPaired
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TestUtilsTest#testTwoSampleTHeterscedastic
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.correlation.PearsonsCorrelationTest#testSwissFertility
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.distribution.TDistributionTest#testInverseCumulativeProbabilities
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TTestTest#testOneSampleTTest
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TTestTest#testTwoSampleTHeterscedastic
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.inference.TTestTest#testOneSampleT
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest#testPValueNearZero
+.E
+Time: 0
+There was 1 failure:
+1) testPValueNearZero(org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest)
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at org.apache.commons.math.stat.correlation.PearsonsCorrelationTest.testPValueNearZero(PearsonsCorrelationTest.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+org.apache.commons.math.stat.inference.TestUtilsTest#testOneSampleT
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.correlation.PearsonsCorrelationTest#testLongly
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.regression.SimpleRegressionTest#testPerfectNegative
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.distribution.TDistributionTest#testCumulativeProbabilities
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest#testSwissFertility
+.
+Time: 0
+
+OK (1 test)
+

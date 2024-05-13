@@ -1,0 +1,180 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSolutionBelowSide
+.
+Time: 1.4
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSolutionBelowSide
+.
+Time: 0.72
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSolutionRightSide
+.
+Time: 0.703
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSinZero
+.
+Time: 0.113
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testIssue631
+.E
+Time: 3.046
+There was 1 failure:
+1) testIssue631(org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest)
+java.lang.AssertionError: Expected exception: org.apache.commons.math.exception.TooManyEvaluationsException
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:32)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSolutionAboveSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSolutionRightSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testRootEndpoints
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testBadEndpoints
+.
+Time: 0.006
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSolutionLeftSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSolutionAboveSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testQuinticZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSolutionLeftSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSolutionBelowSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testQuinticZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testRootEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testQuinticZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testBadEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testRootEndpoints
+.
+Time: 0.001
+
+OK (1 test)
+
+org.apache.commons.math.ode.events.OverlappingEventsTest#testOverlappingEvents0
+.
+Time: 0.014
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testBadEndpoints
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSolutionRightSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest#testSolutionLeftSide
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.IllinoisSolverTest#testSinZero
+.
+Time: 0
+
+OK (1 test)
+
+org.apache.commons.math.analysis.solvers.PegasusSolverTest#testSolutionAboveSide
+.
+Time: 0
+
+OK (1 test)
+

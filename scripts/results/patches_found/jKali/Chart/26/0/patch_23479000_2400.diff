@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/axis/Axis.java
++++ /source/org/jfree/chart/axis/Axis.java
+@@ -342,2 +342,2 @@
+-		return this.label;
+-	}
++		if (true)
++			return null; 		return this.label;}
+

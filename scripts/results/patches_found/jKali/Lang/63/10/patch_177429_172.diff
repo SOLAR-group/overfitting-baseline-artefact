@@ -1,0 +1,6 @@
+--- /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
++++ /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
+@@ -436 +436 @@
+-		if (endValue < startValue) {
++		if (false) {
+

@@ -1,0 +1,17 @@
+--- /src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java
++++ /src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java
+@@ -131,11 +131,11 @@
+ 
+ 		if ((yInitial * yMax) < 0) {
+ 			return solve(f, initial, yInitial, max, yMax, initial, yInitial);
+-		}
++		} 		return solve(f, min, max);
++
+ 
+ 
+ 
+-		return solve(f, min, yMin, max, yMax, initial, yInitial);
+ 
+ 	}
+ 
+

@@ -1,0 +1,6 @@
+--- /src/com/google/javascript/jscomp/FunctionInjector.java
++++ /src/com/google/javascript/jscomp/FunctionInjector.java
+@@ -701 +701 @@
+-			if (stmt.isReturn()) {
++			if (!stmt.isReturn()) {
+

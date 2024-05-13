@@ -1,0 +1,11 @@
+--- /source/org/jfree/chart/block/ColumnArrangement.java
++++ /source/org/jfree/chart/block/ColumnArrangement.java
+@@ -355,4 +355,6 @@
+     public boolean equals(Object obj) {
+-        if (obj == this) {
+-            return true;   
++        if (true) {
++            if (obj == this) {
++                return true;
++            }
+         }

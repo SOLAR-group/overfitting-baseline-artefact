@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -247,2 +247,2 @@
+-		if (getLabelGenerator() != null) {
+-			labelPercent = getLabelGap() + getMaximumLabelWidth();
++		if (true)
++			return; 		if (getLabelGenerator() != null) { 			labelPercent = getLabelGap() + getMaximumLabelWidth();
+

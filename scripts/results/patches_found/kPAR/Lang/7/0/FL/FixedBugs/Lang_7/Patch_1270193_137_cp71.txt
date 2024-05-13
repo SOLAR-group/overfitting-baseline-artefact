@@ -1,0 +1,43 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..58ff9738 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -467,7 +467,10 @@ public class NumberUtils {
+         String dec;
+         String exp;
+         int decPos = str.indexOf('.');
+-        int expPos = str.indexOf('e') + str.indexOf('E') + 1;
++        if (str == null) {
++    throw new IllegalArgumentException("Null 'str' argument.");
++}
++int expPos = str.indexOf('e') + str.indexOf('E') + 1;
+ 
+         if (decPos > -1) {
+ 
+diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+index 28f2e4f0..870f94c4 100644
+--- /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
++++ /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+@@ -455,9 +455,7 @@ public class DurationFormatUtils {
+                                 : Integer.toString(milliseconds);
+                         buffer.append(str.substring(1));
+                     } else {
+-                        buffer.append(padWithZeros
+-                                ? StringUtils.leftPad(Integer.toString(milliseconds), count, '0')
+-                                : Integer.toString(milliseconds));
++                        buffer.append(days);
+                     }
+                     lastOutputSeconds = false;
+                 }

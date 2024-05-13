@@ -1,0 +1,17 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2560,0 +2561,6 @@
++		if (true)
++			return;
++
++
++
++
+@@ -2564,6 +2569,0 @@
+-		if (getRenderer() != null) {
+-			getRenderer().drawBackground(g2, this, dataArea);
+-		} else 
+-		{
+-			drawBackground(g2, dataArea);
+-		}
+

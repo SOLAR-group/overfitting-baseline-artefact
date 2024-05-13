@@ -1,0 +1,150 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -112,5 +111,0 @@
+-			if (columnKey != null) {
+-				result = rowData.getObject(columnKey);
+-			}
+-		}
+-		return result;
+@@ -118 +112,0 @@
+-	}
+@@ -127,3 +120,0 @@
+-	public java.lang.Comparable getRowKey(int row) {
+-		return ((java.lang.Comparable) (this.rowKeys.get(row)));
+-	}
+@@ -138,3 +128,0 @@
+-	public int getRowIndex(java.lang.Comparable key) {
+-		return this.rowKeys.indexOf(key);
+-	}
+@@ -147,3 +134,0 @@
+-	public java.util.List getRowKeys() {
+-		return java.util.Collections.unmodifiableList(this.rowKeys);
+-	}
+@@ -158,3 +142,0 @@
+-	public java.lang.Comparable getColumnKey(int column) {
+-		return ((java.lang.Comparable) (this.columnKeys.get(column)));
+-	}
+@@ -169,3 +150,0 @@
+-	public int getColumnIndex(java.lang.Comparable key) {
+-		return this.columnKeys.indexOf(key);
+-	}
+@@ -178,3 +156,0 @@
+-	public java.util.List getColumnKeys() {
+-		return java.util.Collections.unmodifiableList(this.columnKeys);
+-	}
+@@ -190 +165,0 @@
+-	public java.lang.Object getObject(java.lang.Comparable rowKey, java.lang.Comparable columnKey) {
+@@ -192,7 +166,0 @@
+-		java.lang.Object result = null;
+-		int row = this.rowKeys.indexOf(rowKey);
+-		if (row >= 0) {
+-			org.jfree.data.KeyedObjects rowData = ((org.jfree.data.KeyedObjects) (this.rows.get(row)));
+-			result = rowData.getObject(columnKey);
+-		}
+-		return result;
+@@ -200 +167,0 @@
+-	}
+@@ -209,5 +175,0 @@
+-	public void addObject(java.lang.Object object, 
+-	java.lang.Comparable rowKey, 
+-	java.lang.Comparable columnKey) {
+-		setObject(object, rowKey, columnKey);
+-	}
+@@ -222,3 +183,0 @@
+-	public void setObject(java.lang.Object object, 
+-	java.lang.Comparable rowKey, 
+-	java.lang.Comparable columnKey) {
+@@ -226,15 +184,0 @@
+-		org.jfree.data.KeyedObjects row;
+-		int rowIndex = this.rowKeys.indexOf(rowKey);
+-		if (rowIndex >= 0) {
+-			row = ((org.jfree.data.KeyedObjects) (this.rows.get(rowIndex)));
+-		} else 
+-		{
+-			this.rowKeys.add(rowKey);
+-			row = new org.jfree.data.KeyedObjects();
+-			this.rows.add(row);
+-		}
+-		row.setObject(columnKey, object);
+-		int columnIndex = this.columnKeys.indexOf(columnKey);
+-		if (columnIndex < 0) {
+-			this.columnKeys.add(columnKey);
+-		}
+@@ -242 +185,0 @@
+-	}
+@@ -250,2 +192,0 @@
+-	public void removeObject(java.lang.Comparable rowKey, java.lang.Comparable columnKey) {
+-		setObject(null, rowKey, columnKey);
+@@ -254 +194,0 @@
+-	}
+@@ -261,4 +200,0 @@
+-	public void removeRow(int rowIndex) {
+-		this.rowKeys.remove(rowIndex);
+-		this.rows.remove(rowIndex);
+-	}
+@@ -267,0 +204,64 @@
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++			if (columnKey == null) {
++				throw new java.lang.IllegalArgumentException("Null 'columnKey' argument.");
++			}} 		return result;} 	public java.lang.Comparable getRowKey(int row) { 		return ((java.lang.Comparable) (this.rowKeys.get(row)));} 	public int getRowIndex(java.lang.Comparable key) { 		return this.rowKeys.indexOf(key);} 	public java.util.List getRowKeys() { 		return java.util.Collections.unmodifiableList(this.rowKeys);} 	public java.lang.Comparable getColumnKey(int column) { 		return ((java.lang.Comparable) (this.columnKeys.get(column)));} 	public int getColumnIndex(java.lang.Comparable key) { 		return this.columnKeys.indexOf(key);} 	public java.util.List getColumnKeys() { 		return java.util.Collections.unmodifiableList(this.columnKeys);} 	public java.lang.Object getObject(java.lang.Comparable rowKey, java.lang.Comparable columnKey) { 		java.lang.Object result = null; 		int row = this.rowKeys.indexOf(rowKey); 		if (row >= 0) { 			org.jfree.data.KeyedObjects rowData = ((org.jfree.data.KeyedObjects) (this.rows.get(row))); 			result = rowData.getObject(columnKey);} 		return result;} 	public void addObject(java.lang.Object object, java.lang.Comparable rowKey, java.lang.Comparable columnKey) { 		setObject(object, rowKey, columnKey);} 	public void setObject(java.lang.Object object, java.lang.Comparable rowKey, java.lang.Comparable columnKey) { 		org.jfree.data.KeyedObjects row; 		int rowIndex = this.rowKeys.indexOf(rowKey); 		if (rowIndex >= 0) { 			row = ((org.jfree.data.KeyedObjects) (this.rows.get(rowIndex)));} else { 			this.rowKeys.add(rowKey); 			row = new org.jfree.data.KeyedObjects(); 			this.rows.add(row);} 		row.setObject(columnKey, object); 		int columnIndex = this.columnKeys.indexOf(columnKey); 		if (columnIndex < 0) { 			this.columnKeys.add(columnKey);}} 	public void removeObject(java.lang.Comparable rowKey, java.lang.Comparable columnKey) { 		setObject(null, rowKey, columnKey);} 	public void removeRow(int rowIndex) { 		this.rowKeys.remove(rowIndex); 		this.rows.remove(rowIndex);}
+

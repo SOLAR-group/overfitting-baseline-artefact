@@ -1,0 +1,43 @@
+--- /src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java
++++ /src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java
+@@ -113,5 +112,0 @@
+-		double yMin = f.value(min);
+-		if (java.lang.Math.abs(yMin) <= functionValueAccuracy) {
+-			setResult(yMin, 0);
+-			return result;
+-		}
+@@ -120,3 +114,0 @@
+-		if ((yInitial * yMin) < 0) {
+-			return solve(f, min, yMin, initial, yInitial, min, yMin);
+-		}
+@@ -125,5 +116,0 @@
+-		double yMax = f.value(max);
+-		if (java.lang.Math.abs(yMax) <= functionValueAccuracy) {
+-			setResult(yMax, 0);
+-			return result;
+-		}
+@@ -132,3 +118,0 @@
+-		if ((yInitial * yMax) < 0) {
+-			return solve(f, initial, yInitial, max, yMax, initial, yInitial);
+-		}
+@@ -138 +121,0 @@
+-		return solve(f, min, yMin, max, yMax, initial, yInitial);
+@@ -139,0 +123,17 @@
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++		verifyBracketing(min, max, f); 		double yMin = f.value(min); 		if (java.lang.Math.abs(yMin) <= functionValueAccuracy) { 			setResult(yMin, 0); 			return result;} 		if ((yInitial * yMin) < 0) { 			return solve(f, min, yMin, initial, yInitial, min, yMin);} 		double yMax = f.value(max); 		if (java.lang.Math.abs(yMax) <= functionValueAccuracy) { 			setResult(yMax, 0); 			return result;} 		if ((yInitial * yMax) < 0) { 			return solve(f, initial, yInitial, max, yMax, initial, yInitial);} 		return solve(f, min, yMin, max, yMax, initial, yInitial);
+

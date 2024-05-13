@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/axis/AxisCollection.java
++++ /source/org/jfree/chart/axis/AxisCollection.java
+@@ -126,2 +126,2 @@
+-		if (axis == null) {
+-			throw new java.lang.IllegalArgumentException("Null 'axis' argument.");
++		if (true)
++			return; 		if (axis == null) { 			throw new java.lang.IllegalArgumentException("Null 'axis' argument.");
+

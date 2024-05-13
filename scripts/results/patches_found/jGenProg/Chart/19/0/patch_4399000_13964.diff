@@ -1,0 +1,14 @@
+--- /source/org/jfree/chart/util/AbstractObjectList.java
++++ /source/org/jfree/chart/util/AbstractObjectList.java
+@@ -160,5 +160,5 @@
+-			if (this.objects[index] == object) {
+-				return index;
+-			}
+-		}
+-		return -1;
++
++
++			if (object == null) {
++				throw new java.lang.IllegalArgumentException("Null 'object' argument.");
++			} 			if (this.objects[index] == object) { 				return index;}} 		return -1;
+

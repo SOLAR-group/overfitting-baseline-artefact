@@ -1,0 +1,55 @@
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+@@ -106,13 +106,7 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+         }
+         final SubHyperplane<Euclidean1D> lowerCut =
+             new OrientedPoint(new Vector1D(lower), false).wholeHyperplane();
+-        if (Double.isInfinite(upper) && (upper > 0)) {
+-            // the tree must be open on the positive infinity side
+-            return new BSPTree<Euclidean1D>(lowerCut,
+-                                            new BSPTree<Euclidean1D>(Boolean.FALSE),
+-                                            new BSPTree<Euclidean1D>(Boolean.TRUE),
+-                                            null);
+-        }
++        
+ 
+         // the tree must be bounded on the two sides
+         final SubHyperplane<Euclidean1D> upperCut =
+@@ -183,7 +177,10 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+     public double getSup() {
+         BSPTree<Euclidean1D> node = getTree(false);
+         double  sup  = Double.NEGATIVE_INFINITY;
+-        while (node.getCut() != null) {
++        if (node == null) {
++    throw new IllegalArgumentException("Null 'node' argument.");
++}
++while (node.getCut() != null) {
+             final OrientedPoint op = (OrientedPoint) node.getCut().getHyperplane();
+             sup  = op.getLocation().getX();
+             node = op.isDirect() ? node.getPlus() : node.getMinus();
+diff --git a/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java b/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java
+index 7c9a28f14..406366cc7 100644
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java
+@@ -163,7 +163,7 @@ public class Line implements Embedding<Euclidean3D, Euclidean1D> {
+     public double distance(final Vector3D p) {
+         final Vector3D d = p.subtract(zero);
+         final Vector3D n = new Vector3D(1.0, d, -d.dotProduct(direction), direction);
+-        return n.getNorm();
++        return this.direction.getNorm();
+     }
+ 
+     /** Compute the shortest distance between the instance and another line.
+diff --git a/src/main/java/org/apache/commons/math3/util/FastMath.java b/src/main/java/org/apache/commons/math3/util/FastMath.java
+index c5a198a61..2591281d3 100644
+--- /src/main/java/org/apache/commons/math3/util/FastMath.java
++++ /src/main/java/org/apache/commons/math3/util/FastMath.java
+@@ -2661,7 +2661,7 @@ public class FastMath {
+                 return Math.PI * F_1_2;
+             }
+ 
+-            if (y < 0 || 1 / y < 0) {
++            if ((y < 0 || 1 / y < 0) || (y > 0)) {
+                 return -Math.PI * F_1_2;
+             }
+         }

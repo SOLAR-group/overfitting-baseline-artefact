@@ -1,0 +1,86 @@
+--- /src/java/org/apache/commons/lang/BooleanUtils.java
++++ /src/java/org/apache/commons/lang/BooleanUtils.java
+@@ -682,16 +681,0 @@
+-				}
+-			case 4 : 				{
+-					char ch = str.charAt(0);
+-					if (ch == 't') {
+-						return 
+-						(((str.charAt(1) == 'r') || (str.charAt(1) == 'R')) && 
+-						((str.charAt(2) == 'u') || (str.charAt(2) == 'U'))) && 
+-						((str.charAt(3) == 'e') || (str.charAt(3) == 'E'));
+-					}
+-					if (ch == 'T') {
+-						return 
+-						(((str.charAt(1) == 'R') || (str.charAt(1) == 'r')) && 
+-						((str.charAt(2) == 'U') || (str.charAt(2) == 'u'))) && 
+-						((str.charAt(3) == 'E') || (str.charAt(3) == 'e'));
+-					}
+-				}}
+@@ -699,2 +682,0 @@
+-		return false;
+-	}
+@@ -731,12 +712,0 @@
+-	public static boolean toBoolean(java.lang.String str, java.lang.String trueString, java.lang.String falseString) {
+-		if (str == null) {
+-			if (trueString == null) {
+-				return true;
+-			} else if (falseString == null) {
+-				return false;
+-			}
+-		} else if (str.equals(trueString)) {
+-			return true;
+-		} else if (str.equals(falseString)) {
+-			return false;
+-		}
+@@ -744,2 +713,0 @@
+-		throw new java.lang.IllegalArgumentException("The String did not match either specified value");
+-	}
+@@ -763,3 +730,0 @@
+-	public static java.lang.String toStringTrueFalse(java.lang.Boolean bool) {
+-		return org.apache.commons.lang.BooleanUtils.toString(bool, "true", "false", null);
+-	}
+@@ -781,3 +745,0 @@
+-	public static java.lang.String toStringOnOff(java.lang.Boolean bool) {
+-		return org.apache.commons.lang.BooleanUtils.toString(bool, "on", "off", null);
+-	}
+@@ -790,0 +753,38 @@
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++					return false;} 			case 4 : 				{ 					char ch = str.charAt(0); 					if (ch == 't') { 						return (((str.charAt(1) == 'r') || (str.charAt(1) == 'R')) && ((str.charAt(2) == 'u') || (str.charAt(2) == 'U'))) && ((str.charAt(3) == 'e') || (str.charAt(3) == 'E'));} 					if (ch == 'T') { 						return (((str.charAt(1) == 'R') || (str.charAt(1) == 'r')) && ((str.charAt(2) == 'U') || (str.charAt(2) == 'u'))) && ((str.charAt(3) == 'E') || (str.charAt(3) == 'e'));}}} 		return false;} 	public static boolean toBoolean(java.lang.String str, java.lang.String trueString, java.lang.String falseString) { 		if (str == null) { 			if (trueString == null) { 				return true;} else if (falseString == null) { 				return false;}} else if (str.equals(trueString)) { 			return true;} else if (str.equals(falseString)) { 			return false;} 		throw new java.lang.IllegalArgumentException("The String did not match either specified value");} 	public static java.lang.String toStringTrueFalse(java.lang.Boolean bool) { 		return org.apache.commons.lang.BooleanUtils.toString(bool, "true", "false", null);} 	public static java.lang.String toStringOnOff(java.lang.Boolean bool) { 		return org.apache.commons.lang.BooleanUtils.toString(bool, "on", "off", null);}
+

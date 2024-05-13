@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
++++ /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
+@@ -435,2 +435,2 @@
+-		int startValue = start.get(field);
+-		if (endValue < startValue) {
++		if (true)
++			return 0; 		int startValue = start.get(field); 		if (endValue < startValue) {
+

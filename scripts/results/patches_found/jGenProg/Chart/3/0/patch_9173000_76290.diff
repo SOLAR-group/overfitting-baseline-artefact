@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/time/TimeSeries.java
++++ /source/org/jfree/data/time/TimeSeries.java
+@@ -890 +890 @@
+-			}
++			} 			findBoundsByIteration();
+

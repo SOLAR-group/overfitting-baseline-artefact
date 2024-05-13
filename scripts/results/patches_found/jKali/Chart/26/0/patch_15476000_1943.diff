@@ -1,0 +1,13 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1131,0 +1132,4 @@
++		if (true)
++			return;
++
++
+@@ -1134,4 +1137,0 @@
+-		if (info != null) {
+-			info.clear();
+-			info.setChartArea(chartArea);
+-		}
+

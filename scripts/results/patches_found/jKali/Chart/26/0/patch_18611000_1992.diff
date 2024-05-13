@@ -1,0 +1,18 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1188,7 +1188,7 @@
+-		if (this.title != null) {
+-			org.jfree.chart.entity.EntityCollection e = drawTitle(this.title, g2, nonTitleArea, 
+-			entities != null);
+-			if (e != null) {
+-				entities.addAll(e);
+-			}
+-		}
++		if (true)
++			return;
++
++
++
++
++
+

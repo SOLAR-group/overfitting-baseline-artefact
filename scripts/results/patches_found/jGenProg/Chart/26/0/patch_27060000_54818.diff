@@ -1,0 +1,65 @@
+--- /source/org/jfree/chart/util/RectangleInsets.java
++++ /source/org/jfree/chart/util/RectangleInsets.java
+@@ -422,2 +421,0 @@
+-		return result;
+-	}
+@@ -432,7 +429,0 @@
+-	public double calculateLeftOutset(double width) {
+-		double result = this.left;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = (width / ((1 - this.left) - this.right)) * this.left;
+-		}
+-		return result;
+-	}
+@@ -447,7 +437,0 @@
+-	public double calculateRightInset(double width) {
+-		double result = this.right;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = this.right * width;
+-		}
+-		return result;
+-	}
+@@ -462,7 +445,0 @@
+-	public double calculateRightOutset(double width) {
+-		double result = this.right;
+-		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) {
+-			result = (width / ((1 - this.left) - this.right)) * this.right;
+-		}
+-		return result;
+-	}
+@@ -477,3 +453,0 @@
+-	public double trimWidth(double width) {
+-		return (width - calculateLeftInset(width)) - calculateRightInset(width);
+-	}
+@@ -488,2 +462,28 @@
+-	public double extendWidth(double width) {
+-		return (width + calculateLeftOutset(width)) + calculateRightOutset(width);
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++		return (width + calculateLeftOutset(width)) + calculateRightOutset(width);} 	public double calculateLeftOutset(double width) { 		double result = this.left; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = (width / ((1 - this.left) - this.right)) * this.left;} 		return result;} 	public double calculateRightInset(double width) { 		double result = this.right; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = this.right * width;} 		return result;} 	public double calculateRightOutset(double width) { 		double result = this.right; 		if (this.unitType == org.jfree.chart.util.UnitType.RELATIVE) { 			result = (width / ((1 - this.left) - this.right)) * this.right;} 		return result;} 	public double trimWidth(double width) { 		return (width - calculateLeftInset(width)) - calculateRightInset(width);} 	public double extendWidth(double width) { 		return (width + calculateLeftOutset(width)) + calculateRightOutset(width);
+

@@ -1,0 +1,64 @@
+--- /src/main/java/org/apache/commons/lang3/StringUtils.java
++++ /src/main/java/org/apache/commons/lang3/StringUtils.java
+@@ -214,34 +214,7 @@ public class StringUtils {
+         return !StringUtils.isEmpty(cs);
+     }
+ 
+-    /**
+-     * <p>Checks if a CharSequence is whitespace, empty ("") or null.</p>
+-     *
+-     * <pre>
+-     * StringUtils.isBlank(null)      = true
+-     * StringUtils.isBlank("")        = true
+-     * StringUtils.isBlank(" ")       = true
+-     * StringUtils.isBlank("bob")     = false
+-     * StringUtils.isBlank("  bob  ") = false
+-     * </pre>
+-     *
+-     * @param cs  the CharSequence to check, may be null
+-     * @return {@code true} if the CharSequence is null, empty or whitespace
+-     * @since 2.0
+-     * @since 3.0 Changed signature from isBlank(String) to isBlank(CharSequence)
+-     */
+-    public static boolean isBlank(CharSequence cs) {
+-        int strLen;
+-        if (cs == null || (strLen = cs.length()) == 0) {
+-            return true;
+-        }
+-        for (int i = 0; i < strLen; i++) {
+-            if (Character.isWhitespace(cs.charAt(i)) == false) {
+-                return false;
+-            }
+-        }
+-        return true;
+-    }
++    
+ 
+     /**
+      * <p>Checks if a CharSequence is not empty (""), not null and not whitespace only.</p>
+diff --git a/src/main/java/org/apache/commons/lang3/SystemUtils.java b/src/main/java/org/apache/commons/lang3/SystemUtils.java
+index ae87e7c3..80e7eba0 100644
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java b/src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
+index 5a70d3a5..3a586550 100644
+--- /src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
++++ /src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java
+@@ -385,7 +385,7 @@ public class FastDatePrinter implements DatePrinter, Serializable {
+             return format(((Long) obj).longValue(), toAppendTo);
+         } else {
+             throw new IllegalArgumentException("Unknown class: " +
+-                (obj == null ? "<null>" : obj.getClass().getName()));
++                pos);
+         }
+     }

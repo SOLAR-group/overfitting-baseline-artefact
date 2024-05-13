@@ -1,0 +1,41 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..4a534cd1 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -647,7 +647,10 @@ public class NumberUtils {
+         if (str == null) {
+             return null;
+         }
+-        return Double.valueOf(str);
++        if (str == null) {
++    return null;
++}
++return Double.valueOf(str);
+     }
+ 
+     /**
+diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+index 28f2e4f0..9a1af595 100644
+--- /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
++++ /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+@@ -133,7 +133,7 @@ public class DurationFormatUtils {
+             days = (int) (durationMillis / DateUtils.MILLIS_PER_DAY);
+             durationMillis = durationMillis - (days * DateUtils.MILLIS_PER_DAY);
+         }
+-        if (Token.containsTokenWithValue(tokens, H) ) {
++        if ((Token.containsTokenWithValue(tokens, H)) || !(Token.containsTokenWithValue(tokens, s)) ) {
+             hours = (int) (durationMillis / DateUtils.MILLIS_PER_HOUR);
+             durationMillis = durationMillis - (hours * DateUtils.MILLIS_PER_HOUR);
+         }

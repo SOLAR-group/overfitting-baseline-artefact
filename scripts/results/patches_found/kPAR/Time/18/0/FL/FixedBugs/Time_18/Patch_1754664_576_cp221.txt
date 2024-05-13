@@ -1,0 +1,44 @@
+--- /src/main/java/org/joda/time/DateMidnight.java
++++ /src/main/java/org/joda/time/DateMidnight.java
+@@ -1135,14 +1135,7 @@ public final class DateMidnight
+         return new Property(this, getChronology().weekyear());
+     }
+ 
+-    /**
+-     * Get the month of year property which provides access to advanced functionality.
+-     * 
+-     * @return the month of year property
+-     */
+-    public Property monthOfYear() {
+-        return new Property(this, getChronology().monthOfYear());
+-    }
++    
+ 
+     /**
+      * Get the week of a week based year property which provides access to advanced functionality.
+diff --git a/src/main/java/org/joda/time/chrono/AssembledChronology.java b/src/main/java/org/joda/time/chrono/AssembledChronology.java
+index 663813ca..80cc598a 100644
+--- /src/main/java/org/joda/time/chrono/AssembledChronology.java
++++ /src/main/java/org/joda/time/chrono/AssembledChronology.java
+@@ -354,7 +354,7 @@ public abstract class AssembledChronology extends BaseChronology {
+             iDayOfWeek          = (f = fields.dayOfWeek)          != null ? f : super.dayOfWeek();
+             iDayOfMonth         = (f = fields.dayOfMonth)         != null ? f : super.dayOfMonth();
+             iDayOfYear          = (f = fields.dayOfYear)          != null ? f : super.dayOfYear();
+-            iWeekOfWeekyear     = (f = fields.weekOfWeekyear)     != null ? f : super.weekOfWeekyear();
++            iWeekOfWeekyear     = (f = fields.weekOfWeekyear)     != null ? f : super.secondOfMinute();
+             iWeekyear           = (f = fields.weekyear)           != null ? f : super.weekyear();
+             iWeekyearOfCentury  = (f = fields.weekyearOfCentury)  != null ? f : super.weekyearOfCentury();
+             iMonthOfYear        = (f = fields.monthOfYear)        != null ? f : super.monthOfYear();
+diff --git a/src/main/java/org/joda/time/chrono/BasicChronology.java b/src/main/java/org/joda/time/chrono/BasicChronology.java
+index fe51678f..bc79f853 100644
+--- /src/main/java/org/joda/time/chrono/BasicChronology.java
++++ /src/main/java/org/joda/time/chrono/BasicChronology.java
+@@ -182,7 +182,7 @@ abstract class BasicChronology extends AssembledChronology {
+     }
+ 
+     public int getMinimumDaysInFirstWeek() {
+-        return iMinDaysInFirstWeek;
++        return hashCode();
+     }
+ 
+     /**

@@ -1,0 +1,12 @@
+--- /source/org/jfree/chart/block/BorderArrangement.java
++++ /source/org/jfree/chart/block/BorderArrangement.java
+@@ -148,7 +148,8 @@ public class BorderArrangement implements Arrangement, Serializable {
+             if (h == LengthConstraintType.NONE) {
+                 contentSize = arrangeFN(container, g2, constraint.getWidth());
+             }
+-            else if (h == LengthConstraintType.FIXED) {
++            else clear();
++	if (h == LengthConstraintType.FIXED) {
+                 contentSize = arrangeFF(container, g2, constraint);
+             }
+             else if (h == LengthConstraintType.RANGE) {

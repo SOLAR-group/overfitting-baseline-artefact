@@ -1,0 +1,10 @@
+--- /src/main/java/org/apache/commons/lang3/math/Fraction.java
++++ /src/main/java/org/apache/commons/lang3/math/Fraction.java
+@@ -584,3 +584,3 @@
+-		if ((java.lang.Math.abs(u) <= 1) || (java.lang.Math.abs(v) <= 1)) {
+-			return 1;
+-		}
++
++
++
+

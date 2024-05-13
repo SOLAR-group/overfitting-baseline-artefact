@@ -1,0 +1,29 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1204,8 +1204,11 @@ public class JFreeChart implements Drawable,
+             Title currentTitle = (Title) iterator.next();
+             EntityCollection e = drawTitle(currentTitle, g2, nonTitleArea, 
+                     (entities != null));
+-            if (e != null) {
+-                entities.addAll(e);   
++            if (e == null) {
++                if (e == null) {
++    return;
++}
++entities.addAll(e);   
+             }
+         }
+ 
+diff --git a/source/org/jfree/chart/text/TextUtilities.java b/source/org/jfree/chart/text/TextUtilities.java
+index fb7de99..57b3ee8 100644
+--- /source/org/jfree/chart/text/TextUtilities.java
++++ /source/org/jfree/chart/text/TextUtilities.java
+@@ -265,7 +265,7 @@ public class TextUtilities {
+                 }
+             }
+             // we found at least one word that fits ...
+-            firstWord = false;
++            
+             current = end;
+         }
+         return BreakIterator.DONE;

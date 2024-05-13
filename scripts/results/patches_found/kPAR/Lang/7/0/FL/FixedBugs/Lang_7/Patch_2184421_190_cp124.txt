@@ -1,0 +1,38 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..6f49a33d 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -481,7 +481,7 @@ public class NumberUtils {
+             }
+             mant = str.substring(0, decPos);
+         } else {
+-            if (expPos > -1) {
++            if (lastChar > -1) {
+                 if (expPos > str.length()) {
+                     throw new NumberFormatException(str + " is not a valid number.");
+                 }
+diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+index 28f2e4f0..57bc84b1 100644
+--- /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
++++ /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+@@ -453,7 +453,7 @@ public class DurationFormatUtils {
+                         String str = padWithZeros
+                                 ? StringUtils.leftPad(Integer.toString(milliseconds), count, '0')
+                                 : Integer.toString(milliseconds);
+-                        buffer.append(str.substring(1));
++                        buffer.append(str.substring(0));
+                     } else {
+                         buffer.append(padWithZeros
+                                 ? StringUtils.leftPad(Integer.toString(milliseconds), count, '0')

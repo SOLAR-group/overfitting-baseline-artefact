@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
++++ /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+@@ -321 +321 @@
+-				this.maximumRangeValueIncStdDev = m + sd;
++				this.maximumRangeValueIncStdDev = m + sd; 				this.data = new org.jfree.data.KeyedObjects2D();
+

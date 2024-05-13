@@ -1,0 +1,10 @@
+--- source/org/jfree/chart/plotCategoryPlot.java
++++ source/org/jfree/chart/plotCategoryPlot.java
+@@ -2441, +2441, @@
++ // start of generated patch
++ if(layer==Layer.BACKGROUND){
++ markers=(ArrayList)this.foregroundRangeMarkers.get(new Integer(index));
++ }else {
++ markers=(ArrayList)this.backgroundRangeMarkers.get(new Integer(index));
++ }
++ // end of generated patch

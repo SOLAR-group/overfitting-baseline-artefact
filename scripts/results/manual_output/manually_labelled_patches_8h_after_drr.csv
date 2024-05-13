@@ -1,0 +1,25 @@
+results/patches_found/TBar/Chart/1/0/Patch_21302926_2746_cp1182.txt,overfitting,condition moved rather than conditional changed
+results/patches_found/TBar/Chart/1/0/Patch_21215131_2734_cp1177.txt,overfitting,wrong condition inserted
+results/patches_found/Avatar/Chart/1/0/FL/FixedBugs/Chart_1/Patch_11473047_1577.txt,overfitting, wrong condition inserted
+results/patches_found/Avatar/Chart/1/0/FL/FixedBugs/Chart_1/Patch_11428230_1575.txt,overfitting,wrong condition inserted
+results/patches_found/TBar/Chart/1/0/Patch_21147222_2729_cp1173.txt,overfitting,wrong condition inserted
+results/patches_found/TBar/Chart/1/0/Patch_21164307_2730_cp1174.txt,overfitting,wrong condition inserted
+results/patches_found/TBar/Chart/1/0/Patch_21112558_2726_cp1171.txt,overfitting,wrong condition inserted
+results/patches_found/TBar/Chart/1/0/Patch_21180800_2731_cp1175.txt,overfitting,wrong condition inserted
+results/patches_found/TBar/Chart/1/0/Patch_21231800_2735_cp1178.txt,overfitting,wrong condition inserted
+results/patches_found/Avatar/Chart/1/0/FL/FixedBugs/Chart_1/Patch_11516788_1579.txt,overfitting,wrong condition inserted
+results/patches_found/Avatar/Chart/1/0/FL/FixedBugs/Chart_1/Patch_11384545_1573.txt,overfitting,wrong condition inserted
+results/patches_found/Avatar/Chart/1/0/FL/FixedBugs/Chart_1/Patch_11538576_1580.txt,overfitting,wrong condition inserted
+results/patches_found/TBar/Chart/4/0/Patch_12840684_2083_cp985.txt,overfitting,exits the while loop too quickly
+results/patches_found/TBar/Chart/4/0/Patch_12852974_2084_cp986.txt,correct,semantically equivalent to human fix
+results/patches_found/jGenProg/Closure/46/0/patch_20842000_28322.diff,overfitting,removes too much code
+results/patches_found/Avatar/Lang/10/0/FL/FixedBugs/Lang_10/Patch_16808737_2460.txt,correct,semantically equivalent and mValues is never null
+results/patches_found/Avatar/Lang/10/0/FL/FixedBugs/Lang_10/Patch_16831934_2478.txt,correct,semantically equivalent and mValues is never null
+results/patches_found/Avatar/Math/33/0/FL/FixedBugs/Math_33/Patch_17088073_893.txt,overfitting,makes changes in the wrong places also removing code
+results/patches_found/Avatar/Math/33/0/FL/FixedBugs/Math_33/Patch_17174791_895.txt,overfitting,makes changes in the wrong places also removing code
+results/patches_found/Avatar/Math/33/0/FL/FixedBugs/Math_33/Patch_17745736_909.txt,overfitting,makes changes in the wrong places also removing code
+results/patches_found/Avatar/Math/33/0/FL/FixedBugs/Math_33/Patch_17044720_892.txt,overfitting,makes changes in the wrong places also removing code
+results/patches_found/Avatar/Math/33/0/FL/FixedBugs/Math_33/Patch_17614505_906.txt,overfitting,makes changes in the wrong places also removing code
+results/patches_found/Avatar/Math/33/0/FL/FixedBugs/Math_33/Patch_17658076_907.txt,overfitting,makes changes in the wrong places also removing code
+results/patches_found/Avatar/Math/33/0/FL/FixedBugs/Math_33/Patch_17701919_908.txt,overfitting,makes changes in the wrong places also removing code
+results/patches_found/Avatar/Math/33/0/FL/FixedBugs/Math_33/Patch_17569856_905.txt,overfitting,makes changes in the wrong places also removing code

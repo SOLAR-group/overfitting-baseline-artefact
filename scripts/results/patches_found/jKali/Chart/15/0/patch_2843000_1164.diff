@@ -1,0 +1,31 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1169,0 +1170,13 @@
++		if (true)
++			return;
++
++
++
++
++
++
++
++
++
++
++
+@@ -1171,13 +1183,0 @@
+-		if (isBorderVisible()) {
+-			java.awt.Paint paint = getBorderPaint();
+-			java.awt.Stroke stroke = getBorderStroke();
+-			if ((paint != null) && (stroke != null)) {
+-				java.awt.geom.Rectangle2D borderArea = new java.awt.geom.Rectangle2D.Double(
+-				chartArea.getX(), chartArea.getY(), 
+-				chartArea.getWidth() - 1.0, chartArea.getHeight() - 
+-				1.0);
+-				g2.setPaint(paint);
+-				g2.setStroke(stroke);
+-				g2.draw(borderArea);
+-			}
+-		}
+

@@ -1,0 +1,15 @@
+--- /src/com/google/javascript/jscomp/CheckSideEffects.java
++++ /src/com/google/javascript/jscomp/CheckSideEffects.java
+@@ -111 +111 @@
+-			if (n == parent.getLastChild()) {
++			if (false) {
+@@ -115 +115 @@
+-						continue;
++					{ 						continue;}
+@@ -117 +117 @@
+-						return;else
++					{ 						return;} else 
+@@ -119 +119 @@
+-						break;
++					{ 						break;}
+

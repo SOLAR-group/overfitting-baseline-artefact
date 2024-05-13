@@ -1,0 +1,12 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -376,7 +376,9 @@
+ while(iterator.hasNext()){
+ KeyedObjects rowData=(KeyedObjects)iterator.next();
+ this.columnKeys.remove(index);
++this.columnKeys.remove(index);
+ this.rows.remove(index);
++
+ rowData.removeValue(columnKey);
+ }
+ this.columnKeys.remove(columnKey);

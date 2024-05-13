@@ -1,0 +1,1600 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+com.google.javascript.rhino.NodeTest#testCheckTreeEqualsStringDifferent
+.java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsStringDifferent(NodeTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsStringDifferent(NodeTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsStringDifferent(NodeTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsStringDifferent(NodeTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsStringDifferent(NodeTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsStringDifferent(NodeTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.rhino.NodeTest.testCheckTreeEqualsStringDifferent(NodeTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+Time: 1.327
+
+OK (1 test)
+
+com.google.javascript.jscomp.DeadAssignmentsEliminationTest#testInExpression2
+.java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testInExpression2(DeadAssignmentsEliminationTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testInExpression2(DeadAssignmentsEliminationTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testInExpression2(DeadAssignmentsEliminationTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testInExpression2(DeadAssignmentsEliminationTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testInExpression2(DeadAssignmentsEliminationTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testInExpression2(DeadAssignmentsEliminationTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testInExpression2(DeadAssignmentsEliminationTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+E
+Time: 0.665
+There was 1 failure:
+1) testInExpression2(com.google.javascript.jscomp.DeadAssignmentsEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: function FUNC(param1,param2){var a;a=1;if(2||(a=3)||a);}
+Result: function FUNC(param1,param2){var a;a=1;if((a=2)||(a=3)||a);}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [sourcename: expected0] [synthetic: 1]
+        FUNCTION  1 [sourcename: expected0]
+            NAME FUNC 1 [sourcename: expected0]
+            LP 1 [sourcename: expected0]
+                NAME param1 1 [sourcename: expected0]
+                NAME param2 1 [sourcename: expected0]
+            BLOCK 1 [sourcename: expected0]
+                VAR 1 [sourcename: expected0]
+                    NAME a 1 [sourcename: expected0]
+                EXPR_RESULT 1 [sourcename: expected0]
+                    ASSIGN 1 [sourcename: expected0]
+                        NAME a 1 [sourcename: expected0]
+                        NUMBER 1.0 1 [sourcename: expected0]
+                IF 1 [sourcename: expected0]
+                    OR 1 [sourcename: expected0]
+                        NUMBER 2.0 1 [sourcename: expected0] [parenthesized: true]
+                        OR 1 [sourcename: expected0]
+                            ASSIGN 1 [sourcename: expected0] [parenthesized: true]
+                                NAME a 1 [sourcename: expected0]
+                                NUMBER 3.0 1 [sourcename: expected0]
+                            NAME a 1 [sourcename: expected0] [parenthesized: true]
+                    BLOCK 1 [sourcename: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [sourcename: testcode] [synthetic: 1]
+        FUNCTION  1 [sourcename: testcode]
+            NAME FUNC 1 [sourcename: testcode]
+            LP 1 [sourcename: testcode]
+                NAME param1 1 [sourcename: testcode]
+                NAME param2 1 [sourcename: testcode]
+            BLOCK 1 [sourcename: testcode]
+                VAR 1 [sourcename: testcode]
+                    NAME a 1 [sourcename: testcode]
+                EXPR_RESULT 1 [sourcename: testcode]
+                    ASSIGN 1 [sourcename: testcode]
+                        NAME a 1 [sourcename: testcode]
+                        NUMBER 1.0 1 [sourcename: testcode]
+                IF 1 [sourcename: testcode]
+                    OR 1 [sourcename: testcode]
+                        ASSIGN 1 [sourcename: testcode] [parenthesized: true]
+                            NAME a 1 [sourcename: testcode]
+                            NUMBER 2.0 1 [sourcename: testcode]
+                        OR 1 [sourcename: testcode]
+                            ASSIGN 1 [sourcename: testcode] [parenthesized: true]
+                                NAME a 1 [sourcename: testcode]
+                                NUMBER 3.0 1 [sourcename: testcode]
+                            NAME a 1 [sourcename: testcode] [parenthesized: true]
+                    BLOCK 1 [sourcename: testcode]
+
+
+Subtree1: NUMBER 2.0 1 [sourcename: expected0] [parenthesized: true]
+
+
+Subtree2: ASSIGN 1 [sourcename: testcode] [parenthesized: true]
+    NAME a 1 [sourcename: testcode]
+    NUMBER 2.0 1 [sourcename: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:843)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testInExpression2(DeadAssignmentsEliminationTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.DeadAssignmentsEliminationTest#testIssue384d
+.java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384d(DeadAssignmentsEliminationTest.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384d(DeadAssignmentsEliminationTest.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384d(DeadAssignmentsEliminationTest.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384d(DeadAssignmentsEliminationTest.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384d(DeadAssignmentsEliminationTest.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384d(DeadAssignmentsEliminationTest.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384d(DeadAssignmentsEliminationTest.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+E
+Time: 0.373
+There was 1 failure:
+1) testIssue384d(com.google.javascript.jscomp.DeadAssignmentsEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: function FUNC(param1,param2){var a,b;(f(b=true)||f(b=false))&&(a=b);return a}
+Result: function FUNC(param1,param2){var a,b;(f(true)||f(b=false))&&(a=b);return a}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [sourcename: expected0] [synthetic: 1]
+        FUNCTION  1 [sourcename: expected0]
+            NAME FUNC 1 [sourcename: expected0]
+            LP 1 [sourcename: expected0]
+                NAME param1 1 [sourcename: expected0]
+                NAME param2 1 [sourcename: expected0]
+            BLOCK 1 [sourcename: expected0]
+                VAR 1 [sourcename: expected0]
+                    NAME a 1 [sourcename: expected0]
+                    NAME b 1 [sourcename: expected0]
+                EXPR_RESULT 2 [sourcename: expected0]
+                    AND 2 [sourcename: expected0]
+                        OR 2 [sourcename: expected0] [parenthesized: true]
+                            CALL 2 [sourcename: expected0] [free_call: 1]
+                                NAME f 2 [sourcename: expected0]
+                                ASSIGN 2 [sourcename: expected0]
+                                    NAME b 2 [sourcename: expected0]
+                                    TRUE 2 [sourcename: expected0]
+                            CALL 2 [sourcename: expected0] [free_call: 1]
+                                NAME f 2 [sourcename: expected0]
+                                ASSIGN 2 [sourcename: expected0]
+                                    NAME b 2 [sourcename: expected0]
+                                    FALSE 2 [sourcename: expected0]
+                        ASSIGN 2 [sourcename: expected0] [parenthesized: true]
+                            NAME a 2 [sourcename: expected0]
+                            NAME b 2 [sourcename: expected0]
+                RETURN 3 [sourcename: expected0]
+                    NAME a 3 [sourcename: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [sourcename: testcode] [synthetic: 1]
+        FUNCTION  1 [sourcename: testcode]
+            NAME FUNC 1 [sourcename: testcode]
+            LP 1 [sourcename: testcode]
+                NAME param1 1 [sourcename: testcode]
+                NAME param2 1 [sourcename: testcode]
+            BLOCK 1 [sourcename: testcode]
+                VAR 1 [sourcename: testcode]
+                    NAME a 1 [sourcename: testcode]
+                    NAME b 1 [sourcename: testcode]
+                EXPR_RESULT 2 [sourcename: testcode]
+                    AND 2 [sourcename: testcode]
+                        OR 2 [sourcename: testcode] [parenthesized: true]
+                            CALL 2 [sourcename: testcode] [free_call: 1]
+                                NAME f 2 [sourcename: testcode]
+                                TRUE 2 [sourcename: testcode]
+                            CALL 2 [sourcename: testcode] [free_call: 1]
+                                NAME f 2 [sourcename: testcode]
+                                ASSIGN 2 [sourcename: testcode]
+                                    NAME b 2 [sourcename: testcode]
+                                    FALSE 2 [sourcename: testcode]
+                        ASSIGN 2 [sourcename: testcode] [parenthesized: true]
+                            NAME a 2 [sourcename: testcode]
+                            NAME b 2 [sourcename: testcode]
+                RETURN 3 [sourcename: testcode]
+                    NAME a 3 [sourcename: testcode]
+
+
+Subtree1: ASSIGN 2 [sourcename: expected0]
+    NAME b 2 [sourcename: expected0]
+    TRUE 2 [sourcename: expected0]
+
+
+Subtree2: TRUE 2 [sourcename: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:843)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384d(DeadAssignmentsEliminationTest.java:515)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.DeadAssignmentsEliminationTest#testIssue384c
+.java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384c(DeadAssignmentsEliminationTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384c(DeadAssignmentsEliminationTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384c(DeadAssignmentsEliminationTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384c(DeadAssignmentsEliminationTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384c(DeadAssignmentsEliminationTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384c(DeadAssignmentsEliminationTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384c(DeadAssignmentsEliminationTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+E
+Time: 0.398
+There was 1 failure:
+1) testIssue384c(com.google.javascript.jscomp.DeadAssignmentsEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: function FUNC(param1,param2){var a,b;(a?f(b=true):f(b=false))&&(a=b);return a}
+Result: function FUNC(param1,param2){var a,b;(a?f(true):f(b=false))&&(a=b);return a}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [sourcename: expected0] [synthetic: 1]
+        FUNCTION  1 [sourcename: expected0]
+            NAME FUNC 1 [sourcename: expected0]
+            LP 1 [sourcename: expected0]
+                NAME param1 1 [sourcename: expected0]
+                NAME param2 1 [sourcename: expected0]
+            BLOCK 1 [sourcename: expected0]
+                VAR 1 [sourcename: expected0]
+                    NAME a 1 [sourcename: expected0]
+                    NAME b 1 [sourcename: expected0]
+                EXPR_RESULT 2 [sourcename: expected0]
+                    AND 2 [sourcename: expected0]
+                        HOOK 2 [sourcename: expected0] [parenthesized: true]
+                            NAME a 2 [sourcename: expected0]
+                            CALL 2 [sourcename: expected0] [free_call: 1]
+                                NAME f 2 [sourcename: expected0]
+                                ASSIGN 2 [sourcename: expected0]
+                                    NAME b 2 [sourcename: expected0]
+                                    TRUE 2 [sourcename: expected0]
+                            CALL 2 [sourcename: expected0] [free_call: 1]
+                                NAME f 2 [sourcename: expected0]
+                                ASSIGN 2 [sourcename: expected0]
+                                    NAME b 2 [sourcename: expected0]
+                                    FALSE 2 [sourcename: expected0]
+                        ASSIGN 2 [sourcename: expected0] [parenthesized: true]
+                            NAME a 2 [sourcename: expected0]
+                            NAME b 2 [sourcename: expected0]
+                RETURN 3 [sourcename: expected0]
+                    NAME a 3 [sourcename: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [sourcename: testcode] [synthetic: 1]
+        FUNCTION  1 [sourcename: testcode]
+            NAME FUNC 1 [sourcename: testcode]
+            LP 1 [sourcename: testcode]
+                NAME param1 1 [sourcename: testcode]
+                NAME param2 1 [sourcename: testcode]
+            BLOCK 1 [sourcename: testcode]
+                VAR 1 [sourcename: testcode]
+                    NAME a 1 [sourcename: testcode]
+                    NAME b 1 [sourcename: testcode]
+                EXPR_RESULT 2 [sourcename: testcode]
+                    AND 2 [sourcename: testcode]
+                        HOOK 2 [sourcename: testcode] [parenthesized: true]
+                            NAME a 2 [sourcename: testcode]
+                            CALL 2 [sourcename: testcode] [free_call: 1]
+                                NAME f 2 [sourcename: testcode]
+                                TRUE 2 [sourcename: testcode]
+                            CALL 2 [sourcename: testcode] [free_call: 1]
+                                NAME f 2 [sourcename: testcode]
+                                ASSIGN 2 [sourcename: testcode]
+                                    NAME b 2 [sourcename: testcode]
+                                    FALSE 2 [sourcename: testcode]
+                        ASSIGN 2 [sourcename: testcode] [parenthesized: true]
+                            NAME a 2 [sourcename: testcode]
+                            NAME b 2 [sourcename: testcode]
+                RETURN 3 [sourcename: testcode]
+                    NAME a 3 [sourcename: testcode]
+
+
+Subtree1: ASSIGN 2 [sourcename: expected0]
+    NAME b 2 [sourcename: expected0]
+    TRUE 2 [sourcename: expected0]
+
+
+Subtree2: TRUE 2 [sourcename: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:843)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384c(DeadAssignmentsEliminationTest.java:508)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.DeadAssignmentsEliminationTest#testIssue384b
+.java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384b(DeadAssignmentsEliminationTest.java:501)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384b(DeadAssignmentsEliminationTest.java:501)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384b(DeadAssignmentsEliminationTest.java:501)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384b(DeadAssignmentsEliminationTest.java:501)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384b(DeadAssignmentsEliminationTest.java:501)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384b(DeadAssignmentsEliminationTest.java:501)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+java.lang.IllegalStateException: FAILED ASSERTION
+	at com.google.javascript.rhino.Kit.codeBug(Kit.java:462)
+	at com.google.javascript.rhino.Node.getExistingIntProp(Node.java:818)
+	at com.google.javascript.rhino.Node.checkTreeEquals(Node.java:1369)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:842)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384b(DeadAssignmentsEliminationTest.java:501)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+E
+Time: 0.337
+There was 1 failure:
+1) testIssue384b(com.google.javascript.jscomp.DeadAssignmentsEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: function FUNC(param1,param2){var a,b;f(b=true)||f(b=false)?a=b:a=null;return a}
+Result: function FUNC(param1,param2){var a,b;f(true)||f(b=false)?a=b:a=null;return a}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [sourcename: expected0] [synthetic: 1]
+        FUNCTION  1 [sourcename: expected0]
+            NAME FUNC 1 [sourcename: expected0]
+            LP 1 [sourcename: expected0]
+                NAME param1 1 [sourcename: expected0]
+                NAME param2 1 [sourcename: expected0]
+            BLOCK 1 [sourcename: expected0]
+                VAR 1 [sourcename: expected0]
+                    NAME a 1 [sourcename: expected0]
+                    NAME b 1 [sourcename: expected0]
+                EXPR_RESULT 2 [sourcename: expected0]
+                    HOOK 2 [sourcename: expected0]
+                        OR 2 [sourcename: expected0] [parenthesized: true]
+                            CALL 2 [sourcename: expected0] [free_call: 1]
+                                NAME f 2 [sourcename: expected0]
+                                ASSIGN 2 [sourcename: expected0]
+                                    NAME b 2 [sourcename: expected0]
+                                    TRUE 2 [sourcename: expected0]
+                            CALL 2 [sourcename: expected0] [free_call: 1]
+                                NAME f 2 [sourcename: expected0]
+                                ASSIGN 2 [sourcename: expected0]
+                                    NAME b 2 [sourcename: expected0]
+                                    FALSE 2 [sourcename: expected0]
+                        ASSIGN 2 [sourcename: expected0] [parenthesized: true]
+                            NAME a 2 [sourcename: expected0]
+                            NAME b 2 [sourcename: expected0]
+                        ASSIGN 2 [sourcename: expected0] [parenthesized: true]
+                            NAME a 2 [sourcename: expected0]
+                            NULL 2 [sourcename: expected0]
+                RETURN 3 [sourcename: expected0]
+                    NAME a 3 [sourcename: expected0]
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT 1 [sourcename: testcode] [synthetic: 1]
+        FUNCTION  1 [sourcename: testcode]
+            NAME FUNC 1 [sourcename: testcode]
+            LP 1 [sourcename: testcode]
+                NAME param1 1 [sourcename: testcode]
+                NAME param2 1 [sourcename: testcode]
+            BLOCK 1 [sourcename: testcode]
+                VAR 1 [sourcename: testcode]
+                    NAME a 1 [sourcename: testcode]
+                    NAME b 1 [sourcename: testcode]
+                EXPR_RESULT 2 [sourcename: testcode]
+                    HOOK 2 [sourcename: testcode]
+                        OR 2 [sourcename: testcode] [parenthesized: true]
+                            CALL 2 [sourcename: testcode] [free_call: 1]
+                                NAME f 2 [sourcename: testcode]
+                                TRUE 2 [sourcename: testcode]
+                            CALL 2 [sourcename: testcode] [free_call: 1]
+                                NAME f 2 [sourcename: testcode]
+                                ASSIGN 2 [sourcename: testcode]
+                                    NAME b 2 [sourcename: testcode]
+                                    FALSE 2 [sourcename: testcode]
+                        ASSIGN 2 [sourcename: testcode] [parenthesized: true]
+                            NAME a 2 [sourcename: testcode]
+                            NAME b 2 [sourcename: testcode]
+                        ASSIGN 2 [sourcename: testcode] [parenthesized: true]
+                            NAME a 2 [sourcename: testcode]
+                            NULL 2 [sourcename: testcode]
+                RETURN 3 [sourcename: testcode]
+                    NAME a 3 [sourcename: testcode]
+
+
+Subtree1: ASSIGN 2 [sourcename: expected0]
+    NAME b 2 [sourcename: expected0]
+    TRUE 2 [sourcename: expected0]
+
+
+Subtree2: TRUE 2 [sourcename: testcode]
+
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:233)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:843)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:410)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:335)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:304)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:292)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:345)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.inFunction(DeadAssignmentsEliminationTest.java:341)
+	at com.google.javascript.jscomp.DeadAssignmentsEliminationTest.testIssue384b(DeadAssignmentsEliminationTest.java:501)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

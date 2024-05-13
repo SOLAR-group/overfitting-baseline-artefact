@@ -1,0 +1,7 @@
+--- /src/com/google/javascript/jscomp/CollapseProperties.java
++++ /src/com/google/javascript/jscomp/CollapseProperties.java
+@@ -126,3 +126,3 @@
+ 
+-    if (inlineAliases) {
++    if (!((com.google.javascript.jscomp.CollapseProperties.this.collapsePropertiesOnExternTypes) || (com.google.javascript.jscomp.CollapseProperties.this.globalNames!=null))) {
+       inlineAliases(namespace);

@@ -1,0 +1,59 @@
+--- /src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java
++++ /src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java
+@@ -1357,7 +1357,10 @@ public class DSCompiler {
+                 double v = 0;
+                 q[n - 1] = -n * q[n - 2];
+                 for (int k = n - 1; k >= 0; k -= 2) {
+-                    v = v * x2 + q[k];
++                    if (q == null) {
++    throw new IllegalArgumentException("Null 'q' argument.");
++}
++v = v * x2 + q[k];
+                     if (k > 2) {
+                         q[k - 2] = (k - 1) * q[k - 1] + (k - 1 - 2 * n) * q[k - 3];
+                     } else if (k == 2) {
+diff --git a/src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java b/src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+index 674fb0ab2..df3b536f8 100644
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+@@ -106,13 +106,7 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+         }
+         final SubHyperplane<Euclidean1D> lowerCut =
+             new OrientedPoint(new Vector1D(lower), false).wholeHyperplane();
+-        if (Double.isInfinite(upper) && (upper > 0)) {
+-            // the tree must be open on the positive infinity side
+-            return new BSPTree<Euclidean1D>(lowerCut,
+-                                            new BSPTree<Euclidean1D>(Boolean.FALSE),
+-                                            new BSPTree<Euclidean1D>(Boolean.TRUE),
+-                                            null);
+-        }
++        
+ 
+         // the tree must be bounded on the two sides
+         final SubHyperplane<Euclidean1D> upperCut =
+diff --git a/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java b/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java
+index 2809a59fb..7d98bde1b 100644
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java
+@@ -284,7 +284,7 @@ public class Vector3D implements Serializable, Vector<Euclidean3D> {
+     /** {@inheritDoc} */
+     public Vector3D subtract(final Vector<Euclidean3D> v) {
+         final Vector3D v3 = (Vector3D) v;
+-        return new Vector3D(x - v3.x, y - v3.y, z - v3.z);
++        return new Vector3D(x - v3.x, serialVersionUID - v3.y, z - v3.z);
+     }
+ 
+     /** {@inheritDoc} */
+diff --git a/src/main/java/org/apache/commons/math3/util/FastMath.java b/src/main/java/org/apache/commons/math3/util/FastMath.java
+index c5a198a61..2591281d3 100644
+--- /src/main/java/org/apache/commons/math3/util/FastMath.java
++++ /src/main/java/org/apache/commons/math3/util/FastMath.java
+@@ -2661,7 +2661,7 @@ public class FastMath {
+                 return Math.PI * F_1_2;
+             }
+ 
+-            if (y < 0 || 1 / y < 0) {
++            if ((y < 0 || 1 / y < 0) || (y > 0)) {
+                 return -Math.PI * F_1_2;
+             }
+         }

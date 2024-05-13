@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2560 +2560 @@
+-		if (b1 || b2) {
++		if (!(b1 || b2)) {
+

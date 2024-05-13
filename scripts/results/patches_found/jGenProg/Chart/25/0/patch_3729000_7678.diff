@@ -1,0 +1,54 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -212,2 +211,0 @@
+-		setObject(object, rowKey, columnKey);
+-	}
+@@ -222,3 +219,0 @@
+-	public void setObject(java.lang.Object object, 
+-	java.lang.Comparable rowKey, 
+-	java.lang.Comparable columnKey) {
+@@ -226,15 +220,0 @@
+-		org.jfree.data.KeyedObjects row;
+-		int rowIndex = this.rowKeys.indexOf(rowKey);
+-		if (rowIndex >= 0) {
+-			row = ((org.jfree.data.KeyedObjects) (this.rows.get(rowIndex)));
+-		} else 
+-		{
+-			this.rowKeys.add(rowKey);
+-			row = new org.jfree.data.KeyedObjects();
+-			this.rows.add(row);
+-		}
+-		row.setObject(columnKey, object);
+-		int columnIndex = this.columnKeys.indexOf(columnKey);
+-		if (columnIndex < 0) {
+-			this.columnKeys.add(columnKey);
+-		}
+@@ -242 +221,0 @@
+-	}
+@@ -250,2 +229,23 @@
+-	public void removeObject(java.lang.Comparable rowKey, java.lang.Comparable columnKey) {
+-		setObject(null, rowKey, columnKey);
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++		setObject(null, rowKey, columnKey);} 	public void setObject(java.lang.Object object, java.lang.Comparable rowKey, java.lang.Comparable columnKey) { 		org.jfree.data.KeyedObjects row; 		int rowIndex = this.rowKeys.indexOf(rowKey); 		if (rowIndex >= 0) { 			row = ((org.jfree.data.KeyedObjects) (this.rows.get(rowIndex)));} else { 			this.rowKeys.add(rowKey); 			row = new org.jfree.data.KeyedObjects(); 			this.rows.add(row);} 		row.setObject(columnKey, object); 		int columnIndex = this.columnKeys.indexOf(columnKey); 		if (columnIndex < 0) { 			this.columnKeys.add(columnKey);}} 	public void removeObject(java.lang.Comparable rowKey, java.lang.Comparable columnKey) { 		setObject(null, rowKey, columnKey);
+

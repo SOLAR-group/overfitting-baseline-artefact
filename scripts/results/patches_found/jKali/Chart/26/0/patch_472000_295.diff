@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2559,2 +2559,2 @@
+-
+-		state.setDataArea(dataArea);
++		if (true)
++			return;
+

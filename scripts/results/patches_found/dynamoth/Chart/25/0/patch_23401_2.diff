@@ -1,0 +1,9 @@
+--- /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
++++ /source/org/jfree/data/statistics/DefaultStatisticalCategoryDataset.java
+@@ -110,3 +110,5 @@
+         if (masd != null) {
+-            result = masd.getMean();
++            if (false) {
++                result = masd.getMean();
++            }
+         }

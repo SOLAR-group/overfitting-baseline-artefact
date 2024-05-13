@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -112 +112 @@
+-			if (columnKey != null) {
++			if (!(columnKey != null)) {
+

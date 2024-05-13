@@ -1,0 +1,25 @@
+--- /src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java
++++ /src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java
+@@ -125,5 +124,0 @@
+-		double yMax = f.value(max);
+-		if (java.lang.Math.abs(yMax) <= functionValueAccuracy) {
+-			setResult(yMax, 0);
+-			return result;
+-		}
+@@ -132,3 +126,0 @@
+-		if ((yInitial * yMax) < 0) {
+-			return solve(f, initial, yInitial, max, yMax, initial, yInitial);
+-		}
+@@ -138 +129,0 @@
+-		return solve(f, min, yMin, max, yMax, initial, yInitial);
+@@ -139,0 +131,9 @@
++
++
++
++
++
++
++
++
++		verifyBracketing(min, max, f); 		double yMax = f.value(max); 		if (java.lang.Math.abs(yMax) <= functionValueAccuracy) { 			setResult(yMax, 0); 			return result;} 		if ((yInitial * yMax) < 0) { 			return solve(f, initial, yInitial, max, yMax, initial, yInitial);} 		return solve(f, min, yMin, max, yMax, initial, yInitial);
+

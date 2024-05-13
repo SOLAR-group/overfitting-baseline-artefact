@@ -1,0 +1,9 @@
+--- /source/org/jfree/chart/title/LegendTitle.java
++++ /source/org/jfree/chart/title/LegendTitle.java
+@@ -571,4 +571,4 @@
+         }
+-        if (!this.vLayout.equals(that.vLayout)) {
+-            return false;   
++        if (false) {
++            return false;
+         }

@@ -1,0 +1,9 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -112,3 +112,5 @@
+             if (columnKey != null) {
+-                result = rowData.getObject(columnKey);
++                if (false) {
++                    result = rowData.getObject(columnKey);
++                }
+             }

@@ -1,0 +1,35 @@
+--- /src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java
++++ /src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java
+@@ -1294,6 +1294,24 @@
+           token = next();
+           continue;
+ 
++// start of generated patch
++default :
++if(!ignoreStar&&builder.length()>0){
++builder.append(' ');
++}
++ignoreStar=false;
++builder.append(toString(token));
++String line=stream.getRemainingJSDocLine();
++line=trimEnd(line);
++builder.append(line);
++if(line.length()>0){
++jsdocBuilder.recordDeprecationReason(line);
++}
++token=next();
++
++
++// end of generated patch
++/* start of original code
+         default:
+           if (!ignoreStar && builder.length() > 0) {
+             builder.append(' ');
+@@ -1307,6 +1325,7 @@
+           line = trimEnd(line);
+           builder.append(line);
+           token = next();
++ end of original code*/
+       }
+     } while (true);
+   }

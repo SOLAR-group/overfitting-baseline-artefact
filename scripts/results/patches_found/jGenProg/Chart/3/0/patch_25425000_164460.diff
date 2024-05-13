@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/time/TimeSeries.java
++++ /source/org/jfree/data/time/TimeSeries.java
+@@ -878 +878 @@
+-			long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();
++			long latest = getTimePeriod(getItemCount() - 1).getSerialIndex(); 			findBoundsByIteration();
+

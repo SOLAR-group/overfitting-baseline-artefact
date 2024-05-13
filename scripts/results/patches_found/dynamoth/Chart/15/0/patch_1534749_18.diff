@@ -1,0 +1,13 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -3910,5 +3910,7 @@
+             CategoryAxis xAxis = (CategoryAxis) this.domainAxes.get(i);
+-            if (xAxis != null) {
+-                xAxis.setPlot(this);
+-                xAxis.addChangeListener(this);
++            if (true) {
++                if (xAxis != null) {
++                    xAxis.setPlot(this);
++                    xAxis.addChangeListener(this);
++                }
+             }

@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2558,2 +2558,2 @@
+-		this.axisOffset.trim(dataArea);
+-
++		if (true)
++			return;
+

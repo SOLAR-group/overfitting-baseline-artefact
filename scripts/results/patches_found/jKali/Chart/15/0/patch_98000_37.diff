@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/plot/PiePlot3D.java
++++ /source/org/jfree/chart/plot/PiePlot3D.java
+@@ -246,2 +246,2 @@
+-		double labelPercent = 0.0;
+-		if (getLabelGenerator() != null) {
++		if (true)
++			return; 		double labelPercent = 0.0; 		if (getLabelGenerator() != null) {
+

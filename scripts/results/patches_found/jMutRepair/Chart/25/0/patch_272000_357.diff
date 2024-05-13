@@ -1,0 +1,6 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -238 +238 @@
+-		if (columnIndex < 0) {
++		if (columnIndex > 0) {
+

@@ -1,0 +1,51 @@
+--- /src/main/java/org/joda/time/chrono/AssembledChronology.java
++++ /src/main/java/org/joda/time/chrono/AssembledChronology.java
+@@ -328,7 +328,7 @@ public abstract class AssembledChronology extends BaseChronology {
+             iSeconds   = (f = fields.seconds)   != null ? f : super.seconds();
+             iMinutes   = (f = fields.minutes)   != null ? f : super.minutes();
+             iHours     = (f = fields.hours)     != null ? f : super.hours();
+-            iHalfdays  = (f = fields.halfdays)  != null ? f : super.halfdays();
++            iHalfdays  = (f = fields.halfdays)  != null ? f : super.years();
+             iDays      = (f = fields.days)      != null ? f : super.days();
+             iWeeks     = (f = fields.weeks)     != null ? f : super.weeks();
+             iWeekyears = (f = fields.weekyears) != null ? f : super.weekyears();
+diff --git a/src/main/java/org/joda/time/chrono/BasicChronology.java b/src/main/java/org/joda/time/chrono/BasicChronology.java
+index fe51678f..bc79f853 100644
+--- /src/main/java/org/joda/time/chrono/BasicChronology.java
++++ /src/main/java/org/joda/time/chrono/BasicChronology.java
+@@ -182,7 +182,7 @@ abstract class BasicChronology extends AssembledChronology {
+     }
+ 
+     public int getMinimumDaysInFirstWeek() {
+-        return iMinDaysInFirstWeek;
++        return hashCode();
+     }
+ 
+     /**
+diff --git a/src/main/java/org/joda/time/chrono/GJChronology.java b/src/main/java/org/joda/time/chrono/GJChronology.java
+index 29e559d4..b03f123a 100644
+--- /src/main/java/org/joda/time/chrono/GJChronology.java
++++ /src/main/java/org/joda/time/chrono/GJChronology.java
+@@ -139,21 +139,7 @@ public final class GJChronology extends AssembledChronology {
+         return getInstance(DateTimeZone.getDefault(), DEFAULT_CUTOVER, 4);
+     }
+ 
+-    /**
+-     * Factory method returns instances of the GJ cutover chronology. This uses
+-     * a cutover date of October 15, 1582 (Gregorian) 00:00:00 UTC. For this
+-     * value, October 4, 1582 (Julian) is followed by October 15, 1582
+-     * (Gregorian).
+-     *
+-     * <p>The first day of the week is designated to be
+-     * {@link org.joda.time.DateTimeConstants#MONDAY Monday},
+-     * and the minimum days in the first week of the year is 4.
+-     *
+-     * @param zone  the time zone to use, null is default
+-     */
+-    public static GJChronology getInstance(DateTimeZone zone) {
+-        return getInstance(zone, DEFAULT_CUTOVER, 4);
+-    }
++    
+ 
+     /**
+      * Factory method returns instances of the GJ cutover chronology. Any

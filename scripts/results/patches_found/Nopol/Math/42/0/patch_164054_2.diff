@@ -1,0 +1,9 @@
+--- /src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
++++ /src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
+@@ -364,3 +364,5 @@
+ 
+-        this.tableau = new Array2DRowRealMatrix(matrix);
++        if ((org.apache.commons.math.optimization.linear.SimplexTableau.this.numDecisionVariables) != (columnsToDrop.size())) {
++            this.tableau = new Array2DRowRealMatrix(matrix);
++        }
+         this.numArtificialVariables = 0;

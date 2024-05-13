@@ -1,0 +1,35 @@
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+@@ -106,13 +106,7 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+         }
+         final SubHyperplane<Euclidean1D> lowerCut =
+             new OrientedPoint(new Vector1D(lower), false).wholeHyperplane();
+-        if (Double.isInfinite(upper) && (upper > 0)) {
+-            // the tree must be open on the positive infinity side
+-            return new BSPTree<Euclidean1D>(lowerCut,
+-                                            new BSPTree<Euclidean1D>(Boolean.FALSE),
+-                                            new BSPTree<Euclidean1D>(Boolean.TRUE),
+-                                            null);
+-        }
++        
+ 
+         // the tree must be bounded on the two sides
+         final SubHyperplane<Euclidean1D> upperCut =
+diff --git a/src/main/java/org/apache/commons/math3/util/FastMath.java b/src/main/java/org/apache/commons/math3/util/FastMath.java
+index c5a198a61..7f93fad47 100644
+--- /src/main/java/org/apache/commons/math3/util/FastMath.java
++++ /src/main/java/org/apache/commons/math3/util/FastMath.java
+@@ -2657,11 +2657,11 @@ public class FastMath {
+         // Neither y nor x can be infinite or NAN here
+ 
+         if (x == 0) {
+-            if (y > 0 || 1 / y > 0) {
++            if (y > 0 || 1 / y >= 0) {
+                 return Math.PI * F_1_2;
+             }
+ 
+-            if (y < 0 || 1 / y < 0) {
++            if ((y < 0 || 1 / y < 0) || (y > 0)) {
+                 return -Math.PI * F_1_2;
+             }
+         }

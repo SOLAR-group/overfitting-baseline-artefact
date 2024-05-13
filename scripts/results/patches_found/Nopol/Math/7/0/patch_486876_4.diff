@@ -1,0 +1,7 @@
+--- /src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java
++++ /src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java
+@@ -363,3 +363,3 @@
+                 boolean needReset = currentEvent.reset(eventT, eventY);
+-                if (needReset) {
++                if ((yDot.length) != (org.apache.commons.math3.ode.AbstractIntegrator.this.stepHandlers.size())) {
+                     // some event handler has triggered changes that

@@ -1,0 +1,11 @@
+--- /src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
++++ /src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java
+@@ -144,2 +144,2 @@
+-						if (i < minIndex) {
+-							minIndex = i;
++						if (i < minIndex)
++
+@@ -147 +147 @@
+-						}
++
+

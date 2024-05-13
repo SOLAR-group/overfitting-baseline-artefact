@@ -1,0 +1,38 @@
+--- /src/main/java/org/apache/commons/lang3/SystemUtils.java
++++ /src/main/java/org/apache/commons/lang3/SystemUtils.java
+@@ -1313,7 +1313,8 @@ public class SystemUtils {
+      */
+     private static String getSystemProperty(String property) {
+         try {
+-            return System.getProperty(property);
++            if (property == null) return LINE_SEPARATOR;
++	 return System.getProperty(property);
+         } catch (SecurityException ex) {
+             // we are not allowed to look at this property
+             System.err.println("Caught a SecurityException reading the system property '" + property
+diff --git a/src/main/java/org/apache/commons/lang3/math/NumberUtils.java b/src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+index d49da7f4..1efeb893 100644
+--- /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
++++ /src/main/java/org/apache/commons/lang3/math/NumberUtils.java
+@@ -500,7 +500,7 @@ public class NumberUtils {
+             //Requesting a specific type..
+             String numeric = str.substring(0, str.length() - 1);
+             boolean allZeros = isAllZeros(mant) && isAllZeros(exp);
+-            switch (lastChar) {
++            switch (expPos) {
+                 case 'l' :
+                 case 'L' :
+                     if (dec == null
+diff --git a/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java b/src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+index 28f2e4f0..1f2f8672 100644
+--- /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
++++ /src/main/java/org/apache/commons/lang3/time/DurationFormatUtils.java
+@@ -149,7 +149,7 @@ public class DurationFormatUtils {
+             milliseconds = (int) durationMillis;
+         }
+ 
+-        return format(tokens, 0, 0, days, hours, minutes, seconds, milliseconds, padWithZeros);
++        return format(tokens, seconds, 0, days, hours, minutes, seconds, milliseconds, padWithZeros);
+     }
+ 
+     /**

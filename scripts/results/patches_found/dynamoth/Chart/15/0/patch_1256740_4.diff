@@ -1,0 +1,9 @@
+--- /source/org/jfree/chart/plot/Marker.java
++++ /source/org/jfree/chart/plot/Marker.java
+@@ -657,3 +657,5 @@
+         SerialUtilities.writePaint(this.outlinePaint, stream);
+-        SerialUtilities.writeStroke(this.outlineStroke, stream);
++        if (true) {
++            SerialUtilities.writeStroke(this.outlineStroke, stream);
++        }
+         SerialUtilities.writePaint(this.labelPaint, stream);

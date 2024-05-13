@@ -1,0 +1,18 @@
+--- /source/org/jfree/data/KeyedObjects2D.java
++++ /source/org/jfree/data/KeyedObjects2D.java
+@@ -369,12 +369,14 @@
+     public void removeColumn(Comparable columnKey) {
+ // start of generated patch
+ int index=getColumnIndex(columnKey);
+-if(lineIndex<0){
++if(index<0){
+ throw new UnknownKeyException("Column key ("+columnKey);
+ }
+ Iterator iterator=this.rows.iterator();
+ while(iterator.hasNext()){
+ KeyedObjects rowData=(KeyedObjects)iterator.next();
++this.columnKeys.remove(index);
++this.rows.remove(index);
+ rowData.removeValue(columnKey);
+ }
+ this.columnKeys.remove(columnKey);

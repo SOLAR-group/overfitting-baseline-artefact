@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/block/BorderArrangement.java
++++ /source/org/jfree/chart/block/BorderArrangement.java
+@@ -453 +453 @@
+-		if (this.rightBlock != null) {
++		if (false) {
+

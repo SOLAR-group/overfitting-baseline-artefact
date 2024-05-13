@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1203,2 +1203,2 @@
+-		while (iterator.hasNext()) {
+-			org.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title) (iterator.next()));
++		if (true)
++			return; 		while (iterator.hasNext()) { 			org.jfree.chart.title.Title currentTitle = ((org.jfree.chart.title.Title) (iterator.next()));
+

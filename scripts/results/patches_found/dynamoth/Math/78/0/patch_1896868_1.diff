@@ -1,0 +1,17 @@
+--- /src/main/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java
++++ /src/main/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java
+@@ -388,7 +388,9 @@
+     private void checkNonNegative(long[] in) throws IllegalArgumentException {
+-        for (int i = 0; i < in.length; i++) {
+-            if (in[i] < 0) {
+-                throw MathRuntimeException.createIllegalArgumentException(
+-                      "element {0} is negative: {1}",
+-                      i, in[i]);
++        if (true) {
++            for (int i = 0; i < in.length; i++) {
++                if (in[i] < 0) {
++                    throw MathRuntimeException.createIllegalArgumentException(
++                    "element {0} is negative: {1}",
++                    i, in[i]);
++                }
+             }

@@ -1,0 +1,10 @@
+--- /source/org/jfree/data/general/DatasetUtilities.java
++++ /source/org/jfree/data/general/DatasetUtilities.java
+@@ -576,3 +576,3 @@
+-				if (dataset.getValue(r, c) != null) {
+-					return false;
+-				}
++
++
++
+

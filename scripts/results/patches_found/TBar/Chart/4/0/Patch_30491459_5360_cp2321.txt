@@ -1,0 +1,11 @@
+--- /source/org/jfree/chart/plot/XYPlot.java
++++ /source/org/jfree/chart/plot/XYPlot.java
+@@ -4469,7 +4469,7 @@ public class XYPlot extends Plot implements ValueAxisPlot, Pannable,
+         Iterator iterator = mappedDatasets.iterator();
+         while (iterator.hasNext()) {
+             XYDataset d = (XYDataset) iterator.next();
+-            if (d != null) {
++            if (getRenderer() != null) {
+                 XYItemRenderer r = getRendererForDataset(d);
+                 if (isDomainAxis) {
+                     if (r != null) {

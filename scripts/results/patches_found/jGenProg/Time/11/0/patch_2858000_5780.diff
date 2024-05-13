@@ -1,0 +1,77 @@
+--- /src/main/java/org/joda/time/tz/ZoneInfoCompiler.java
++++ /src/main/java/org/joda/time/tz/ZoneInfoCompiler.java
+@@ -78,2 +77,0 @@
+-		return org.joda.time.tz.ZoneInfoCompiler.cVerbose.get();
+-	}
+@@ -93,5 +90,0 @@
+-	public static void main(java.lang.String[] args) throws java.lang.Exception {
+-		if (args.length == 0) {
+-			org.joda.time.tz.ZoneInfoCompiler.printUsage();
+-			return;
+-		}
+@@ -99,3 +91,0 @@
+-		java.io.File inputDir = null;
+-		java.io.File outputDir = null;
+-		boolean verbose = false;
+@@ -103,20 +92,0 @@
+-		int i;
+-		for (i = 0; i < args.length; i++) {
+-			try {
+-				if ("-src".equals(args[i])) {
+-					inputDir = new java.io.File(args[++i]);
+-				} else if ("-dst".equals(args[i])) {
+-					outputDir = new java.io.File(args[++i]);
+-				} else if ("-verbose".equals(args[i])) {
+-					verbose = true;
+-				} else if ("-?".equals(args[i])) {
+-					org.joda.time.tz.ZoneInfoCompiler.printUsage();
+-					return;
+-				} else {
+-					break;
+-				}
+-			} catch (java.lang.IndexOutOfBoundsException e) {
+-				org.joda.time.tz.ZoneInfoCompiler.printUsage();
+-				return;
+-			}
+-		}
+@@ -124,4 +93,0 @@
+-		if (i >= args.length) {
+-			org.joda.time.tz.ZoneInfoCompiler.printUsage();
+-			return;
+-		}
+@@ -128,0 +95,34 @@
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++		return true;} 	public static void main(java.lang.String[] args) throws java.lang.Exception { 		if (args.length == 0) { 			org.joda.time.tz.ZoneInfoCompiler.printUsage(); 			return;} 		java.io.File inputDir = null; 		java.io.File outputDir = null; 		boolean verbose = false; 		int i; 		for (i = 0; i < args.length; i++) { 			try { 				if ("-src".equals(args[i])) { 					inputDir = new java.io.File(args[++i]);} else if ("-dst".equals(args[i])) { 					outputDir = new java.io.File(args[++i]);} else if ("-verbose".equals(args[i])) { 					verbose = true;} else if ("-?".equals(args[i])) { 					org.joda.time.tz.ZoneInfoCompiler.printUsage(); 					return;} else { 					break;}} catch (java.lang.IndexOutOfBoundsException e) { 				org.joda.time.tz.ZoneInfoCompiler.printUsage(); 				return;}} 		if (i >= args.length) { 			org.joda.time.tz.ZoneInfoCompiler.printUsage(); 			return;}
+

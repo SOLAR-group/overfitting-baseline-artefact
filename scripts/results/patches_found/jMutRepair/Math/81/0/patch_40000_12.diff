@@ -1,0 +1,6 @@
+--- /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
++++ /src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+@@ -1537 +1537 @@
+-					if ((work[np - 8] > b2) || (work[np - 4] > b1)) {
++					if ((work[np - 8] > b2) || (work[np - 4] <= b1)) {
+

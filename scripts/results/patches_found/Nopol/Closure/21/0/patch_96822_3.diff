@@ -1,0 +1,7 @@
+--- /src/com/google/javascript/jscomp/CheckSideEffects.java
++++ /src/com/google/javascript/jscomp/CheckSideEffects.java
+@@ -116,3 +116,3 @@
+       }
+-      if (n == parent.getLastChild()) {
++      if (com.google.javascript.jscomp.CheckSideEffects.this.problemNodes.size() == 1) {
+         for (Node an : parent.getAncestors()) {

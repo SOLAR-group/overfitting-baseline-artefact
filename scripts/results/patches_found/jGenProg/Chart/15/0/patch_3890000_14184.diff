@@ -1,0 +1,12 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1219 +1218,0 @@
+-		this.plot.draw(g2, plotArea, anchor, null, plotInfo);
+@@ -1221 +1220,2 @@
+-		g2.setClip(savedClip);
++
++
+@@ -1224 +1224 @@
+-		org.jfree.chart.event.ChartProgressEvent.DRAWING_FINISHED, 100));
++		org.jfree.chart.event.ChartProgressEvent.DRAWING_FINISHED, 100)); 		g2.setClip(savedClip); 		notifyListeners(new org.jfree.chart.event.ChartProgressEvent(this, this, org.jfree.chart.event.ChartProgressEvent.DRAWING_FINISHED, 100));
+

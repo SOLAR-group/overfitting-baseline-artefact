@@ -1,0 +1,15 @@
+--- /src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
++++ /src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java
+@@ -353,6 +353,8 @@
+           int col = 0;
+-          for (int j = 0; j < getWidth(); j++) {
+-            if (!columnsToDrop.contains(j)) {
+-              matrix[i - 1][col++] = tableau.getEntry(i, j);
+-            }
++          if ((columnsToDrop.size()) != (org.apache.commons.math.optimization.linear.SimplexTableau.this.numDecisionVariables)) {
++              for (int j = 0; j < getWidth(); j++) {
++                  if (!columnsToDrop.contains(j)) {
++                      matrix[i - 1][col++] = tableau.getEntry(i, j);
++                  }
++              }
+           }

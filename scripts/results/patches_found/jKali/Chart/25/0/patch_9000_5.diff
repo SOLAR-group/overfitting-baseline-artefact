@@ -1,0 +1,13 @@
+--- /source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
++++ /source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+@@ -197,0 +198,4 @@
++		if (true)
++			return;
++
++
+@@ -200,4 +203,0 @@
+-		if (!(data instanceof org.jfree.data.statistics.StatisticalCategoryDataset)) {
+-			throw new java.lang.IllegalArgumentException(
+-			"Requires StatisticalCategoryDataset.");
+-		}
+

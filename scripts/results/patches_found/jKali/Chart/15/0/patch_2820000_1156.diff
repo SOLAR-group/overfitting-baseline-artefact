@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1156,2 +1156,2 @@
+-
+-		if (this.backgroundImage != null) {
++		if (true)
++			return; 		if (this.backgroundImage != null) {
+

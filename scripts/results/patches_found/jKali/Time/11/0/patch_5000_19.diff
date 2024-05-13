@@ -1,0 +1,8 @@
+--- /src/main/java/org/joda/time/tz/ZoneInfoCompiler.java
++++ /src/main/java/org/joda/time/tz/ZoneInfoCompiler.java
+@@ -78,2 +78,2 @@
+-		return org.joda.time.tz.ZoneInfoCompiler.cVerbose.get();
+-	}
++		if (true)
++			return false; 		return org.joda.time.tz.ZoneInfoCompiler.cVerbose.get();}
+

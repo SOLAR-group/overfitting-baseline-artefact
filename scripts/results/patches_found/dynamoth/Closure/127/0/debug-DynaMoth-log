@@ -1,0 +1,746 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8 -Duser.language=en-US -Duser.country=US -Duser.language=en
+com.google.javascript.jscomp.UnreachableCodeEliminationTest#testDontRemoveBreakInTryFinallySwitch
+.E
+Time: 2.134
+There was 1 failure:
+1) testDontRemoveBreakInTryFinallySwitch(com.google.javascript.jscomp.UnreachableCodeEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: function f(){b:try{throw 9;}finally{switch(x){case 1:break b}}return 1}
+Result: function f(){b:try{throw 9;}finally{switch(x){case 1:}}return 1}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        FUNCTION f
+            NAME f
+            PARAM_LIST
+            BLOCK
+                LABEL
+                    LABEL_NAME b
+                    TRY
+                        BLOCK
+                            THROW
+                                NUMBER 9.0
+                        BLOCK
+                        BLOCK
+                            SWITCH
+                                NAME x
+                                CASE
+                                    NUMBER 1.0
+                                    BLOCK [synthetic: 1]
+                                        BREAK
+                                            LABEL_NAME b
+                RETURN
+                    NUMBER 1.0
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        FUNCTION f
+            NAME f
+            PARAM_LIST
+            BLOCK
+                LABEL
+                    LABEL_NAME b
+                    TRY
+                        BLOCK
+                            THROW
+                                NUMBER 9.0
+                        BLOCK
+                        BLOCK
+                            SWITCH
+                                NAME x
+                                CASE
+                                    NUMBER 1.0
+                                    BLOCK [synthetic: 1]
+                RETURN
+                    NUMBER 1.0
+
+
+Subtree1: BLOCK [synthetic: 1]
+    BREAK
+        LABEL_NAME b
+
+
+Subtree2: BLOCK [synthetic: 1]
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:928)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:460)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:386)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:355)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:343)
+	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:582)
+	at com.google.javascript.jscomp.UnreachableCodeEliminationTest.testDontRemoveBreakInTryFinallySwitch(UnreachableCodeEliminationTest.java:421)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.rhino.NodeTest#testCheckTreeEqualsStringDifferent
+.
+Time: 0.547
+
+OK (1 test)
+
+com.google.javascript.jscomp.UnreachableCodeEliminationTest#testDontRemoveBreakInTryFinally
+.E
+Time: 0.654
+There was 1 failure:
+1) testDontRemoveBreakInTryFinally(com.google.javascript.jscomp.UnreachableCodeEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: function f(){b:try{throw 9;}finally{break b}return 1}
+Result: function f(){b:try{throw 9;}finally{}return 1}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        FUNCTION f
+            NAME f
+            PARAM_LIST
+            BLOCK
+                LABEL
+                    LABEL_NAME b
+                    TRY
+                        BLOCK
+                            THROW
+                                NUMBER 9.0
+                        BLOCK
+                        BLOCK
+                            BREAK
+                                LABEL_NAME b
+                RETURN
+                    NUMBER 1.0
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        FUNCTION f
+            NAME f
+            PARAM_LIST
+            BLOCK
+                LABEL
+                    LABEL_NAME b
+                    TRY
+                        BLOCK
+                            THROW
+                                NUMBER 9.0
+                        BLOCK
+                        BLOCK
+                RETURN
+                    NUMBER 1.0
+
+
+Subtree1: BLOCK
+    BREAK
+        LABEL_NAME b
+
+
+Subtree2: BLOCK
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:928)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:460)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:386)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:355)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:343)
+	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:582)
+	at com.google.javascript.jscomp.UnreachableCodeEliminationTest.testDontRemoveBreakInTryFinally(UnreachableCodeEliminationTest.java:417)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.UnreachableCodeEliminationTest#testIssue4177428_continue
+.E
+Time: 0.612
+There was 1 failure:
+1) testIssue4177428_continue(com.google.javascript.jscomp.UnreachableCodeEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: f=function(){var action;a:do{var proto=null;try{proto=new Proto}finally{action=proto;continue a}}while(false);alert(action)}
+Result: f=function(){var action;a:do{var proto=null;try{proto=new Proto}finally{action=proto}}while(false);alert(action)}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        EXPR_RESULT
+            ASSIGN
+                NAME f
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+                        VAR
+                            NAME action
+                        LABEL
+                            LABEL_NAME a
+                            DO
+                                BLOCK
+                                    VAR
+                                        NAME proto
+                                            NULL
+                                    TRY
+                                        BLOCK
+                                            EXPR_RESULT
+                                                ASSIGN
+                                                    NAME proto
+                                                    NEW
+                                                        NAME Proto
+                                        BLOCK
+                                        BLOCK
+                                            EXPR_RESULT
+                                                ASSIGN
+                                                    NAME action
+                                                    NAME proto
+                                            CONTINUE
+                                                LABEL_NAME a
+                                FALSE
+                        EXPR_RESULT
+                            CALL [free_call: 1]
+                                NAME alert
+                                NAME action
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        EXPR_RESULT
+            ASSIGN
+                NAME f
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+                        VAR
+                            NAME action
+                        LABEL
+                            LABEL_NAME a
+                            DO
+                                BLOCK
+                                    VAR
+                                        NAME proto
+                                            NULL
+                                    TRY
+                                        BLOCK
+                                            EXPR_RESULT
+                                                ASSIGN
+                                                    NAME proto
+                                                    NEW
+                                                        NAME Proto
+                                        BLOCK
+                                        BLOCK
+                                            EXPR_RESULT
+                                                ASSIGN
+                                                    NAME action
+                                                    NAME proto
+                                FALSE
+                        EXPR_RESULT
+                            CALL [free_call: 1]
+                                NAME alert
+                                NAME action
+
+
+Subtree1: BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME action
+            NAME proto
+    CONTINUE
+        LABEL_NAME a
+
+
+Subtree2: BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME action
+            NAME proto
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:928)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:460)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:386)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:355)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:343)
+	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:582)
+	at com.google.javascript.jscomp.UnreachableCodeEliminationTest.testIssue4177428_continue(UnreachableCodeEliminationTest.java:345)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.UnreachableCodeEliminationTest#testIssue4177428c
+.E
+Time: 0.606
+There was 1 failure:
+1) testIssue4177428c(com.google.javascript.jscomp.UnreachableCodeEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: f=function(){var action;a:{var proto=null;try{}finally{try{proto=new Proto}finally{action=proto;break a}}}alert(action)}
+Result: f=function(){var action;a:{var proto=null;try{}finally{try{proto=new Proto}finally{action=proto}}}alert(action)}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        EXPR_RESULT
+            ASSIGN
+                NAME f
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+                        VAR
+                            NAME action
+                        LABEL
+                            LABEL_NAME a
+                            BLOCK
+                                VAR
+                                    NAME proto
+                                        NULL
+                                TRY
+                                    BLOCK
+                                    BLOCK
+                                    BLOCK
+                                        TRY
+                                            BLOCK
+                                                EXPR_RESULT
+                                                    ASSIGN
+                                                        NAME proto
+                                                        NEW
+                                                            NAME Proto
+                                            BLOCK
+                                            BLOCK
+                                                EXPR_RESULT
+                                                    ASSIGN
+                                                        NAME action
+                                                        NAME proto
+                                                BREAK
+                                                    LABEL_NAME a
+                        EXPR_RESULT
+                            CALL [free_call: 1]
+                                NAME alert
+                                NAME action
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        EXPR_RESULT
+            ASSIGN
+                NAME f
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+                        VAR
+                            NAME action
+                        LABEL
+                            LABEL_NAME a
+                            BLOCK
+                                VAR
+                                    NAME proto
+                                        NULL
+                                TRY
+                                    BLOCK
+                                    BLOCK
+                                    BLOCK
+                                        TRY
+                                            BLOCK
+                                                EXPR_RESULT
+                                                    ASSIGN
+                                                        NAME proto
+                                                        NEW
+                                                            NAME Proto
+                                            BLOCK
+                                            BLOCK
+                                                EXPR_RESULT
+                                                    ASSIGN
+                                                        NAME action
+                                                        NAME proto
+                        EXPR_RESULT
+                            CALL [free_call: 1]
+                                NAME alert
+                                NAME action
+
+
+Subtree1: BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME action
+            NAME proto
+    BREAK
+        LABEL_NAME a
+
+
+Subtree2: BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME action
+            NAME proto
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:928)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:460)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:386)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:355)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:343)
+	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:582)
+	at com.google.javascript.jscomp.UnreachableCodeEliminationTest.testIssue4177428c(UnreachableCodeEliminationTest.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.UnreachableCodeEliminationTest#testIssue4177428a
+.E
+Time: 0.66
+There was 1 failure:
+1) testIssue4177428a(com.google.javascript.jscomp.UnreachableCodeEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: f=function(){var action;a:{var proto=null;try{proto=new Proto}finally{action=proto;break a}}alert(action)}
+Result: f=function(){var action;a:{var proto=null;try{proto=new Proto}finally{action=proto}}alert(action)}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        EXPR_RESULT
+            ASSIGN
+                NAME f
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+                        VAR
+                            NAME action
+                        LABEL
+                            LABEL_NAME a
+                            BLOCK
+                                VAR
+                                    NAME proto
+                                        NULL
+                                TRY
+                                    BLOCK
+                                        EXPR_RESULT
+                                            ASSIGN
+                                                NAME proto
+                                                NEW
+                                                    NAME Proto
+                                    BLOCK
+                                    BLOCK
+                                        EXPR_RESULT
+                                            ASSIGN
+                                                NAME action
+                                                NAME proto
+                                        BREAK
+                                            LABEL_NAME a
+                        EXPR_RESULT
+                            CALL [free_call: 1]
+                                NAME alert
+                                NAME action
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        EXPR_RESULT
+            ASSIGN
+                NAME f
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+                        VAR
+                            NAME action
+                        LABEL
+                            LABEL_NAME a
+                            BLOCK
+                                VAR
+                                    NAME proto
+                                        NULL
+                                TRY
+                                    BLOCK
+                                        EXPR_RESULT
+                                            ASSIGN
+                                                NAME proto
+                                                NEW
+                                                    NAME Proto
+                                    BLOCK
+                                    BLOCK
+                                        EXPR_RESULT
+                                            ASSIGN
+                                                NAME action
+                                                NAME proto
+                        EXPR_RESULT
+                            CALL [free_call: 1]
+                                NAME alert
+                                NAME action
+
+
+Subtree1: BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME action
+            NAME proto
+    BREAK
+        LABEL_NAME a
+
+
+Subtree2: BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME action
+            NAME proto
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:928)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:460)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:386)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:355)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:343)
+	at com.google.javascript.jscomp.CompilerTestCase.testSame(CompilerTestCase.java:582)
+	at com.google.javascript.jscomp.UnreachableCodeEliminationTest.testIssue4177428a(UnreachableCodeEliminationTest.java:288)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+com.google.javascript.jscomp.UnreachableCodeEliminationTest#testIssue4177428_return
+.E
+Time: 0.651
+There was 1 failure:
+1) testIssue4177428_return(com.google.javascript.jscomp.UnreachableCodeEliminationTest)
+junit.framework.AssertionFailedError: 
+Expected: f=function(){var action;a:{var proto=null;try{proto=new Proto}finally{action=proto;return}}}
+Result: f=function(){var action;a:{var proto=null;try{proto=new Proto}finally{action=proto}}}
+Node tree inequality:
+Tree1:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: expected0]
+        EXPR_RESULT
+            ASSIGN
+                NAME f
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+                        VAR
+                            NAME action
+                        LABEL
+                            LABEL_NAME a
+                            BLOCK
+                                VAR
+                                    NAME proto
+                                        NULL
+                                TRY
+                                    BLOCK
+                                        EXPR_RESULT
+                                            ASSIGN
+                                                NAME proto
+                                                NEW
+                                                    NAME Proto
+                                    BLOCK
+                                    BLOCK
+                                        EXPR_RESULT
+                                            ASSIGN
+                                                NAME action
+                                                NAME proto
+                                        RETURN
+
+
+Tree2:
+BLOCK [synthetic: 1]
+    SCRIPT [synthetic: 1] [input_id: InputId: testcode]
+        EXPR_RESULT
+            ASSIGN
+                NAME f
+                FUNCTION 
+                    NAME 
+                    PARAM_LIST
+                    BLOCK
+                        VAR
+                            NAME action
+                        LABEL
+                            LABEL_NAME a
+                            BLOCK
+                                VAR
+                                    NAME proto
+                                        NULL
+                                TRY
+                                    BLOCK
+                                        EXPR_RESULT
+                                            ASSIGN
+                                                NAME proto
+                                                NEW
+                                                    NAME Proto
+                                    BLOCK
+                                    BLOCK
+                                        EXPR_RESULT
+                                            ASSIGN
+                                                NAME action
+                                                NAME proto
+
+
+Subtree1: BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME action
+            NAME proto
+    RETURN
+
+
+Subtree2: BLOCK
+    EXPR_RESULT
+        ASSIGN
+            NAME action
+            NAME proto
+
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertNull(Assert.java:237)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:928)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:460)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:386)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:355)
+	at com.google.javascript.jscomp.CompilerTestCase.test(CompilerTestCase.java:343)
+	at com.google.javascript.jscomp.UnreachableCodeEliminationTest.testIssue4177428_return(UnreachableCodeEliminationTest.java:362)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:136)
+	at fr.inria.lille.repair.MethodTestRunner.runTest(MethodTestRunner.java:44)
+	at fr.inria.lille.repair.MethodTestRunner.access$0(MethodTestRunner.java:37)
+	at fr.inria.lille.repair.MethodTestRunner$1.call(MethodTestRunner.java:20)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+

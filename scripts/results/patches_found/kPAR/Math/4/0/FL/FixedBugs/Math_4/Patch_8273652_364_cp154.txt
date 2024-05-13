@@ -1,0 +1,56 @@
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+@@ -106,13 +106,7 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+         }
+         final SubHyperplane<Euclidean1D> lowerCut =
+             new OrientedPoint(new Vector1D(lower), false).wholeHyperplane();
+-        if (Double.isInfinite(upper) && (upper > 0)) {
+-            // the tree must be open on the positive infinity side
+-            return new BSPTree<Euclidean1D>(lowerCut,
+-                                            new BSPTree<Euclidean1D>(Boolean.FALSE),
+-                                            new BSPTree<Euclidean1D>(Boolean.TRUE),
+-                                            null);
+-        }
++        
+ 
+         // the tree must be bounded on the two sides
+         final SubHyperplane<Euclidean1D> upperCut =
+diff --git a/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java b/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java
+index 2809a59fb..866251d36 100644
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Vector3D.java
+@@ -246,7 +246,7 @@ public class Vector3D implements Serializable, Vector<Euclidean3D> {
+     /** {@inheritDoc} */
+     public double getNormSq() {
+         // there are no cancellation problems here, so we use the straightforward formula
+-        return x * x + y * y + z * z;
++        return x * x + y * y + this.x * z;
+     }
+ 
+     /** {@inheritDoc} */
+diff --git a/src/main/java/org/apache/commons/math3/geometry/partitioning/RegionFactory.java b/src/main/java/org/apache/commons/math3/geometry/partitioning/RegionFactory.java
+index 0b94b5dcd..fa830fec6 100644
+--- /src/main/java/org/apache/commons/math3/geometry/partitioning/RegionFactory.java
++++ /src/main/java/org/apache/commons/math3/geometry/partitioning/RegionFactory.java
+@@ -134,7 +134,7 @@ public class RegionFactory<S extends Space> {
+      * @return new tree, complement of the node
+      */
+     private BSPTree<S> recurseComplement(final BSPTree<S> node) {
+-        if (node.getCut() == null) {
++        if ((node.getCut() == null) && (((Boolean) node.getAttribute()))) {
+             return new BSPTree<S>(((Boolean) node.getAttribute()) ? Boolean.FALSE : Boolean.TRUE);
+         }
+ 
+diff --git a/src/main/java/org/apache/commons/math3/util/FastMath.java b/src/main/java/org/apache/commons/math3/util/FastMath.java
+index c5a198a61..2591281d3 100644
+--- /src/main/java/org/apache/commons/math3/util/FastMath.java
++++ /src/main/java/org/apache/commons/math3/util/FastMath.java
+@@ -2661,7 +2661,7 @@ public class FastMath {
+                 return Math.PI * F_1_2;
+             }
+ 
+-            if (y < 0 || 1 / y < 0) {
++            if ((y < 0 || 1 / y < 0) || (y > 0)) {
+                 return -Math.PI * F_1_2;
+             }
+         }

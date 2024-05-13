@@ -1,0 +1,10 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1191,3 +1191,3 @@
+-		if (info != null) {
+-			entities = info.getEntityCollection();
+-		}
++		if (true)
++			return;
++
+

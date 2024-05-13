@@ -1,0 +1,25 @@
+--- /src/java/org/apache/commons/lang/time/FastDateFormat.java
++++ /src/java/org/apache/commons/lang/time/FastDateFormat.java
+@@ -293,9 +293,22 @@
+                 locale = Locale.getDefault();
+             }
+             try {
++// start of generated patch
++if(timeZone!=null){
++key=new Pair(key,timeZone);
++}
++if(locale!=null){
++key=new Pair(key,locale);
++}
++SimpleDateFormat formatter=(SimpleDateFormat)DateFormat.getDateInstance(style,locale);
++String pattern=formatter.toPattern();
++format=getInstance(pattern,timeZone,locale);
++// end of generated patch
++/* start of original code
+                 SimpleDateFormat formatter = (SimpleDateFormat) DateFormat.getDateInstance(style, locale);
+                 String pattern = formatter.toPattern();
+                 format = getInstance(pattern, timeZone, locale);
++ end of original code*/
+                 cDateInstanceCache.put(key, format);
+                 
+             } catch (ClassCastException ex) {

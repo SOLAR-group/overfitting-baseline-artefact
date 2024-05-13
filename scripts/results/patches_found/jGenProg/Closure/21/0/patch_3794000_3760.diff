@@ -1,0 +1,8 @@
+--- /src/com/google/javascript/jscomp/CheckSideEffects.java
++++ /src/com/google/javascript/jscomp/CheckSideEffects.java
+@@ -121,2 +121,2 @@
+-					if ((ancestorType != com.google.javascript.rhino.Token.EXPR_RESULT) && (ancestorType != com.google.javascript.rhino.Token.BLOCK)) { 						return;} else
+-						break;
++
++
+

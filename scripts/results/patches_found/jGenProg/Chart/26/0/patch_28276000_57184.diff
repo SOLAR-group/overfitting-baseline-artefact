@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1180,2 +1180,2 @@
+-		java.awt.geom.Rectangle2D nonTitleArea = new java.awt.geom.Rectangle2D.Double();
+-		nonTitleArea.setRect(chartArea);
++		java.awt.geom.Rectangle2D nonTitleArea = new java.awt.geom.Rectangle2D.Double(); 		fireChartChanged();
++
+

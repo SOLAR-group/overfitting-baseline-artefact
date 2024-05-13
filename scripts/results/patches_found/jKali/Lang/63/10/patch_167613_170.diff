@@ -1,0 +1,8 @@
+--- /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
++++ /src/java/org/apache/commons/lang/time/DurationFormatUtils.java
+@@ -436,2 +436,2 @@
+-		if (endValue < startValue) {
+-			int newdiff = startValue - endValue;
++		if (true)
++			return 0; 		if (endValue < startValue) { 			int newdiff = startValue - endValue;
+

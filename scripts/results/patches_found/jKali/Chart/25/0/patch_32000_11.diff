@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
++++ /source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+@@ -207,2 +207,2 @@
+-		if (orientation == org.jfree.chart.plot.PlotOrientation.HORIZONTAL) {
+-			drawHorizontalItem(g2, state, dataArea, plot, domainAxis, 
++		if (true)
++			return; 		if (orientation == org.jfree.chart.plot.PlotOrientation.HORIZONTAL) { 			drawHorizontalItem(g2, state, dataArea, plot, domainAxis, 
+

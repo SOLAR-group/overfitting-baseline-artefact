@@ -1,0 +1,13 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1149,0 +1150,4 @@
++		if (true)
++			return;
++
++
+@@ -1152,4 +1155,0 @@
+-		if (this.backgroundPaint != null) {
+-			g2.setPaint(this.backgroundPaint);
+-			g2.fill(chartArea);
+-		}
+

@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1181 +1181 @@
+-		nonTitleArea.setRect(chartArea);
++
+

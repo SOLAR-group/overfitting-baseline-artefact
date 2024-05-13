@@ -1,0 +1,9 @@
+--- /source/org/jfree/chart/plot/Plot.java
++++ /source/org/jfree/chart/plot/Plot.java
+@@ -1266,3 +1266,5 @@
+         stream.defaultWriteObject();
+-        SerialUtilities.writePaint(this.noDataMessagePaint, stream);
++        if (true) {
++            SerialUtilities.writePaint(this.noDataMessagePaint, stream);
++        }
+         SerialUtilities.writeStroke(this.outlineStroke, stream);

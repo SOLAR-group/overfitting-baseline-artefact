@@ -1,0 +1,7 @@
+--- /src/com/google/javascript/jscomp/CollapseProperties.java
++++ /src/com/google/javascript/jscomp/CollapseProperties.java
+@@ -167,3 +167,3 @@
+       // Don't attempt to inline a getter or setter property as a variable.
+-      if (name.type == Name.Type.GET || name.type == Name.Type.SET) {
++      if (com.google.javascript.jscomp.CollapseProperties.this.collapsePropertiesOnExternTypes) {
+         continue;

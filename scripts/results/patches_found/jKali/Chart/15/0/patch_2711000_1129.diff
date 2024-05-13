@@ -1,0 +1,8 @@
+--- /source/org/jfree/chart/JFreeChart.java
++++ /source/org/jfree/chart/JFreeChart.java
+@@ -1135,2 +1135,2 @@
+-
+-		notifyListeners(new org.jfree.chart.event.ChartProgressEvent(this, this, 
++		if (true)
++			return; 		notifyListeners(new org.jfree.chart.event.ChartProgressEvent(this, this, 
+

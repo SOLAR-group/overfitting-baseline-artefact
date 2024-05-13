@@ -1,0 +1,10 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2868,3 +2868,3 @@
+-								renderer.drawItem(g2, state, dataArea, this, 
+-								domainAxis, rangeAxis, currentDataset, 
+-								row, column, pass);
++
++
++
+

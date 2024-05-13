@@ -1,0 +1,106 @@
+--- /src/main/java/org/apache/commons/math/ode/events/EventState.java
++++ /src/main/java/org/apache/commons/math/ode/events/EventState.java
+@@ -178,3 +177,0 @@
+-			double ga = g0;
+-			double tb = t0 + (interpolator.isForward() ? convergence : -convergence);
+-			for (int i = 0; i < n; ++i) {
+@@ -183,3 +179,0 @@
+-				tb += h;
+-				interpolator.setInterpolatedTime(tb);
+-				final double gb = handler.g(tb, interpolator.getInterpolatedState());
+@@ -188 +181,0 @@
+-				if (g0Positive ^ (gb >= 0)) {
+@@ -191 +183,0 @@
+-					if ((ga * gb) > 0) {
+@@ -199,7 +190,0 @@
+-						final double epsilon = (forward ? 0.25 : -0.25) * convergence;
+-						for (int k = 0; (k < 4) && ((ga * gb) > 0); ++k) {
+-							ta += epsilon;
+-							interpolator.setInterpolatedTime(ta);
+-							ga = handler.g(ta, interpolator.getInterpolatedState());
+-						}
+-						if ((ga * gb) > 0) {
+@@ -207,3 +191,0 @@
+-							throw org.apache.commons.math.MathRuntimeException.createInternalError(null);
+-						}
+-					}
+@@ -212 +193,0 @@
+-					increasing = gb >= ga;
+@@ -214,18 +194,0 @@
+-					final org.apache.commons.math.analysis.UnivariateRealFunction f = new org.apache.commons.math.analysis.UnivariateRealFunction() {
+-						public double value(final double t) throws org.apache.commons.math.FunctionEvaluationException {
+-							try {
+-								interpolator.setInterpolatedTime(t);
+-								return handler.g(t, interpolator.getInterpolatedState());
+-							} catch (org.apache.commons.math.ode.DerivativeException e) {
+-								throw new org.apache.commons.math.FunctionEvaluationException(e, t);
+-							} catch (org.apache.commons.math.ode.events.EventException e) {
+-								throw new org.apache.commons.math.FunctionEvaluationException(e, t);
+-							}
+-						}
+-					};
+-					final org.apache.commons.math.analysis.solvers.BrentSolver solver = new org.apache.commons.math.analysis.solvers.BrentSolver();
+-					solver.setAbsoluteAccuracy(convergence);
+-					solver.setMaximalIterationCount(maxIterationCount);
+-					final double root = (ta <= tb) ? solver.solve(f, ta, tb) : solver.solve(f, tb, ta);
+-					if ((java.lang.Math.abs(root - ta) <= convergence) && 
+-					(java.lang.Math.abs(root - previousEventTime) <= convergence)) {
+@@ -233,6 +195,0 @@
+-						ta = tb;
+-						ga = gb;
+-					} else if (java.lang.Double.isNaN(previousEventTime) || 
+-					(java.lang.Math.abs(previousEventTime - root) > convergence)) {
+-						pendingEventTime = root;
+-						if (pendingEvent && (java.lang.Math.abs(t1 - pendingEventTime) <= convergence)) {
+@@ -243,2 +199,0 @@
+-							return false;
+-						}
+@@ -247 +202,46 @@
+-						pendingEvent = true;
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++			pendingEvent = true; 			double ga = g0; 			double tb = t0 + (interpolator.isForward() ? convergence : -convergence); 			for (int i = 0; i < n; ++i) { 				tb += h; 				interpolator.setInterpolatedTime(tb); 				final double gb = handler.g(tb, interpolator.getInterpolatedState()); 				if (g0Positive ^ (gb >= 0)) { 					if ((ga * gb) > 0) { 						final double epsilon = (forward ? 0.25 : -0.25) * convergence; 						for (int k = 0; (k < 4) && ((ga * gb) > 0); ++k) { 							ta += epsilon; 							interpolator.setInterpolatedTime(ta); 							ga = handler.g(ta, interpolator.getInterpolatedState());} 						if ((ga * gb) > 0) { 							throw org.apache.commons.math.MathRuntimeException.createInternalError(null);}} 					increasing = gb >= ga; 					final org.apache.commons.math.analysis.UnivariateRealFunction f = new org.apache.commons.math.analysis.UnivariateRealFunction() { 						public double value(final double t) throws org.apache.commons.math.FunctionEvaluationException { 							try { 								interpolator.setInterpolatedTime(t); 								return handler.g(t, interpolator.getInterpolatedState());} catch (org.apache.commons.math.ode.DerivativeException e) { 								throw new org.apache.commons.math.FunctionEvaluationException(e, t);} catch (org.apache.commons.math.ode.events.EventException e) { 								throw new org.apache.commons.math.FunctionEvaluationException(e, t);}}}; 					final org.apache.commons.math.analysis.solvers.BrentSolver solver = new org.apache.commons.math.analysis.solvers.BrentSolver(); 					solver.setAbsoluteAccuracy(convergence); 					solver.setMaximalIterationCount(maxIterationCount); 					final double root = (ta <= tb) ? solver.solve(f, ta, tb) : solver.solve(f, tb, ta); 					if ((java.lang.Math.abs(root - ta) <= convergence) && (java.lang.Math.abs(root - previousEventTime) <= convergence)) { 						ta = tb; 						ga = gb;} else if (java.lang.Double.isNaN(previousEventTime) || (java.lang.Math.abs(previousEventTime - root) > convergence)) { 						pendingEventTime = root; 						if (pendingEvent && (java.lang.Math.abs(t1 - pendingEventTime) <= convergence)) { 							return false;} 						pendingEvent = true;
+

@@ -1,0 +1,455 @@
+--- /source/org/jfree/data/time/TimeSeries.java
++++ /source/org/jfree/data/time/TimeSeries.java
+@@ -254,2 +253,0 @@
+-		return this.data.size();
+-	}
+@@ -263 +260,0 @@
+-	public java.util.List getItems() {
+@@ -265,2 +261,0 @@
+-		return java.util.Collections.unmodifiableList(this.data);
+-	}
+@@ -276,3 +270,0 @@
+-	public int getMaximumItemCount() {
+-		return this.maximumItemCount;
+-	}
+@@ -291,10 +282,0 @@
+-	public void setMaximumItemCount(int maximum) {
+-		if (maximum < 0) {
+-			throw new java.lang.IllegalArgumentException("Negative 'maximum' argument.");
+-		}
+-		this.maximumItemCount = maximum;
+-		int count = this.data.size();
+-		if (count > maximum) {
+-			delete(0, (count - maximum) - 1);
+-		}
+-	}
+@@ -309,3 +290,0 @@
+-	public long getMaximumItemAge() {
+-		return this.maximumItemAge;
+-	}
+@@ -325,7 +303,0 @@
+-	public void setMaximumItemAge(long periods) {
+-		if (periods < 0) {
+-			throw new java.lang.IllegalArgumentException("Negative 'periods' argument.");
+-		}
+-		this.maximumItemAge = periods;
+-		removeAgedItems(true);
+-	}
+@@ -344,3 +315,0 @@
+-	public double getMinY() {
+-		return this.minY;
+-	}
+@@ -359,3 +327,0 @@
+-	public double getMaxY() {
+-		return this.maxY;
+-	}
+@@ -373,3 +338,0 @@
+-	public java.lang.Class getTimePeriodClass() {
+-		return this.timePeriodClass;
+-	}
+@@ -388,4 +350,0 @@
+-	public org.jfree.data.time.TimeSeriesDataItem getDataItem(int index) {
+-		org.jfree.data.time.TimeSeriesDataItem item = ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index)));
+-		return ((org.jfree.data.time.TimeSeriesDataItem) (item.clone()));
+-	}
+@@ -405,9 +363,0 @@
+-	public org.jfree.data.time.TimeSeriesDataItem getDataItem(org.jfree.data.time.RegularTimePeriod period) {
+-		int index = getIndex(period);
+-		if (index >= 0) {
+-			return getDataItem(index);
+-		} else 
+-		{
+-			return null;
+-		}
+-	}
+@@ -428,3 +377,0 @@
+-	org.jfree.data.time.TimeSeriesDataItem getRawDataItem(int index) {
+-		return ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index)));
+-	}
+@@ -445,9 +391,0 @@
+-	org.jfree.data.time.TimeSeriesDataItem getRawDataItem(org.jfree.data.time.RegularTimePeriod period) {
+-		int index = getIndex(period);
+-		if (index >= 0) {
+-			return ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index)));
+-		} else 
+-		{
+-			return null;
+-		}
+-	}
+@@ -462,3 +399,0 @@
+-	public org.jfree.data.time.RegularTimePeriod getTimePeriod(int index) {
+-		return getRawDataItem(index).getPeriod();
+-	}
+@@ -472,4 +406,0 @@
+-	public org.jfree.data.time.RegularTimePeriod getNextTimePeriod() {
+-		org.jfree.data.time.RegularTimePeriod last = getTimePeriod(getItemCount() - 1);
+-		return last.next();
+-	}
+@@ -482,7 +412,0 @@
+-	public java.util.Collection getTimePeriods() {
+-		java.util.Collection result = new java.util.ArrayList();
+-		for (int i = 0; i < getItemCount(); i++) {
+-			result.add(getTimePeriod(i));
+-		}
+-		return result;
+-	}
+@@ -498,11 +421,0 @@
+-	public java.util.Collection getTimePeriodsUniqueToOtherSeries(org.jfree.data.time.TimeSeries series) {
+-		java.util.Collection result = new java.util.ArrayList();
+-		for (int i = 0; i < series.getItemCount(); i++) {
+-			org.jfree.data.time.RegularTimePeriod period = series.getTimePeriod(i);
+-			int index = getIndex(period);
+-			if (index < 0) {
+-				result.add(period);
+-			}
+-		}
+-		return result;
+-	}
+@@ -518,8 +430,0 @@
+-	public int getIndex(org.jfree.data.time.RegularTimePeriod period) {
+-		if (period == null) {
+-			throw new java.lang.IllegalArgumentException("Null 'period' argument.");
+-		}
+-		org.jfree.data.time.TimeSeriesDataItem dummy = new org.jfree.data.time.TimeSeriesDataItem(
+-		period, java.lang.Integer.MIN_VALUE);
+-		return java.util.Collections.binarySearch(this.data, dummy);
+-	}
+@@ -534,3 +438,0 @@
+-	public java.lang.Number getValue(int index) {
+-		return getRawDataItem(index).getValue();
+-	}
+@@ -546,9 +447,0 @@
+-	public java.lang.Number getValue(org.jfree.data.time.RegularTimePeriod period) {
+-		int index = getIndex(period);
+-		if (index >= 0) {
+-			return getValue(index);
+-		} else 
+-		{
+-			return null;
+-		}
+-	}
+@@ -563,3 +455,0 @@
+-	public void add(org.jfree.data.time.TimeSeriesDataItem item) {
+-		add(item, true);
+-	}
+@@ -575,19 +464,0 @@
+-	public void add(org.jfree.data.time.TimeSeriesDataItem item, boolean notify) {
+-		if (item == null) {
+-			throw new java.lang.IllegalArgumentException("Null 'item' argument.");
+-		}
+-		item = ((org.jfree.data.time.TimeSeriesDataItem) (item.clone()));
+-		java.lang.Class c = item.getPeriod().getClass();
+-		if (this.timePeriodClass == null) {
+-			this.timePeriodClass = c;
+-		} else 
+-		if (!this.timePeriodClass.equals(c)) {
+-			java.lang.StringBuffer b = new java.lang.StringBuffer();
+-			b.append("You are trying to add data where the time period class ");
+-			b.append("is ");
+-			b.append(item.getPeriod().getClass().getName());
+-			b.append(", but the TimeSeries is expecting an instance of ");
+-			b.append(this.timePeriodClass.getName());
+-			b.append(".");
+-			throw new org.jfree.data.general.SeriesException(b.toString());
+-		}
+@@ -596,32 +466,0 @@
+-		boolean added = false;
+-		int count = getItemCount();
+-		if (count == 0) {
+-			this.data.add(item);
+-			added = true;
+-		} else 
+-		{
+-			org.jfree.data.time.RegularTimePeriod last = getTimePeriod(getItemCount() - 1);
+-			if (item.getPeriod().compareTo(last) > 0) {
+-				this.data.add(item);
+-				added = true;
+-			} else 
+-			{
+-				int index = java.util.Collections.binarySearch(this.data, item);
+-				if (index < 0) {
+-					this.data.add((-index) - 1, item);
+-					added = true;
+-				} else 
+-				{
+-					java.lang.StringBuffer b = new java.lang.StringBuffer();
+-					b.append("You are attempting to add an observation for ");
+-					b.append("the time period ");
+-					b.append(item.getPeriod().toString());
+-					b.append(" but the series already contains an observation");
+-					b.append(" for that time period. Duplicates are not ");
+-					b.append("permitted.  Try using the addOrUpdate() method.");
+-					throw new org.jfree.data.general.SeriesException(b.toString());
+-				}
+-			}
+-		}
+-		if (added) {
+-			updateBoundsForAddedItem(item);
+@@ -629,4 +467,0 @@
+-			if (getItemCount() > this.maximumItemCount) {
+-				org.jfree.data.time.TimeSeriesDataItem d = ((org.jfree.data.time.TimeSeriesDataItem) (this.data.remove(0)));
+-				updateBoundsForRemovedItem(d);
+-			}
+@@ -634 +468,0 @@
+-			removeAgedItems(false);
+@@ -637,4 +470,0 @@
+-			if (notify) {
+-				fireSeriesChanged();
+-			}
+-		}
+@@ -642 +471,0 @@
+-	}
+@@ -651 +479,0 @@
+-	public void add(org.jfree.data.time.RegularTimePeriod period, double value) {
+@@ -653,2 +480,0 @@
+-		add(period, value, true);
+-	}
+@@ -664 +489,0 @@
+-	public void add(org.jfree.data.time.RegularTimePeriod period, double value, boolean notify) {
+@@ -666,3 +490,0 @@
+-		org.jfree.data.time.TimeSeriesDataItem item = new org.jfree.data.time.TimeSeriesDataItem(period, value);
+-		add(item, notify);
+-	}
+@@ -678 +499,0 @@
+-	public void add(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value) {
+@@ -680,2 +500,0 @@
+-		add(period, value, true);
+-	}
+@@ -691 +509,0 @@
+-	public void add(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value, boolean notify) {
+@@ -693,3 +510,0 @@
+-		org.jfree.data.time.TimeSeriesDataItem item = new org.jfree.data.time.TimeSeriesDataItem(period, value);
+-		add(item, notify);
+-	}
+@@ -704,9 +518,0 @@
+-	public void update(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value) {
+-		org.jfree.data.time.TimeSeriesDataItem temp = new org.jfree.data.time.TimeSeriesDataItem(period, value);
+-		int index = java.util.Collections.binarySearch(this.data, temp);
+-		if (index < 0) {
+-			throw new org.jfree.data.general.SeriesException("There is no existing value for the " + 
+-			"specified 'period'.");
+-		}
+-		update(index, value);
+-	}
+@@ -720,13 +526,207 @@
+-	public void update(int index, java.lang.Number value) {
+-		org.jfree.data.time.TimeSeriesDataItem item = ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index)));
+-		boolean iterate = false;
+-		java.lang.Number oldYN = item.getValue();
+-		if (oldYN != null) {
+-			double oldY = oldYN.doubleValue();
+-			if (!java.lang.Double.isNaN(oldY)) {
+-				iterate = (oldY <= this.minY) || (oldY >= this.maxY);
+-			}
+-		}
+-		item.setValue(value);
+-		if (iterate) {
+-			findBoundsByIteration();
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++		findBoundsByIteration(); 		return this.data.size();} 	public java.util.List getItems() { 		return java.util.Collections.unmodifiableList(this.data);} 	public int getMaximumItemCount() { 		return this.maximumItemCount;} 	public void setMaximumItemCount(int maximum) { 		if (maximum < 0) { 			throw new java.lang.IllegalArgumentException("Negative 'maximum' argument.");} 		this.maximumItemCount = maximum; 		int count = this.data.size(); 		if (count > maximum) { 			delete(0, (count - maximum) - 1);}} 	public long getMaximumItemAge() { 		return this.maximumItemAge;} 	public void setMaximumItemAge(long periods) { 		if (periods < 0) { 			throw new java.lang.IllegalArgumentException("Negative 'periods' argument.");} 		this.maximumItemAge = periods; 		removeAgedItems(true);} 	public double getMinY() { 		return this.minY;} 	public double getMaxY() { 		return this.maxY;} 	public java.lang.Class getTimePeriodClass() { 		return this.timePeriodClass;} 	public org.jfree.data.time.TimeSeriesDataItem getDataItem(int index) { 		org.jfree.data.time.TimeSeriesDataItem item = ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index))); 		return ((org.jfree.data.time.TimeSeriesDataItem) (item.clone()));} 	public org.jfree.data.time.TimeSeriesDataItem getDataItem(org.jfree.data.time.RegularTimePeriod period) { 		int index = getIndex(period); 		if (index >= 0) { 			return getDataItem(index);} else { 			return null;}} 	org.jfree.data.time.TimeSeriesDataItem getRawDataItem(int index) { 		return ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index)));} 	org.jfree.data.time.TimeSeriesDataItem getRawDataItem(org.jfree.data.time.RegularTimePeriod period) { 		int index = getIndex(period); 		if (index >= 0) { 			return ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index)));} else { 			return null;}} 	public org.jfree.data.time.RegularTimePeriod getTimePeriod(int index) { 		return getRawDataItem(index).getPeriod();} 	public org.jfree.data.time.RegularTimePeriod getNextTimePeriod() { 		org.jfree.data.time.RegularTimePeriod last = getTimePeriod(getItemCount() - 1); 		return last.next();} 	public java.util.Collection getTimePeriods() { 		java.util.Collection result = new java.util.ArrayList(); 		for (int i = 0; i < getItemCount(); i++) { 			result.add(getTimePeriod(i));} 		return result;} 	public java.util.Collection getTimePeriodsUniqueToOtherSeries(org.jfree.data.time.TimeSeries series) { 		java.util.Collection result = new java.util.ArrayList(); 		for (int i = 0; i < series.getItemCount(); i++) { 			org.jfree.data.time.RegularTimePeriod period = series.getTimePeriod(i); 			int index = getIndex(period); 			if (index < 0) { 				result.add(period);}} 		return result;} 	public int getIndex(org.jfree.data.time.RegularTimePeriod period) { 		if (period == null) { 			throw new java.lang.IllegalArgumentException("Null 'period' argument.");} 		org.jfree.data.time.TimeSeriesDataItem dummy = new org.jfree.data.time.TimeSeriesDataItem(period, java.lang.Integer.MIN_VALUE); 		return java.util.Collections.binarySearch(this.data, dummy);} 	public java.lang.Number getValue(int index) { 		return getRawDataItem(index).getValue();} 	public java.lang.Number getValue(org.jfree.data.time.RegularTimePeriod period) { 		int index = getIndex(period); 		if (index >= 0) { 			return getValue(index);} else { 			return null;}} 	public void add(org.jfree.data.time.TimeSeriesDataItem item) { 		add(item, true);} 	public void add(org.jfree.data.time.TimeSeriesDataItem item, boolean notify) { 		if (item == null) { 			throw new java.lang.IllegalArgumentException("Null 'item' argument.");} 		item = ((org.jfree.data.time.TimeSeriesDataItem) (item.clone())); 		java.lang.Class c = item.getPeriod().getClass(); 		if (this.timePeriodClass == null) { 			this.timePeriodClass = c;} else if (!this.timePeriodClass.equals(c)) { 			java.lang.StringBuffer b = new java.lang.StringBuffer(); 			b.append("You are trying to add data where the time period class "); 			b.append("is "); 			b.append(item.getPeriod().getClass().getName()); 			b.append(", but the TimeSeries is expecting an instance of "); 			b.append(this.timePeriodClass.getName()); 			b.append("."); 			throw new org.jfree.data.general.SeriesException(b.toString());} 		boolean added = false; 		int count = getItemCount(); 		if (count == 0) { 			this.data.add(item); 			added = true;} else { 			org.jfree.data.time.RegularTimePeriod last = getTimePeriod(getItemCount() - 1); 			if (item.getPeriod().compareTo(last) > 0) { 				this.data.add(item); 				added = true;} else { 				int index = java.util.Collections.binarySearch(this.data, item); 				if (index < 0) { 					this.data.add((-index) - 1, item); 					added = true;} else { 					java.lang.StringBuffer b = new java.lang.StringBuffer(); 					b.append("You are attempting to add an observation for "); 					b.append("the time period "); 					b.append(item.getPeriod().toString()); 					b.append(" but the series already contains an observation"); 					b.append(" for that time period. Duplicates are not "); 					b.append("permitted.  Try using the addOrUpdate() method."); 					throw new org.jfree.data.general.SeriesException(b.toString());}}} 		if (added) { 			updateBoundsForAddedItem(item); 			if (getItemCount() > this.maximumItemCount) { 				org.jfree.data.time.TimeSeriesDataItem d = ((org.jfree.data.time.TimeSeriesDataItem) (this.data.remove(0))); 				updateBoundsForRemovedItem(d);} 			removeAgedItems(false); 			if (notify) { 				fireSeriesChanged();}}} 	public void add(org.jfree.data.time.RegularTimePeriod period, double value) { 		add(period, value, true);} 	public void add(org.jfree.data.time.RegularTimePeriod period, double value, boolean notify) { 		org.jfree.data.time.TimeSeriesDataItem item = new org.jfree.data.time.TimeSeriesDataItem(period, value); 		add(item, notify);} 	public void add(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value) { 		add(period, value, true);} 	public void add(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value, boolean notify) { 		org.jfree.data.time.TimeSeriesDataItem item = new org.jfree.data.time.TimeSeriesDataItem(period, value); 		add(item, notify);} 	public void update(org.jfree.data.time.RegularTimePeriod period, java.lang.Number value) { 		org.jfree.data.time.TimeSeriesDataItem temp = new org.jfree.data.time.TimeSeriesDataItem(period, value); 		int index = java.util.Collections.binarySearch(this.data, temp); 		if (index < 0) { 			throw new org.jfree.data.general.SeriesException("There is no existing value for the " + "specified 'period'.");} 		update(index, value);} 	public void update(int index, java.lang.Number value) { 		org.jfree.data.time.TimeSeriesDataItem item = ((org.jfree.data.time.TimeSeriesDataItem) (this.data.get(index))); 		boolean iterate = false; 		java.lang.Number oldYN = item.getValue(); 		if (oldYN != null) { 			double oldY = oldYN.doubleValue(); 			if (!java.lang.Double.isNaN(oldY)) { 				iterate = (oldY <= this.minY) || (oldY >= this.maxY);}} 		item.setValue(value); 		if (iterate) { 			findBoundsByIteration();
+

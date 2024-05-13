@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/block/BorderArrangement.java
++++ /source/org/jfree/chart/block/BorderArrangement.java
+@@ -450 +450 @@
+-			w[2] = size.width;
++
+

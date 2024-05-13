@@ -1,0 +1,56 @@
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/oned/IntervalsSet.java
+@@ -106,13 +106,7 @@ public class IntervalsSet extends AbstractRegion<Euclidean1D, Euclidean1D> {
+         }
+         final SubHyperplane<Euclidean1D> lowerCut =
+             new OrientedPoint(new Vector1D(lower), false).wholeHyperplane();
+-        if (Double.isInfinite(upper) && (upper > 0)) {
+-            // the tree must be open on the positive infinity side
+-            return new BSPTree<Euclidean1D>(lowerCut,
+-                                            new BSPTree<Euclidean1D>(Boolean.FALSE),
+-                                            new BSPTree<Euclidean1D>(Boolean.TRUE),
+-                                            null);
+-        }
++        
+ 
+         // the tree must be bounded on the two sides
+         final SubHyperplane<Euclidean1D> upperCut =
+diff --git a/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java b/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java
+index 7c9a28f14..d3b4e6558 100644
+--- /src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java
++++ /src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java
+@@ -77,7 +77,7 @@ public class Line implements Embedding<Euclidean3D, Euclidean1D> {
+             throw new MathIllegalArgumentException(LocalizedFormats.ZERO_NORM);
+         }
+         this.direction = new Vector3D(1.0 / FastMath.sqrt(norm2), delta);
+-        zero = new Vector3D(1.0, p1, -p1.dotProduct(delta) / norm2, delta);
++        zero = new Vector3D(1.0, p1, -p1.dotProduct(this.direction) / norm2, delta);
+     }
+ 
+     /** Get a line with reversed direction.
+diff --git a/src/main/java/org/apache/commons/math3/geometry/partitioning/RegionFactory.java b/src/main/java/org/apache/commons/math3/geometry/partitioning/RegionFactory.java
+index 0b94b5dcd..92b34c1e0 100644
+--- /src/main/java/org/apache/commons/math3/geometry/partitioning/RegionFactory.java
++++ /src/main/java/org/apache/commons/math3/geometry/partitioning/RegionFactory.java
+@@ -140,7 +140,7 @@ public class RegionFactory<S extends Space> {
+ 
+         @SuppressWarnings("unchecked")
+         BoundaryAttribute<S> attribute = (BoundaryAttribute<S>) node.getAttribute();
+-        if (attribute != null) {
++        if (((attribute.getPlusInside() == null))) {
+             final SubHyperplane<S> plusOutside =
+                 (attribute.getPlusInside() == null) ? null : attribute.getPlusInside().copySelf();
+             final SubHyperplane<S> plusInside  =
+diff --git a/src/main/java/org/apache/commons/math3/util/FastMath.java b/src/main/java/org/apache/commons/math3/util/FastMath.java
+index c5a198a61..2591281d3 100644
+--- /src/main/java/org/apache/commons/math3/util/FastMath.java
++++ /src/main/java/org/apache/commons/math3/util/FastMath.java
+@@ -2661,7 +2661,7 @@ public class FastMath {
+                 return Math.PI * F_1_2;
+             }
+ 
+-            if (y < 0 || 1 / y < 0) {
++            if ((y < 0 || 1 / y < 0) || (y > 0)) {
+                 return -Math.PI * F_1_2;
+             }
+         }

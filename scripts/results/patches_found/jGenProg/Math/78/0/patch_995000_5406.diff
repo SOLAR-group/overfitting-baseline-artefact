@@ -1,0 +1,6 @@
+--- /src/main/java/org/apache/commons/math/ode/events/EventState.java
++++ /src/main/java/org/apache/commons/math/ode/events/EventState.java
+@@ -174 +174 @@
+-			final int n = java.lang.Math.max(1, ((int) (java.lang.Math.ceil(java.lang.Math.abs(t1 - t0) / maxCheckInterval))));
++			final int n = java.lang.Math.max(1, ((int) (java.lang.Math.ceil(java.lang.Math.abs(t1 - t0) / maxCheckInterval)))); 			final double t0 = interpolator.getPreviousTime();
+

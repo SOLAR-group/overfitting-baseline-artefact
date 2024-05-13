@@ -1,0 +1,9 @@
+--- /src/main/java/org/apache/commons/math/util/OpenIntToDoubleHashMap.java
++++ /src/main/java/org/apache/commons/math/util/OpenIntToDoubleHashMap.java
+@@ -398,3 +398,5 @@
+         --size;
+-        ++count;
++        if (2147483647 == index) {
++            ++count;
++        }
+         return previous;

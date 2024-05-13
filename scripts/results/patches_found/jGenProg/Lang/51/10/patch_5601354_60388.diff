@@ -1,0 +1,414 @@
+--- /src/java/org/apache/commons/lang/BooleanUtils.java
++++ /src/java/org/apache/commons/lang/BooleanUtils.java
+@@ -671,27 +670,0 @@
+-					char ch = str.charAt(0);
+-					if (ch == 'y') {
+-						return 
+-						((str.charAt(1) == 'e') || (str.charAt(1) == 'E')) && 
+-						((str.charAt(2) == 's') || (str.charAt(2) == 'S'));
+-					}
+-					if (ch == 'Y') {
+-						return 
+-						((str.charAt(1) == 'E') || (str.charAt(1) == 'e')) && 
+-						((str.charAt(2) == 'S') || (str.charAt(2) == 's'));
+-					}
+-				}
+-			case 4 : 				{
+-					char ch = str.charAt(0);
+-					if (ch == 't') {
+-						return 
+-						(((str.charAt(1) == 'r') || (str.charAt(1) == 'R')) && 
+-						((str.charAt(2) == 'u') || (str.charAt(2) == 'U'))) && 
+-						((str.charAt(3) == 'e') || (str.charAt(3) == 'E'));
+-					}
+-					if (ch == 'T') {
+-						return 
+-						(((str.charAt(1) == 'R') || (str.charAt(1) == 'r')) && 
+-						((str.charAt(2) == 'U') || (str.charAt(2) == 'u'))) && 
+-						((str.charAt(3) == 'E') || (str.charAt(3) == 'e'));
+-					}
+-				}}
+@@ -699,2 +671,0 @@
+-		return false;
+-	}
+@@ -731,12 +701,0 @@
+-	public static boolean toBoolean(java.lang.String str, java.lang.String trueString, java.lang.String falseString) {
+-		if (str == null) {
+-			if (trueString == null) {
+-				return true;
+-			} else if (falseString == null) {
+-				return false;
+-			}
+-		} else if (str.equals(trueString)) {
+-			return true;
+-		} else if (str.equals(falseString)) {
+-			return false;
+-		}
+@@ -744,2 +702,0 @@
+-		throw new java.lang.IllegalArgumentException("The String did not match either specified value");
+-	}
+@@ -763,3 +719,0 @@
+-	public static java.lang.String toStringTrueFalse(java.lang.Boolean bool) {
+-		return org.apache.commons.lang.BooleanUtils.toString(bool, "true", "false", null);
+-	}
+@@ -781,3 +734,0 @@
+-	public static java.lang.String toStringOnOff(java.lang.Boolean bool) {
+-		return org.apache.commons.lang.BooleanUtils.toString(bool, "on", "off", null);
+-	}
+@@ -799,3 +749,0 @@
+-	public static java.lang.String toStringYesNo(java.lang.Boolean bool) {
+-		return org.apache.commons.lang.BooleanUtils.toString(bool, "yes", "no", null);
+-	}
+@@ -821,6 +768,0 @@
+-	public static java.lang.String toString(java.lang.Boolean bool, java.lang.String trueString, java.lang.String falseString, java.lang.String nullString) {
+-		if (bool == null) {
+-			return nullString;
+-		}
+-		return bool.booleanValue() ? trueString : falseString;
+-	}
+@@ -843,3 +784,0 @@
+-	public static java.lang.String toStringTrueFalse(boolean bool) {
+-		return org.apache.commons.lang.BooleanUtils.toString(bool, "true", "false");
+-	}
+@@ -860,3 +798,0 @@
+-	public static java.lang.String toStringOnOff(boolean bool) {
+-		return org.apache.commons.lang.BooleanUtils.toString(bool, "on", "off");
+-	}
+@@ -877,3 +812,0 @@
+-	public static java.lang.String toStringYesNo(boolean bool) {
+-		return org.apache.commons.lang.BooleanUtils.toString(bool, "yes", "no");
+-	}
+@@ -896,3 +828,0 @@
+-	public static java.lang.String toString(boolean bool, java.lang.String trueString, java.lang.String falseString) {
+-		return bool ? trueString : falseString;
+-	}
+@@ -916 +845,0 @@
+-	public static boolean xor(boolean[] array) {
+@@ -918,5 +846,0 @@
+-		if (array == null) {
+-			throw new java.lang.IllegalArgumentException("The Array must not be null");
+-		} else if (array.length == 0) {
+-			throw new java.lang.IllegalArgumentException("Array is empty");
+-		}
+@@ -925,2 +848,0 @@
+-		int trueCount = 0;
+-		for (int i = 0; i < array.length; i++) {
+@@ -929,8 +850,0 @@
+-			if (array[i]) {
+-				if (trueCount < 1) {
+-					trueCount++;
+-				} else {
+-					return false;
+-				}
+-			}
+-		}
+@@ -939,2 +852,0 @@
+-		return trueCount == 1;
+-	}
+@@ -957,14 +869,289 @@
+-	public static java.lang.Boolean xor(java.lang.Boolean[] array) {
+-		if (array == null) {
+-			throw new java.lang.IllegalArgumentException("The Array must not be null");
+-		} else if (array.length == 0) {
+-			throw new java.lang.IllegalArgumentException("Array is empty");
+-		}
+-		boolean[] primitive = null;
+-		try {
+-			primitive = org.apache.commons.lang.ArrayUtils.toPrimitive(array);
+-		} catch (java.lang.NullPointerException ex) {
+-			throw new java.lang.IllegalArgumentException("The array must not contain any null elements");
+-		}
+-		return org.apache.commons.lang.BooleanUtils.xor(primitive) ? java.lang.Boolean.TRUE : java.lang.Boolean.FALSE;
+-	}}
+\ No newline at end of file
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++					if (org.apache.commons.lang.SystemUtils.JAVA_VERSION_TRIMMED.length() >= 5) {
++						str = str + org.apache.commons.lang.SystemUtils.JAVA_VERSION_TRIMMED.substring(4, 5);
++					} else {
++						str = str + "0";
++					} 					char ch = str.charAt(0); 					if (ch == 'y') { 						return ((str.charAt(1) == 'e') || (str.charAt(1) == 'E')) && ((str.charAt(2) == 's') || (str.charAt(2) == 'S'));} 					if (ch == 'Y') { 						return ((str.charAt(1) == 'E') || (str.charAt(1) == 'e')) && ((str.charAt(2) == 'S') || (str.charAt(2) == 's'));}} 			case 4 : 				{ 					char ch = str.charAt(0); 					if (ch == 't') { 						return (((str.charAt(1) == 'r') || (str.charAt(1) == 'R')) && ((str.charAt(2) == 'u') || (str.charAt(2) == 'U'))) && ((str.charAt(3) == 'e') || (str.charAt(3) == 'E'));} 					if (ch == 'T') { 						return (((str.charAt(1) == 'R') || (str.charAt(1) == 'r')) && ((str.charAt(2) == 'U') || (str.charAt(2) == 'u'))) && ((str.charAt(3) == 'E') || (str.charAt(3) == 'e'));}}} 		return false;} 	public static boolean toBoolean(java.lang.String str, java.lang.String trueString, java.lang.String falseString) { 		if (str == null) { 			if (trueString == null) { 				return true;} else if (falseString == null) { 				return false;}} else if (str.equals(trueString)) { 			return true;} else if (str.equals(falseString)) { 			return false;} 		throw new java.lang.IllegalArgumentException("The String did not match either specified value");} 	public static java.lang.String toStringTrueFalse(java.lang.Boolean bool) { 		return org.apache.commons.lang.BooleanUtils.toString(bool, "true", "false", null);} 	public static java.lang.String toStringOnOff(java.lang.Boolean bool) { 		return org.apache.commons.lang.BooleanUtils.toString(bool, "on", "off", null);} 	public static java.lang.String toStringYesNo(java.lang.Boolean bool) { 		return org.apache.commons.lang.BooleanUtils.toString(bool, "yes", "no", null);} 	public static java.lang.String toString(java.lang.Boolean bool, java.lang.String trueString, java.lang.String falseString, java.lang.String nullString) { 		if (bool == null) { 			return nullString;} 		return bool.booleanValue() ? trueString : falseString;} 	public static java.lang.String toStringTrueFalse(boolean bool) { 		return org.apache.commons.lang.BooleanUtils.toString(bool, "true", "false");} 	public static java.lang.String toStringOnOff(boolean bool) { 		return org.apache.commons.lang.BooleanUtils.toString(bool, "on", "off");} 	public static java.lang.String toStringYesNo(boolean bool) { 		return org.apache.commons.lang.BooleanUtils.toString(bool, "yes", "no");} 	public static java.lang.String toString(boolean bool, java.lang.String trueString, java.lang.String falseString) { 		return bool ? trueString : falseString;} 	public static boolean xor(boolean[] array) { 		if (array == null) { 			throw new java.lang.IllegalArgumentException("The Array must not be null");} else if (array.length == 0) { 			throw new java.lang.IllegalArgumentException("Array is empty");} 		int trueCount = 0; 		for (int i = 0; i < array.length; i++) { 			if (array[i]) { 				if (trueCount < 1) { 					trueCount++;} else { 					return false;}}} 		return trueCount == 1;} 	public static java.lang.Boolean xor(java.lang.Boolean[] array) { 		if (array == null) { 			throw new java.lang.IllegalArgumentException("The Array must not be null");} else if (array.length == 0) { 			throw new java.lang.IllegalArgumentException("Array is empty");} 		boolean[] primitive = null; 		try { 			primitive = org.apache.commons.lang.ArrayUtils.toPrimitive(array);} catch (java.lang.NullPointerException ex) { 			throw new java.lang.IllegalArgumentException("The array must not contain any null elements");} 		return org.apache.commons.lang.BooleanUtils.xor(primitive) ? java.lang.Boolean.TRUE : java.lang.Boolean.FALSE;}}
+\ No newline at end of file
+

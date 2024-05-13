@@ -1,0 +1,6 @@
+--- /source/org/jfree/chart/plot/CategoryPlot.java
++++ /source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2855 +2855 @@
+-		if (hasData && (renderer != null)) {
++		if (hasData && (!(renderer != null))) {
+

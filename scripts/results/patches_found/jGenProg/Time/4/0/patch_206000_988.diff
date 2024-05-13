@@ -1,0 +1,13 @@
+--- /src/main/java/org/joda/time/field/ZeroIsMaxDateTimeField.java
++++ /src/main/java/org/joda/time/field/ZeroIsMaxDateTimeField.java
+@@ -138,2 +137,0 @@
+-		return 1;
+-	}
+@@ -147,2 +145,4 @@
+-	public int getMaximumValue() {
+-		return getWrappedField().getMaximumValue() + 1;
++
++
++
++		return getWrappedField().getMaximumValue() + 1;} 	public int getMaximumValue() { 		return getWrappedField().getMaximumValue() + 1;
+
